@@ -1,0 +1,376 @@
+"""The main class is the class am_sec_error
+The idea behind spelling_error_taxonomy is that spelling errors can be
+characterized by features and the prescence and abscence of features can
+help classify the learning level of a student.
+There are 5 stages of a student who is learning to spell
+
+["PrePhonemic", "LetterName", "WithinWord", "SyllableJuncture", "DerivationalConstancy"]
+A student whose spelling error features indicate "PrePhonemic class"
+mean that the child is at a nursery level in spelling.
+
+The previous sentence means that a particular class should be associated with certain
+"spelling error feature". Therefore all my spelling error features have names that start with class name
+
+However I have coded spelling error qualities. i.e if a quality is present then the spelling error feature is not present
+For example a feature called
+"ln_shortVowel_predictablySubstituted_not" - indicates that it is a feature of the Letter Name stage
+The code works by determining whether this feature is present or not in the spelling by calling isPresent
+function for this feature "ln_shortVowel_predictablySubstituted_not". The isPresent function can return 3 values
+[None  True False]
+None - The word being spelled doesnt have the type of structure where this error could occur.
+       (this is actually calculated by the isPresent function)
+True - The spelling mistake had the desirable quality(it did not have an error)
+False - opposite of true
+For example if pp_initialConsonant_perfect returns True then the student's Initial Consonant was correct
+Which means he is a level above the pp class
+
+There is also a complication of barOrWindow and the incrementOnYes aspects of a feature
+Basically there is a problem that features when they are present can either indicate that a student
+is definitely better than a certain level or they can say that the student falls outside that level
+(but could be both below and above). 
+"""
+#Things to be done are the #XXX tags and the test cases that are failing. and the unimplemented features.
+from am_sec_util import *
+from am_sec_error_test import am_sec_error_classification_test_cases
+import operator
+
+def pp_syllableWord_approximateBySingleLetter_not_e(iw, cw):
+    """if length of incorrect word is 1 and pronunciation matches then return True,
+    in case of multiple syllables check that atleast all alphabets are in their corresponsing syllables in cw"""
+    #return False if (len(iw)==1 and (proncMatch(iw, cw) or iw in cw)) or  all([True if iwAlphabet in cwSyllable else False for iwAlphabet, cwSyllable in zip(splitIntoSyllable(iw), splitIntoSyllable(cw))]) else True
+    return False if len(iw)==len(splitIntoSyllable(cw)) else True
+
+def pp_initialConsonant_perfect_e(iw, cw):
+    return True if len(iw) > 0 and len(cw) > 0 and iw[0]==cw[0] else False
+
+def pp_finalConsononant_perfect_e(iw, cw):
+    iw=stripTrailingVowelsNaive(iw)
+    cw=stripTrailingVowelsNaive(cw)
+    return pp_initialConsonant_perfect_e(iw[::-1], cw[::-1])
+
+def ln_rControlledVowel_approximateByR_not_e(iw, cw):
+    "substitute all r controlled vowels by r and check that iw and cw are the same"
+    for rule in rControlledVowelGrapheme:
+        rcvRegex=re.compile(rule)
+        cw=rcvRegex.sub('r', cw)
+    return iw!=cw
+
+def ln_shortVowel_predictablySubstituted_not_e(iw, cw):
+    "substitution of i->e, e->i, e-u, u-e, e-a, a-e are allowed while matching short vowels"
+    #XXXXX
+    for rule in shortVowelGrapheme:        
+        for shortVowelMatches in containedShortVowel(cw):
+            for possibility in vowelConfusionMap[shortVowelMatches.group()]:
+                if iw==re.sub(rule, possibility, cw):
+                    return False
+    return True
+
+def ww_inflectionalEndings_perfect_e(iw, cw):
+    """Stem cw, pick the common part between stem and cw, check that the part in cw after the trimmedStem and iw match.
+    This ensures that everything that is part of inflectional ending matches between iw and cw."""
+    stem=porterStemmer.stem(cw)
+    trimmedStemLength=len(commonStartingSubsequence(stem, cw))
+    if len(iw)<trimmedStemLength:
+        return False
+    else:
+        _offset=(trimmedStemLength-1)-len(cw)
+        return cw[_offset:]==iw[_offset:]
+
+def ln_longVowel_approximateByLetterName_not_e(iw, cw):
+    """check whether long vowel sounds have been substituted by their letter names.
+    eg. play->pla, by checking whether the long vowel has been replaced by the first vowel of the group.
+    for V_e, check whether incorrect word is formed by substituting V_e by V_ eg. gate by gat.
+    only assign this error to those words where this pattern is repeated for all possible instances otherwise not.
+    e.g. if in relegate I mispell it to relgat then i am doing this mistake otherwise not"""
+    for rule in longVowelGrapheme:
+        cw=re.sub(rule, r'\g<replacement_group>', cw)        
+    return iw!=cw
+
+class am_sec_error:
+    spellingStages=["PrePhonemic", "LetterName", "WithinWord", "SyllableJuncture", "DerivationalConstancy"]
+    #A False returned by isPresent feature implies there is a error
+
+    sortedFeatureNames=[
+        "ln_shortVowel_predictablySubstituted_not",
+        "ln_longVowel_approximateByLetterName_not",
+        "ln_rControlledVowels_approximateByR_not",
+        
+        "pp_syllableWord_approximateBySingleLetter_not",
+        "pp_initialConsonant_perfect",
+        "pp_finalConsonant_perfect",
+        
+        "ln_affricatesSibilants_perfect",
+        "ln_edSuffix_perfect",
+        
+        "dc_consonantDoublingInAssimilatedPrefix_perfect",#XXXX - backward
+        
+        "ln_preConsonantNasals_perfect",
+        
+        "ww_preConsonantNasals_perfect",
+
+        "ww_rControlledVowels_perfect",
+
+        "sj_eDroppedWithSuffixes_perfect",#XXXX backward
+        "sj_singleSyllableWord_perfect",#XXXX backward
+        "sj_rPatternInMultiSyllablicWord_perfect",#XXXX backward
+
+        "ww_complexConsonant_perfect",
+        "ww_shortVowels_perfect",        
+        
+        
+        "pp_vowelElements_approximatelyPresent",#XXXX - forward
+
+        "ww_longVowel_perfect",
+        "ww_vcePattern_perfect",
+        "ww_inflectionalEndings_perfect",
+        
+        "ww_vowelPresentInSyllable_perfect",
+
+        "sj_longVowelInMultiSyllabicWord_perfect",
+        "sj_doublingWithSuffixes_perfect",
+
+        "dc_twoOrThreeSyllabicWord_perfect",
+    ]
+
+    featureConfiguration={
+        #-1
+        "unspec_wordSpacing_perfect":{
+            "isApplicable": lambda iw, cw: (" " in iw) or (" " in cw),
+            "isPresent": lambda iw, cw: patternMatch(iw, cw, whitespaceGrapheme)}
+        #0
+        ,"unspec_apostrophe_perfect":{
+            "isApplicable": lambda iw, cw: ("'" in iw) or ("'" in cw),
+            "isPresent": lambda iw, cw: patternMatch(iw, cw, apostropheGrapheme)}
+        #1
+        ,"pp_syllableWord_approximateBySingleLetter_not":{
+            "isApplicable": lambda cw: True,
+            "isPresent": lambda iw, cw:  pp_syllableWord_approximateBySingleLetter_not_e(iw, cw),
+            "barOrWindow":"window",
+            #We are assuming that there is no lower level than 0, otherwise we would increment that along with 1,2,3,4
+            "incrementOnYes":set([1,2,3,4])}
+        #2
+        ,"pp_initialConsonant_perfect":{
+            "isApplicable": lambda cw:  not startsWithDiOrTriOrBlend(cw),
+            "isPresent": lambda iw, cw:  pp_initialConsonant_perfect_e(iw, cw),
+            "barOrWindow":"bar",
+            "incrementOnYes":set([1, 2, 3, 4])}
+        #3
+        ,"pp_finalConsonant_perfect":{
+            "isApplicable": lambda cw:  not endsWithDiOrTriOrBlend(cw),
+            "isPresent": lambda iw, cw:  pp_finalConsononant_perfect_e(iw, cw),
+            "barOrWindow":"bar",
+            "incrementOnYes":set([1, 2, 3, 4])}
+        #4
+        ,"pp_vowelElements_approximatelyPresent":{
+            "isApplicable": lambda cw: containsVowel(cw), #XXXX -- we should check the order and number of vowels
+            "isPresent": lambda iw, cw: containsVowel(iw) and (len(containedVowel(cw))==len(containedVowel(iw))),
+            "barOrWindow":"bar",
+            "incrementOnYes":set([1, 2, 3, 4])}
+        #5
+        ,"ln_shortVowel_predictablySubstituted_not":{
+            "isApplicable": lambda cw: containsShortVowel(cw),
+            "isPresent": lambda iw, cw: ln_shortVowel_predictablySubstituted_not_e(iw, cw),
+            "barOrWindow":"window",
+            "incrementOnYes":set([0, 2, 3, 4])}
+        #6
+        ,"ln_longVowel_approximateByLetterName_not":{
+            "isApplicable": lambda cw: containsLongVowel(cw),
+            "isPresent": lambda iw, cw: ln_longVowel_approximateByLetterName_not_e(iw, cw),
+            "barOrWindow":"window",
+            "incrementOnYes":set([0, 2, 3, 4])}
+        #7
+        ,"ln_rControlledVowels_approximateByR_not":{
+            "isApplicable": lambda cw: containsVowelControlledR(cw),
+            "isPresent": lambda iw, cw: ln_rControlledVowel_approximateByR_not_e(iw, cw),
+            "barOrWindow":"window",
+            "incrementOnYes":set([0, 2, 3, 4])}
+        #8
+        ,"ln_edSuffix_perfect":{
+            "isApplicable": lambda cw: containsEDSuffix(cw),
+            "isPresent": lambda iw, cw: patternMatch(iw, cw, edSuffixGrapheme),
+            "barOrWindow": "bar",
+            "incrementOnYes":set([2,3,4])}
+        #9
+        ,"ln_affricatesSibilants_perfect":{
+            "isApplicable": lambda cw: containsSibilant(cw) or containsAffricate(cw),
+            "isPresent": lambda iw, cw: patternMatch(iw, cw, affricateGrapheme+sibilantGrapheme),
+            "barOrWindow":"bar",
+            "incrementOnYes":set([2, 3, 4])}
+        #10
+        ,"ln_preConsonantNasals_perfect":{
+            "isApplicable": lambda cw: containsPreConsonantNasal(cw),
+            "isPresent": lambda iw, cw: patternMatch(iw, cw, preConsonantNasalGrapheme),
+            "barOrWindow":"bar",
+            "incrementOnYes":set([2, 3, 4])}
+        #11
+        ,"ww_vcePattern_perfect":{
+            "isApplicable": lambda cw: containsVCEPattern(cw),
+            "isPresent": lambda iw, cw: patternMatch(iw, cw, vceGrapheme),
+            "barOrWindow":"bar",
+            "incrementOnYes":set([2, 3, 4])}
+        #12
+        # ,"ww_highFrequencyPattern_perfect":{#XXXX
+        #     "isApplicable": lambda cw: False,
+        #     "isPresent": lambda iw, cw: False,
+        #     "barOrWindow":"bar",
+        #     "incrementOnYes":set([2, 3, 4])}
+        #13
+        ,"ww_inflectionalEndings_perfect":{ #XXXXX I am treating inflectional endings and suffixes to be the same therefore this feature is actually more complex than sj_eDroppedWithSuffixes_perfect, correctly deciding between inflection and suffix would require correct pos tagging.
+            "isApplicable": lambda cw: containsInflectionalEnding(cw),
+            "isPresent": lambda iw, cw: ww_inflectionalEndings_perfect_e(iw, cw),
+            "barOrWindow": "bar",
+            "incrementOnYes": set([2, 3, 4])}
+        #14
+        ,"ww_shortVowels_perfect":{
+            "isApplicable": lambda cw: containsShortVowel(cw),
+            "isPresent": lambda iw, cw: patternMatch(iw, cw, shortVowelGrapheme),
+            "barOrWindow":"bar",
+            "incrementOnYes":set([2, 3, 4])}
+        #15
+        ,"ww_preConsonantNasals_perfect":{
+            "isApplicable": lambda cw: containsPreConsonantNasal(cw), 
+            "isPresent": lambda iw, cw: patternMatch(iw, cw, preConsonantNasalGrapheme),
+            "barOrWindow":"bar",
+            "incrementOnYes":set([2, 3, 4])}
+        #16
+        ,"ww_vowelPresentInSyllable_perfect":{
+            "isApplicable": lambda cw: True,
+            "isPresent": lambda iw, cw: getNumberOfSyllable(iw)==getNumberOfSyllable(cw),
+            "barOrWindow":"bar",
+            "incrementOnYes":set([2, 3, 4])}
+        #17
+        ,"ww_rControlledVowels_perfect":{
+            "isApplicable": lambda cw: containsVowelControlledR(cw),
+            "isPresent": lambda iw, cw: patternMatch(iw, cw, rControlledVowelGrapheme),
+            "barOrWindow":"bar",
+            "incrementOnYes":set([2, 3, 4])}
+        #18
+        ,"ww_longVowel_perfect":{
+            "isApplicable": lambda cw: containsLongVowel(cw),
+            "isPresent": lambda iw, cw: patternMatch(iw, cw, longVowelGrapheme),
+            "barOrWindow":"bar",
+            "incrementOnYes":set([2, 3, 4])}
+        #19
+        ,"ww_complexConsonant_perfect":{
+            "isApplicable": lambda cw: containsComplexConsonant(cw),
+            "isPresent": lambda iw, cw: patternMatch(iw, cw, complexConsonantGrapheme),
+            "barOrWindow":"bar",
+            "incrementOnYes":set([3, 4])}
+        #20
+        ,"sj_singleSyllableWord_perfect":{
+            "isApplicable": lambda cw: getNumberOfSyllable(cw)==1,
+            "isPresent": lambda iw, cw: cw==iw,
+            "barOrWindow":"bar",
+            "incrementOnYes":set([3, 4])}
+        #21
+        ,"sj_longVowelInMultiSyllabicWord_perfect":{
+            "isApplicable": lambda cw: containsLongVowel(cw) and getNumberOfSyllable(cw)>1,
+            "isPresent": lambda iw, cw: patternMatch(iw, cw, longVowelGrapheme),
+            "barOrWindow":"bar",
+            "incrementOnYes":set([3, 4])}
+        #22
+        ,"sj_rPatternInMultiSyllablicWord_perfect":{
+            "isApplicable": lambda cw: containsVowelControlledR(cw) and getNumberOfSyllable(cw)>1,
+            "isPresent": lambda iw, cw: patternMatch(iw, cw, rControlledVowelGrapheme),
+            "barOrWindow":"bar",
+            "incrementOnYes":set([3, 4])}
+        #23
+        ,"sj_doublingWithSuffixes_perfect":{
+            "isApplicable": lambda cw: containsConsonantDoublingSuffix(cw),
+            "isPresent": lambda iw, cw: patternMatch(iw, cw, suffixDoublingGrapheme),
+            "barOrWindow": "bar",
+            "incrementOnYes": set([3, 4])}
+        #24
+        ,"sj_eDroppedWithSuffixes_perfect":{
+            "isApplicable": lambda cw: containsEDroppingSuffix(cw),
+            "isPresent": lambda iw, cw: endingSuffixMatch(iw, cw, containedEDroppingSuffix),
+            "barOrWindow": "bar",
+            "incrementOnYes": set([3, 4])}
+        #24
+        ,"dc_twoOrThreeSyllabicWord_perfect":{
+            "isApplicable": lambda cw: getNumberOfSyllable(cw)>1 and getNumberOfSyllable(cw)<4,
+            "isPresent": lambda iw, cw: iw==cw,
+            "barOrWindow":"bar",
+            "incrementOnYes":set([4])}
+        #25
+        ,"dc_consonantDoublingInAssimilatedPrefix_perfect":{
+            "isApplicable": lambda cw: containsConsonantDoublingPrefix(cw),
+            "isPresent": lambda iw, cw: patternMatch(iw, cw, suffixDoublingGrapheme),
+            "barOrWindow":"bar",
+            "incrementOnYes":set([4])}
+        #26
+        # ,"dc_rootWord_perfect":{
+        #     "isApplicable": lambda containsConsonantDoublingPrefix(cw) or containsInflectionalEnding(cw),
+        #     "isPresent": lambda ,
+        #     "barOrWindow":"bar",
+        #     "incrementOnYes":set([4])}
+        }
+    
+    @staticmethod
+    def preProcess(word):
+        "preprocess word before passing it to thing in init"
+        return(word.replace(" ", "").replace("'", ""))
+    
+    def __init__(self, iw, cw):
+        "iw is incorrect word, cw is correct word, sec is spelling error classfication"
+        assert iw==iw.lower()
+        assert cw==cw.lower()
+        self.errorFeatures={}
+        self.stageSimilarity=dict((e, 0) for e in am_sec_error.spellingStages)
+        for featureName, value in sorted(am_sec_error.featureConfiguration.iteritems()):
+            if featureName.startswith('unspec'):
+                isApplicable=am_sec_error.featureConfiguration[featureName]["isApplicable"](iw, cw)
+                isPresent=None if not isApplicable else am_sec_error.featureConfiguration[featureName]['isPresent'](iw, cw)
+                self.errorFeatures[featureName]=dict(isApplicable=isApplicable, isPresent=isPresent)
+            else:
+                isApplicable=am_sec_error.featureConfiguration[featureName]["isApplicable"](am_sec_error.preProcess(cw))
+                isPresent=None if not isApplicable else \
+                    am_sec_error.featureConfiguration[featureName]['isPresent'](am_sec_error.preProcess(iw), am_sec_error.preProcess(cw))
+                self.errorFeatures[featureName]=dict(isApplicable=isApplicable, isPresent=isPresent)
+                if isPresent!=None:
+                    relevantStages=am_sec_error.featureConfiguration[featureName]["incrementOnYes"] if isPresent else set(range(len(am_sec_error.spellingStages)))-am_sec_error.featureConfiguration[featureName]["incrementOnYes"]
+                    _fractionDenom=len(relevantStages)
+                    for stage in relevantStages:
+                        self.stageSimilarity[am_sec_error.spellingStages[stage]]+= int(1000/_fractionDenom)
+        #print sorted(self.stageSimilarity.iteritems(), key=operator.itemgetter(1), reverse=True)    
+
+    def __repr__(self):
+        return str(self.stageSimilarity)+"\n"+str(self.errorFeatures)
+
+    def __str__(self):
+        return self.__repr__()
+    
+
+def test():
+    print 'starting test.'
+    print """The test will run test cases in am_sec_error_test.py
+and tell which of the functions, for which of these feature failed, and what
+was the expectedOutput"""
+    unitTests=am_sec_error_classification_test_cases.keys()
+    features=am_sec_error.featureConfiguration.keys()
+    unitTests.sort()
+    features.sort()
+    assert features==unitTests, "Please check the following test cases " + str(set(features)-set(unitTests)) + 'and\n' + str(set(unitTests)-set(features))
+    assert len(am_sec_error.sortedFeatureNames)==len(features)-2
+    #assert set(am_sec_error.sortedFeatureNames)==set(features)
+    for errorType, testCases in am_sec_error_classification_test_cases.iteritems():
+        assert len(testCases)==2
+        for _i, unitTestArray in enumerate(testCases):
+            functionBeingTested=["isApplicable", "isPresent"][_i]                
+            if type(unitTestArray) is str:
+                unitTestArray=am_sec_error_classification_test_cases[unitTestArray][_i]
+            for unitTest in unitTestArray:                
+                if functionBeingTested=="isApplicable":
+                    if errorType.startswith('unspec'):
+                        if am_sec_error.featureConfiguration[errorType][functionBeingTested](unitTest[0], unitTest[1])!=unitTest[-1]:
+                            print 'errorType %s, function %s, input (%s, %s), expectedOutput %s' % (errorType, functionBeingTested, unitTest[0], unitTest[1], unitTest[-1])
+                    else:
+                        if am_sec_error.featureConfiguration[errorType][functionBeingTested](unitTest[0])!=unitTest[-1]:
+                            print 'errorType %s, function %s, input %s, expectedOutput %s' % (errorType, functionBeingTested, unitTest[0], unitTest[-1])
+                elif functionBeingTested=="isPresent":
+                    if am_sec_error.featureConfiguration[errorType][functionBeingTested](unitTest[0],unitTest[1])!=unitTest[-1]:
+                        print 'errorType %s, function %s, input %s, expOut %s' % (errorType, functionBeingTested, ','.join(unitTest[0:2]), unitTest[-1])
+
+if __name__=="__main__":
+    test()
+    print am_sec_error("help", "halp")
