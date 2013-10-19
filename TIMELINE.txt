@@ -1,0 +1,92 @@
+| Date   | Week | Task (sauri)                                                                                                               | Task (tweets)                                                                               |
+| 27 oct |    1 | Make a list of all features, and all functions that will have to be implemented and agree on the list (set up a make file) |                                                                                             |
+|        |      | Also figure out the types of phenomena that we are interested in (how do SIPs influence us? use sauri's thesis)            |                                                                                             |
+| 3 Nov  |    2 | Do Feature Engineering (set up dependency parses, basic library modules implementing some of sauri's thesis algos)         | 100 tweets (totally random) or (news org),  manually detect whether phenomena occurs or not |
+|        |      |                                                                                                                            | by default assume that the tweets are true and then check what the                          |
+|        |      |                                                                                                                            | correlation is between me and roger so that we agree amongst us,                            |
+|        |      |                                                                                                                            | Report these results to Ben and Kyle                                                        |
+| 10 Nov |    3 | Do Feature Engineering                                                                                                     | Depending on feedback we choose the actual corpus                                           |
+| 17 Nov |    4 | Train and test loglinear model (check overtrain, smoothing parameter)                                                      | Implement Sauri's normalization algorithm                                                   |
+| 24 Nov |    5 |                                                                                                                            | Train and test on tweets                                                                    |
+| 1 Nov  |    6 | Writeup                                                                                                                    | Writeup                                                                                     |
+
+>>> import csv
+>>> d=csv.DictReader(open("marneffe_data.csv"))
+>>> ld=list(d)
+>>> ll=[(e["eText"], e["normalization"]) for e in ld if e["normalization"].count(e["eText"]) > 1]
+>>> ll
+[('common', 'kidnappings has been common in this U.S. commonwealth'), ('put', 'the speaker and his people are putting put new products into the marketplace')]
+
+potts csv has normalized sentences, and every normalized sentence has
+the eText mentioned only once except for one sentence which we can disregard.
+
+They learn to assign a pdf over factuality categories to sentences,
+and think of each turker annotation as a training point, so since they
+have 10 turker annot. each setnence appears 10 times with the required
+category.
+So if there were 4 turkers who gave conflicting labels then they will
+make a flat file 
+sentence_1_feature_1 weight sentence_1_feature_2 weight CT+
+sentence_1_feature_1 weight sentence_1_feature_2 weight PS+
+sentence_1_feature_1 weight sentence_1_feature_2 weight Pr+
+sentence_1_feature_1 weight sentence_1_feature_2 weight Uu+
+and then run the loglinear training command.
+
+
+If I Was to train then basically I will have to learn to assign
+weights to the features so that the log-likelihood of data(the
+data is the turker judgements) can be explained. (and you regularize
+the feature weights.)
+
+Do feature engineering.
+1. Predicate Classes
+2. General Features
+3. Modality Features
+4. Negation
+5. Conditional
+6. Quotation
+
+
+*Predicate classes*
+Sauri's thesis defines classes of predicates(nouns and verbs) that project the same veridicality value onto the events they introduce. (Appendix A, PAge 164)
+The classes also define the grammatical relations that need to hold between the predicate and the event it introduces, because grammatical contexts
+matter for veridicality.
+
+Different veridicality values will indeed be assigned to X in He doesnt know that X and in He doesnt know if X.
+The classes have names like ANNOUNCE, CONFIRM, CONJECTURE, and SAY.
+We used dependency graphs produced by the Stanford parser to follow the path from the target event to the root of the sentence.
+
+If a predicate in the path was contained in one of the classes and the grammatical relation matched, 
+      we added 
+         1. the lemma of the predicate as a feature
+         2. a feature marking the predicate class.
+
+*World knowledge* 
+For each verb found in the path and contained in the predicate classes, we also added the lemma of its subject, and whether or not the verb was negated. 
+
+Our rationale for including the subject is that, as we saw in Section 3, readers interpretations differ for sentences such as The FBI said it received . . . and Bush said he re-ceived . . . , presumably because of world knowledge they bring to bear on the judgment.
+
+To approximate such world knowledge, we also obtained subject–verb bigram and subject counts from the New York Times portion of GigaWord and then included log(subject verb-counts/subject-counts) as a feature.
+
+The intuition here is that some embedded clauses carry the main point of the sentence (Frazier and Clifton 2005; Simons 2007; Clifton and Frazier 2010), with the overall frequency of the elements introducing the embedded clause contributing to readers veridicality assessments. 
+
+
+*General features* 
+We used the lemma of the event, the lemma of the root of the sentence, the incoming grammatical relation to the event, and a general class feature. 
+
+*Modality features*
+We used Sauri's list of modal words as features.
+We distinguished between modality markers found as direct governors or children of the event under consideration, and modal words found elsewhere in the context of the sentence. Figure 4 provides some indication of how these will relate to our annotations. 
+
+*Negation*
+A negation feature captures the presence of linguistic markers of negative contexts.
+Events are considered negated if they have a negation dependency in the graph or an explicit linguistic marker of negation as dependent (e.g., simple negation (not), downward-monotone quantifiers (no, any), or restricting prepositions).
+Events are also considered negated if embedded in a negative context (e.g., fail, cancel). 
+
+*Conditional*
+Antecedents of conditionals and words clearly marking uncertainty are reliable indicators of the Uu category.
+We therefore checked for events in an if-clause or embedded under markers such as call for. 
+
+*Quotation*
+Another reliable indicator of the Uu category is quotation.
+We generated a quotation feature if the sentence opened and ended with quotation marks, or if the root subject was we. 
