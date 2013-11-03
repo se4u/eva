@@ -1,0 +1,2382 @@
+Sentence #1 (14 tokens):
+Poland, Hungary and the Czech Republic will participate in NATO strategy planning.
+[Text=Poland CharacterOffsetBegin=0 CharacterOffsetEnd=6 PartOfSpeech=NNP] [Text=, CharacterOffsetBegin=6 CharacterOffsetEnd=7 PartOfSpeech=,] [Text=Hungary CharacterOffsetBegin=8 CharacterOffsetEnd=15 PartOfSpeech=NNP] [Text=and CharacterOffsetBegin=16 CharacterOffsetEnd=19 PartOfSpeech=CC] [Text=the CharacterOffsetBegin=20 CharacterOffsetEnd=23 PartOfSpeech=DT] [Text=Czech CharacterOffsetBegin=24 CharacterOffsetEnd=29 PartOfSpeech=NNP] [Text=Republic CharacterOffsetBegin=30 CharacterOffsetEnd=38 PartOfSpeech=NNP] [Text=will CharacterOffsetBegin=39 CharacterOffsetEnd=43 PartOfSpeech=MD] [Text=participate CharacterOffsetBegin=44 CharacterOffsetEnd=55 PartOfSpeech=VB] [Text=in CharacterOffsetBegin=56 CharacterOffsetEnd=58 PartOfSpeech=IN] [Text=NATO CharacterOffsetBegin=59 CharacterOffsetEnd=63 PartOfSpeech=NNP] [Text=strategy CharacterOffsetBegin=64 CharacterOffsetEnd=72 PartOfSpeech=NN] [Text=planning CharacterOffsetBegin=73 CharacterOffsetEnd=81 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=81 CharacterOffsetEnd=82 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Poland))
+      (, ,)
+      (NP (NNP Hungary))
+      (CC and)
+      (NP (DT the) (NNP Czech) (NNP Republic)))
+    (VP (MD will)
+      (VP (VB participate)
+        (PP (IN in)
+          (NP (NNP NATO) (NN strategy) (NN planning)))))
+    (. .)))
+
+nsubj(participate-9, Poland-1)
+conj_and(Poland-1, Hungary-3)
+nsubj(participate-9, Hungary-3)
+det(Republic-7, the-5)
+nn(Republic-7, Czech-6)
+conj_and(Poland-1, Republic-7)
+nsubj(participate-9, Republic-7)
+aux(participate-9, will-8)
+root(ROOT-0, participate-9)
+nn(planning-13, NATO-11)
+nn(planning-13, strategy-12)
+prep_in(participate-9, planning-13)
+
+Sentence #2 (5 tokens):
+the three will join.
+[Text=the CharacterOffsetBegin=83 CharacterOffsetEnd=86 PartOfSpeech=DT] [Text=three CharacterOffsetBegin=87 CharacterOffsetEnd=92 PartOfSpeech=CD] [Text=will CharacterOffsetBegin=93 CharacterOffsetEnd=97 PartOfSpeech=MD] [Text=join CharacterOffsetBegin=98 CharacterOffsetEnd=102 PartOfSpeech=VB] [Text=. CharacterOffsetBegin=102 CharacterOffsetEnd=103 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT the) (CD three))
+    (VP (MD will)
+      (VP (VB join)))
+    (. .)))
+
+det(three-2, the-1)
+nsubj(join-4, three-2)
+aux(join-4, will-3)
+root(ROOT-0, join-4)
+
+Sentence #3 (16 tokens):
+a strand of hair was found near where a sniper shot and killed a doctor.
+[Text=a CharacterOffsetBegin=104 CharacterOffsetEnd=105 PartOfSpeech=DT] [Text=strand CharacterOffsetBegin=106 CharacterOffsetEnd=112 PartOfSpeech=NN] [Text=of CharacterOffsetBegin=113 CharacterOffsetEnd=115 PartOfSpeech=IN] [Text=hair CharacterOffsetBegin=116 CharacterOffsetEnd=120 PartOfSpeech=NN] [Text=was CharacterOffsetBegin=121 CharacterOffsetEnd=124 PartOfSpeech=VBD] [Text=found CharacterOffsetBegin=125 CharacterOffsetEnd=130 PartOfSpeech=VBN] [Text=near CharacterOffsetBegin=131 CharacterOffsetEnd=135 PartOfSpeech=IN] [Text=where CharacterOffsetBegin=136 CharacterOffsetEnd=141 PartOfSpeech=WRB] [Text=a CharacterOffsetBegin=142 CharacterOffsetEnd=143 PartOfSpeech=DT] [Text=sniper CharacterOffsetBegin=144 CharacterOffsetEnd=150 PartOfSpeech=NN] [Text=shot CharacterOffsetBegin=151 CharacterOffsetEnd=155 PartOfSpeech=NN] [Text=and CharacterOffsetBegin=156 CharacterOffsetEnd=159 PartOfSpeech=CC] [Text=killed CharacterOffsetBegin=160 CharacterOffsetEnd=166 PartOfSpeech=VBD] [Text=a CharacterOffsetBegin=167 CharacterOffsetEnd=168 PartOfSpeech=DT] [Text=doctor CharacterOffsetBegin=169 CharacterOffsetEnd=175 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=175 CharacterOffsetEnd=176 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP
+      (NP (DT a) (NN strand))
+      (PP (IN of)
+        (NP (NN hair))))
+    (VP (VBD was)
+      (VP (VBN found)
+        (PP (IN near)
+          (SBAR
+            (WHADVP (WRB where))
+            (S
+              (NP (DT a) (NN sniper))
+              (VP
+                (VP (NN shot))
+                (CC and)
+                (VP (VBD killed)
+                  (NP (DT a) (NN doctor)))))))))
+    (. .)))
+
+det(strand-2, a-1)
+nsubjpass(found-6, strand-2)
+prep_of(strand-2, hair-4)
+auxpass(found-6, was-5)
+root(ROOT-0, found-6)
+advmod(shot-11, where-8)
+det(sniper-10, a-9)
+nsubj(shot-11, sniper-10)
+nsubj(killed-13, sniper-10)
+prepc_near(found-6, shot-11)
+prepc_near(found-6, killed-13)
+conj_and(shot-11, killed-13)
+det(doctor-15, a-14)
+dobj(killed-13, doctor-15)
+
+Sentence #4 (8 tokens):
+the hair came from the same person.
+[Text=the CharacterOffsetBegin=177 CharacterOffsetEnd=180 PartOfSpeech=DT] [Text=hair CharacterOffsetBegin=181 CharacterOffsetEnd=185 PartOfSpeech=NN] [Text=came CharacterOffsetBegin=186 CharacterOffsetEnd=190 PartOfSpeech=VBD] [Text=from CharacterOffsetBegin=191 CharacterOffsetEnd=195 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=196 CharacterOffsetEnd=199 PartOfSpeech=DT] [Text=same CharacterOffsetBegin=200 CharacterOffsetEnd=204 PartOfSpeech=JJ] [Text=person CharacterOffsetBegin=205 CharacterOffsetEnd=211 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=211 CharacterOffsetEnd=212 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT the) (NN hair))
+    (VP (VBD came)
+      (PP (IN from)
+        (NP (DT the) (JJ same) (NN person))))
+    (. .)))
+
+det(hair-2, the-1)
+nsubj(came-3, hair-2)
+root(ROOT-0, came-3)
+det(person-7, the-5)
+amod(person-7, same-6)
+prep_from(came-3, person-7)
+
+Sentence #5 (18 tokens):
+the sniper fired the rifle bullet that killed Slepian near the location where the cap was found.
+[Text=the CharacterOffsetBegin=213 CharacterOffsetEnd=216 PartOfSpeech=DT] [Text=sniper CharacterOffsetBegin=217 CharacterOffsetEnd=223 PartOfSpeech=NN] [Text=fired CharacterOffsetBegin=224 CharacterOffsetEnd=229 PartOfSpeech=VBD] [Text=the CharacterOffsetBegin=230 CharacterOffsetEnd=233 PartOfSpeech=DT] [Text=rifle CharacterOffsetBegin=234 CharacterOffsetEnd=239 PartOfSpeech=NN] [Text=bullet CharacterOffsetBegin=240 CharacterOffsetEnd=246 PartOfSpeech=NN] [Text=that CharacterOffsetBegin=247 CharacterOffsetEnd=251 PartOfSpeech=WDT] [Text=killed CharacterOffsetBegin=252 CharacterOffsetEnd=258 PartOfSpeech=VBD] [Text=Slepian CharacterOffsetBegin=259 CharacterOffsetEnd=266 PartOfSpeech=NNP] [Text=near CharacterOffsetBegin=267 CharacterOffsetEnd=271 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=272 CharacterOffsetEnd=275 PartOfSpeech=DT] [Text=location CharacterOffsetBegin=276 CharacterOffsetEnd=284 PartOfSpeech=NN] [Text=where CharacterOffsetBegin=285 CharacterOffsetEnd=290 PartOfSpeech=WRB] [Text=the CharacterOffsetBegin=291 CharacterOffsetEnd=294 PartOfSpeech=DT] [Text=cap CharacterOffsetBegin=295 CharacterOffsetEnd=298 PartOfSpeech=NN] [Text=was CharacterOffsetBegin=299 CharacterOffsetEnd=302 PartOfSpeech=VBD] [Text=found CharacterOffsetBegin=303 CharacterOffsetEnd=308 PartOfSpeech=VBN] [Text=. CharacterOffsetBegin=308 CharacterOffsetEnd=309 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT the) (NN sniper))
+    (VP (VBD fired)
+      (NP
+        (NP (DT the) (NN rifle) (NN bullet))
+        (SBAR
+          (WHNP (WDT that))
+          (S
+            (VP (VBD killed)
+              (NP
+                (NP (NNP Slepian))
+                (PP (IN near)
+                  (NP (DT the) (NN location))))
+              (SBAR
+                (WHADVP (WRB where))
+                (S
+                  (NP (DT the) (NN cap))
+                  (VP (VBD was)
+                    (VP (VBN found))))))))))
+    (. .)))
+
+det(sniper-2, the-1)
+nsubj(fired-3, sniper-2)
+root(ROOT-0, fired-3)
+det(bullet-6, the-4)
+nn(bullet-6, rifle-5)
+dobj(fired-3, bullet-6)
+nsubj(killed-8, bullet-6)
+rcmod(bullet-6, killed-8)
+dobj(killed-8, Slepian-9)
+det(location-12, the-11)
+prep_near(Slepian-9, location-12)
+advmod(found-17, where-13)
+det(cap-15, the-14)
+nsubjpass(found-17, cap-15)
+auxpass(found-17, was-16)
+advcl(killed-8, found-17)
+
+Sentence #6 (10 tokens):
+Louis Freeh went on an official visit to Mexico.
+[Text=Louis CharacterOffsetBegin=310 CharacterOffsetEnd=315 PartOfSpeech=NNP] [Text=Freeh CharacterOffsetBegin=316 CharacterOffsetEnd=321 PartOfSpeech=NNP] [Text=went CharacterOffsetBegin=322 CharacterOffsetEnd=326 PartOfSpeech=VBD] [Text=on CharacterOffsetBegin=327 CharacterOffsetEnd=329 PartOfSpeech=IN] [Text=an CharacterOffsetBegin=330 CharacterOffsetEnd=332 PartOfSpeech=DT] [Text=official CharacterOffsetBegin=333 CharacterOffsetEnd=341 PartOfSpeech=JJ] [Text=visit CharacterOffsetBegin=342 CharacterOffsetEnd=347 PartOfSpeech=NN] [Text=to CharacterOffsetBegin=348 CharacterOffsetEnd=350 PartOfSpeech=TO] [Text=Mexico CharacterOffsetBegin=351 CharacterOffsetEnd=357 PartOfSpeech=NNP] [Text=. CharacterOffsetBegin=357 CharacterOffsetEnd=358 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Louis) (NNP Freeh))
+    (VP (VBD went)
+      (PP (IN on)
+        (NP (DT an) (JJ official) (NN visit)))
+      (PP (TO to)
+        (NP (NNP Mexico))))
+    (. .)))
+
+nn(Freeh-2, Louis-1)
+nsubj(went-3, Freeh-2)
+root(ROOT-0, went-3)
+det(visit-7, an-5)
+amod(visit-7, official-6)
+prep_on(went-3, visit-7)
+prep_to(went-3, Mexico-9)
+
+Sentence #7 (5 tokens):
+there was a shooting.
+[Text=there CharacterOffsetBegin=359 CharacterOffsetEnd=364 PartOfSpeech=EX] [Text=was CharacterOffsetBegin=365 CharacterOffsetEnd=368 PartOfSpeech=VBD] [Text=a CharacterOffsetBegin=369 CharacterOffsetEnd=370 PartOfSpeech=DT] [Text=shooting CharacterOffsetBegin=371 CharacterOffsetEnd=379 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=379 CharacterOffsetEnd=380 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBD was)
+      (NP (DT a) (NN shooting)))
+    (. .)))
+
+expl(was-2, there-1)
+root(ROOT-0, was-2)
+det(shooting-4, a-3)
+nsubj(was-2, shooting-4)
+
+Sentence #8 (15 tokens):
+Kopp's car was spotted in Amherst in the weeks before Slepian was killed.
+[Text=Kopp CharacterOffsetBegin=381 CharacterOffsetEnd=385 PartOfSpeech=NNP] [Text='s CharacterOffsetBegin=385 CharacterOffsetEnd=387 PartOfSpeech=POS] [Text=car CharacterOffsetBegin=388 CharacterOffsetEnd=391 PartOfSpeech=NN] [Text=was CharacterOffsetBegin=392 CharacterOffsetEnd=395 PartOfSpeech=VBD] [Text=spotted CharacterOffsetBegin=396 CharacterOffsetEnd=403 PartOfSpeech=VBN] [Text=in CharacterOffsetBegin=404 CharacterOffsetEnd=406 PartOfSpeech=IN] [Text=Amherst CharacterOffsetBegin=407 CharacterOffsetEnd=414 PartOfSpeech=NNP] [Text=in CharacterOffsetBegin=415 CharacterOffsetEnd=417 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=418 CharacterOffsetEnd=421 PartOfSpeech=DT] [Text=weeks CharacterOffsetBegin=422 CharacterOffsetEnd=427 PartOfSpeech=NNS] [Text=before CharacterOffsetBegin=428 CharacterOffsetEnd=434 PartOfSpeech=IN] [Text=Slepian CharacterOffsetBegin=435 CharacterOffsetEnd=442 PartOfSpeech=NNP] [Text=was CharacterOffsetBegin=443 CharacterOffsetEnd=446 PartOfSpeech=VBD] [Text=killed CharacterOffsetBegin=447 CharacterOffsetEnd=453 PartOfSpeech=VBN] [Text=. CharacterOffsetBegin=453 CharacterOffsetEnd=454 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Kopp) (POS 's))
+      (NN car))
+    (VP (VBD was)
+      (VP (VBN spotted)
+        (PP (IN in)
+          (NP
+            (NP (NNP Amherst))
+            (PP (IN in)
+              (NP (DT the) (NNS weeks)))))
+        (SBAR (IN before)
+          (S
+            (NP (NNP Slepian))
+            (VP (VBD was)
+              (VP (VBN killed)))))))
+    (. .)))
+
+poss(car-3, Kopp-1)
+nsubjpass(spotted-5, car-3)
+auxpass(spotted-5, was-4)
+root(ROOT-0, spotted-5)
+prep_in(spotted-5, Amherst-7)
+det(weeks-10, the-9)
+prep_in(Amherst-7, weeks-10)
+mark(killed-14, before-11)
+nsubjpass(killed-14, Slepian-12)
+auxpass(killed-14, was-13)
+advcl(spotted-5, killed-14)
+
+Sentence #9 (21 tokens):
+Horsley's ÒNuremburg FilesÓ was the focus of a federal court trial that lead to a $107 million verdict.
+[Text=Horsley CharacterOffsetBegin=455 CharacterOffsetEnd=462 PartOfSpeech=NNP] [Text='s CharacterOffsetBegin=462 CharacterOffsetEnd=464 PartOfSpeech=POS] [Text=ÒNuremburg CharacterOffsetBegin=465 CharacterOffsetEnd=475 PartOfSpeech=NN] [Text=FilesÓ CharacterOffsetBegin=476 CharacterOffsetEnd=482 PartOfSpeech=NN] [Text=was CharacterOffsetBegin=483 CharacterOffsetEnd=486 PartOfSpeech=VBD] [Text=the CharacterOffsetBegin=487 CharacterOffsetEnd=490 PartOfSpeech=DT] [Text=focus CharacterOffsetBegin=491 CharacterOffsetEnd=496 PartOfSpeech=NN] [Text=of CharacterOffsetBegin=497 CharacterOffsetEnd=499 PartOfSpeech=IN] [Text=a CharacterOffsetBegin=500 CharacterOffsetEnd=501 PartOfSpeech=DT] [Text=federal CharacterOffsetBegin=502 CharacterOffsetEnd=509 PartOfSpeech=JJ] [Text=court CharacterOffsetBegin=510 CharacterOffsetEnd=515 PartOfSpeech=NN] [Text=trial CharacterOffsetBegin=516 CharacterOffsetEnd=521 PartOfSpeech=NN] [Text=that CharacterOffsetBegin=522 CharacterOffsetEnd=526 PartOfSpeech=WDT] [Text=lead CharacterOffsetBegin=527 CharacterOffsetEnd=531 PartOfSpeech=VBP] [Text=to CharacterOffsetBegin=532 CharacterOffsetEnd=534 PartOfSpeech=TO] [Text=a CharacterOffsetBegin=535 CharacterOffsetEnd=536 PartOfSpeech=DT] [Text=$ CharacterOffsetBegin=537 CharacterOffsetEnd=538 PartOfSpeech=$] [Text=107 CharacterOffsetBegin=538 CharacterOffsetEnd=541 PartOfSpeech=CD] [Text=million CharacterOffsetBegin=542 CharacterOffsetEnd=549 PartOfSpeech=CD] [Text=verdict CharacterOffsetBegin=550 CharacterOffsetEnd=557 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=557 CharacterOffsetEnd=558 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Horsley) (POS 's))
+      (NN ÒNuremburg) (NN FilesÓ))
+    (VP (VBD was)
+      (NP
+        (NP (DT the) (NN focus))
+        (PP (IN of)
+          (NP
+            (NP (DT a) (JJ federal) (NN court) (NN trial))
+            (SBAR
+              (WHNP (WDT that))
+              (S
+                (VP (VBP lead)
+                  (PP (TO to)
+                    (NP (DT a)
+                      (ADJP
+                        (QP ($ $) (CD 107) (CD million)))
+                      (NN verdict))))))))))
+    (. .)))
+
+poss(FilesÓ-4, Horsley-1)
+nn(FilesÓ-4, ÒNuremburg-3)
+nsubj(focus-7, FilesÓ-4)
+cop(focus-7, was-5)
+det(focus-7, the-6)
+root(ROOT-0, focus-7)
+det(trial-12, a-9)
+amod(trial-12, federal-10)
+nn(trial-12, court-11)
+prep_of(focus-7, trial-12)
+nsubj(lead-14, trial-12)
+rcmod(trial-12, lead-14)
+det(verdict-20, a-16)
+num(verdict-20, $-17)
+number($-17, 107-18)
+number($-17, million-19)
+prep_to(lead-14, verdict-20)
+
+Sentence #10 (8 tokens):
+Horsley was a defendant in the suit.
+[Text=Horsley CharacterOffsetBegin=559 CharacterOffsetEnd=566 PartOfSpeech=NNP] [Text=was CharacterOffsetBegin=567 CharacterOffsetEnd=570 PartOfSpeech=VBD] [Text=a CharacterOffsetBegin=571 CharacterOffsetEnd=572 PartOfSpeech=DT] [Text=defendant CharacterOffsetBegin=573 CharacterOffsetEnd=582 PartOfSpeech=NN] [Text=in CharacterOffsetBegin=583 CharacterOffsetEnd=585 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=586 CharacterOffsetEnd=589 PartOfSpeech=DT] [Text=suit CharacterOffsetBegin=590 CharacterOffsetEnd=594 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=594 CharacterOffsetEnd=595 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Horsley))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN defendant))
+        (PP (IN in)
+          (NP (DT the) (NN suit)))))
+    (. .)))
+
+nsubj(defendant-4, Horsley-1)
+cop(defendant-4, was-2)
+det(defendant-4, a-3)
+root(ROOT-0, defendant-4)
+det(suit-7, the-6)
+prep_in(defendant-4, suit-7)
+
+Sentence #11 (12 tokens):
+they are searching for a bolder provider to host the files.
+[Text=they CharacterOffsetBegin=596 CharacterOffsetEnd=600 PartOfSpeech=PRP] [Text=are CharacterOffsetBegin=601 CharacterOffsetEnd=604 PartOfSpeech=VBP] [Text=searching CharacterOffsetBegin=605 CharacterOffsetEnd=614 PartOfSpeech=VBG] [Text=for CharacterOffsetBegin=615 CharacterOffsetEnd=618 PartOfSpeech=IN] [Text=a CharacterOffsetBegin=619 CharacterOffsetEnd=620 PartOfSpeech=DT] [Text=bolder CharacterOffsetBegin=621 CharacterOffsetEnd=627 PartOfSpeech=JJR] [Text=provider CharacterOffsetBegin=628 CharacterOffsetEnd=636 PartOfSpeech=NN] [Text=to CharacterOffsetBegin=637 CharacterOffsetEnd=639 PartOfSpeech=TO] [Text=host CharacterOffsetBegin=640 CharacterOffsetEnd=644 PartOfSpeech=VB] [Text=the CharacterOffsetBegin=645 CharacterOffsetEnd=648 PartOfSpeech=DT] [Text=files CharacterOffsetBegin=649 CharacterOffsetEnd=654 PartOfSpeech=NNS] [Text=. CharacterOffsetBegin=654 CharacterOffsetEnd=655 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (PRP they))
+    (VP (VBP are)
+      (VP (VBG searching)
+        (PP (IN for)
+          (NP (DT a)
+            (ADJP (JJR bolder))
+            (NN provider)))
+        (S
+          (VP (TO to)
+            (VP (VB host)
+              (NP (DT the) (NNS files)))))))
+    (. .)))
+
+nsubj(searching-3, they-1)
+xsubj(host-9, they-1)
+aux(searching-3, are-2)
+root(ROOT-0, searching-3)
+det(provider-7, a-5)
+amod(provider-7, bolder-6)
+prep_for(searching-3, provider-7)
+aux(host-9, to-8)
+xcomp(searching-3, host-9)
+det(files-11, the-10)
+dobj(host-9, files-11)
+
+Sentence #12 (16 tokens):
+Secretary of State Madeleine Albright accepted admission papers from the three countries' foreign ministers.
+[Text=Secretary CharacterOffsetBegin=656 CharacterOffsetEnd=665 PartOfSpeech=NNP] [Text=of CharacterOffsetBegin=666 CharacterOffsetEnd=668 PartOfSpeech=IN] [Text=State CharacterOffsetBegin=669 CharacterOffsetEnd=674 PartOfSpeech=NNP] [Text=Madeleine CharacterOffsetBegin=675 CharacterOffsetEnd=684 PartOfSpeech=NNP] [Text=Albright CharacterOffsetBegin=685 CharacterOffsetEnd=693 PartOfSpeech=NNP] [Text=accepted CharacterOffsetBegin=694 CharacterOffsetEnd=702 PartOfSpeech=VBD] [Text=admission CharacterOffsetBegin=703 CharacterOffsetEnd=712 PartOfSpeech=NN] [Text=papers CharacterOffsetBegin=713 CharacterOffsetEnd=719 PartOfSpeech=NNS] [Text=from CharacterOffsetBegin=720 CharacterOffsetEnd=724 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=725 CharacterOffsetEnd=728 PartOfSpeech=DT] [Text=three CharacterOffsetBegin=729 CharacterOffsetEnd=734 PartOfSpeech=CD] [Text=countries CharacterOffsetBegin=735 CharacterOffsetEnd=744 PartOfSpeech=NNS] [Text=' CharacterOffsetBegin=744 CharacterOffsetEnd=745 PartOfSpeech=POS] [Text=foreign CharacterOffsetBegin=746 CharacterOffsetEnd=753 PartOfSpeech=JJ] [Text=ministers CharacterOffsetBegin=754 CharacterOffsetEnd=763 PartOfSpeech=NNS] [Text=. CharacterOffsetBegin=763 CharacterOffsetEnd=764 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP
+      (NAC (NNP Secretary)
+        (PP (IN of)
+          (NP (NNP State))))
+      (NNP Madeleine) (NNP Albright))
+    (VP (VBD accepted)
+      (NP (NN admission) (NNS papers))
+      (PP (IN from)
+        (NP
+          (NP (DT the) (CD three) (NNS countries) (POS '))
+          (JJ foreign) (NNS ministers))))
+    (. .)))
+
+dep(Albright-5, Secretary-1)
+prep_of(Secretary-1, State-3)
+nn(Albright-5, Madeleine-4)
+nsubj(accepted-6, Albright-5)
+root(ROOT-0, accepted-6)
+nn(papers-8, admission-7)
+dobj(accepted-6, papers-8)
+det(countries-12, the-10)
+num(countries-12, three-11)
+poss(ministers-15, countries-12)
+amod(ministers-15, foreign-14)
+prep_from(accepted-6, ministers-15)
+
+Sentence #13 (14 tokens):
+Jan Kavan was working in nearby Kansas City with the underground in 1968.
+[Text=Jan CharacterOffsetBegin=765 CharacterOffsetEnd=768 PartOfSpeech=NNP] [Text=Kavan CharacterOffsetBegin=769 CharacterOffsetEnd=774 PartOfSpeech=NNP] [Text=was CharacterOffsetBegin=775 CharacterOffsetEnd=778 PartOfSpeech=VBD] [Text=working CharacterOffsetBegin=779 CharacterOffsetEnd=786 PartOfSpeech=VBG] [Text=in CharacterOffsetBegin=787 CharacterOffsetEnd=789 PartOfSpeech=IN] [Text=nearby CharacterOffsetBegin=790 CharacterOffsetEnd=796 PartOfSpeech=JJ] [Text=Kansas CharacterOffsetBegin=797 CharacterOffsetEnd=803 PartOfSpeech=NNP] [Text=City CharacterOffsetBegin=804 CharacterOffsetEnd=808 PartOfSpeech=NNP] [Text=with CharacterOffsetBegin=809 CharacterOffsetEnd=813 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=814 CharacterOffsetEnd=817 PartOfSpeech=DT] [Text=underground CharacterOffsetBegin=818 CharacterOffsetEnd=829 PartOfSpeech=NN] [Text=in CharacterOffsetBegin=830 CharacterOffsetEnd=832 PartOfSpeech=IN] [Text=1968 CharacterOffsetBegin=833 CharacterOffsetEnd=837 PartOfSpeech=CD] [Text=. CharacterOffsetBegin=837 CharacterOffsetEnd=838 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Jan) (NNP Kavan))
+    (VP (VBD was)
+      (VP (VBG working)
+        (PP (IN in)
+          (NP (JJ nearby) (NNP Kansas) (NNP City)))
+        (PP (IN with)
+          (NP
+            (NP (DT the) (NN underground))
+            (PP (IN in)
+              (NP (CD 1968)))))))
+    (. .)))
+
+nn(Kavan-2, Jan-1)
+nsubj(working-4, Kavan-2)
+aux(working-4, was-3)
+root(ROOT-0, working-4)
+amod(City-8, nearby-6)
+nn(City-8, Kansas-7)
+prep_in(working-4, City-8)
+det(underground-11, the-10)
+prep_with(working-4, underground-11)
+prep_in(underground-11, 1968-13)
+
+Sentence #14 (8 tokens):
+the issue will dominate a NATO summit.
+[Text=the CharacterOffsetBegin=839 CharacterOffsetEnd=842 PartOfSpeech=DT] [Text=issue CharacterOffsetBegin=843 CharacterOffsetEnd=848 PartOfSpeech=NN] [Text=will CharacterOffsetBegin=849 CharacterOffsetEnd=853 PartOfSpeech=MD] [Text=dominate CharacterOffsetBegin=854 CharacterOffsetEnd=862 PartOfSpeech=VB] [Text=a CharacterOffsetBegin=863 CharacterOffsetEnd=864 PartOfSpeech=DT] [Text=NATO CharacterOffsetBegin=865 CharacterOffsetEnd=869 PartOfSpeech=NNP] [Text=summit CharacterOffsetBegin=870 CharacterOffsetEnd=876 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=876 CharacterOffsetEnd=877 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT the) (NN issue))
+    (VP (MD will)
+      (VP (VB dominate)
+        (NP (DT a) (NNP NATO) (NN summit))))
+    (. .)))
+
+det(issue-2, the-1)
+nsubj(dominate-4, issue-2)
+aux(dominate-4, will-3)
+root(ROOT-0, dominate-4)
+det(summit-7, a-5)
+nn(summit-7, NATO-6)
+dobj(dominate-4, summit-7)
+
+Sentence #15 (7 tokens):
+there will be a NATO summit.
+[Text=there CharacterOffsetBegin=878 CharacterOffsetEnd=883 PartOfSpeech=RB] [Text=will CharacterOffsetBegin=884 CharacterOffsetEnd=888 PartOfSpeech=MD] [Text=be CharacterOffsetBegin=889 CharacterOffsetEnd=891 PartOfSpeech=VB] [Text=a CharacterOffsetBegin=892 CharacterOffsetEnd=893 PartOfSpeech=DT] [Text=NATO CharacterOffsetBegin=894 CharacterOffsetEnd=898 PartOfSpeech=NNP] [Text=summit CharacterOffsetBegin=899 CharacterOffsetEnd=905 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=905 CharacterOffsetEnd=906 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (RB there))
+    (VP (MD will)
+      (VP (VB be)
+        (NP (DT a) (NNP NATO) (NN summit))))
+    (. .)))
+
+nsubj(summit-6, there-1)
+aux(summit-6, will-2)
+cop(summit-6, be-3)
+det(summit-6, a-4)
+nn(summit-6, NATO-5)
+root(ROOT-0, summit-6)
+
+Sentence #16 (14 tokens):
+the three new members enhance NATO's ability to fulfill its core mission.
+[Text=the CharacterOffsetBegin=907 CharacterOffsetEnd=910 PartOfSpeech=DT] [Text=three CharacterOffsetBegin=911 CharacterOffsetEnd=916 PartOfSpeech=CD] [Text=new CharacterOffsetBegin=917 CharacterOffsetEnd=920 PartOfSpeech=JJ] [Text=members CharacterOffsetBegin=921 CharacterOffsetEnd=928 PartOfSpeech=NNS] [Text=enhance CharacterOffsetBegin=929 CharacterOffsetEnd=936 PartOfSpeech=VBP] [Text=NATO CharacterOffsetBegin=937 CharacterOffsetEnd=941 PartOfSpeech=NNP] [Text='s CharacterOffsetBegin=941 CharacterOffsetEnd=943 PartOfSpeech=POS] [Text=ability CharacterOffsetBegin=944 CharacterOffsetEnd=951 PartOfSpeech=NN] [Text=to CharacterOffsetBegin=952 CharacterOffsetEnd=954 PartOfSpeech=TO] [Text=fulfill CharacterOffsetBegin=955 CharacterOffsetEnd=962 PartOfSpeech=VB] [Text=its CharacterOffsetBegin=963 CharacterOffsetEnd=966 PartOfSpeech=PRP$] [Text=core CharacterOffsetBegin=967 CharacterOffsetEnd=971 PartOfSpeech=NN] [Text=mission CharacterOffsetBegin=972 CharacterOffsetEnd=979 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=979 CharacterOffsetEnd=980 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT the) (CD three) (JJ new) (NNS members))
+    (VP (VBP enhance)
+      (NP
+        (NP (NNP NATO) (POS 's))
+        (NN ability)
+        (S
+          (VP (TO to)
+            (VP (VB fulfill)
+              (NP (PRP$ its) (NN core) (NN mission)))))))
+    (. .)))
+
+det(members-4, the-1)
+num(members-4, three-2)
+amod(members-4, new-3)
+nsubj(enhance-5, members-4)
+root(ROOT-0, enhance-5)
+poss(ability-8, NATO-6)
+dobj(enhance-5, ability-8)
+aux(fulfill-10, to-9)
+infmod(ability-8, fulfill-10)
+poss(mission-13, its-11)
+nn(mission-13, core-12)
+dobj(fulfill-10, mission-13)
+
+Sentence #17 (11 tokens):
+extending membership to these three democracies helps stabilize a region.
+[Text=extending CharacterOffsetBegin=981 CharacterOffsetEnd=990 PartOfSpeech=VBG] [Text=membership CharacterOffsetBegin=991 CharacterOffsetEnd=1001 PartOfSpeech=NN] [Text=to CharacterOffsetBegin=1002 CharacterOffsetEnd=1004 PartOfSpeech=TO] [Text=these CharacterOffsetBegin=1005 CharacterOffsetEnd=1010 PartOfSpeech=DT] [Text=three CharacterOffsetBegin=1011 CharacterOffsetEnd=1016 PartOfSpeech=CD] [Text=democracies CharacterOffsetBegin=1017 CharacterOffsetEnd=1028 PartOfSpeech=NNS] [Text=helps CharacterOffsetBegin=1029 CharacterOffsetEnd=1034 PartOfSpeech=VBZ] [Text=stabilize CharacterOffsetBegin=1035 CharacterOffsetEnd=1044 PartOfSpeech=VB] [Text=a CharacterOffsetBegin=1045 CharacterOffsetEnd=1046 PartOfSpeech=DT] [Text=region CharacterOffsetBegin=1047 CharacterOffsetEnd=1053 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=1053 CharacterOffsetEnd=1054 PartOfSpeech=.] 
+(ROOT
+  (S
+    (S
+      (VP (VBG extending)
+        (NP (NN membership))
+        (PP (TO to)
+          (NP (DT these) (CD three) (NNS democracies)))))
+    (VP (VBZ helps)
+      (VP (VB stabilize)
+        (NP (DT a) (NN region))))
+    (. .)))
+
+csubj(helps-7, extending-1)
+dobj(extending-1, membership-2)
+det(democracies-6, these-4)
+num(democracies-6, three-5)
+prep_to(extending-1, democracies-6)
+root(ROOT-0, helps-7)
+xcomp(helps-7, stabilize-8)
+det(region-10, a-9)
+dobj(stabilize-8, region-10)
+
+Sentence #18 (11 tokens):
+Rowe said that the rifle might also have clothing fibers.
+[Text=Rowe CharacterOffsetBegin=1055 CharacterOffsetEnd=1059 PartOfSpeech=NNP] [Text=said CharacterOffsetBegin=1060 CharacterOffsetEnd=1064 PartOfSpeech=VBD] [Text=that CharacterOffsetBegin=1065 CharacterOffsetEnd=1069 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=1070 CharacterOffsetEnd=1073 PartOfSpeech=DT] [Text=rifle CharacterOffsetBegin=1074 CharacterOffsetEnd=1079 PartOfSpeech=NN] [Text=might CharacterOffsetBegin=1080 CharacterOffsetEnd=1085 PartOfSpeech=MD] [Text=also CharacterOffsetBegin=1086 CharacterOffsetEnd=1090 PartOfSpeech=RB] [Text=have CharacterOffsetBegin=1091 CharacterOffsetEnd=1095 PartOfSpeech=VB] [Text=clothing CharacterOffsetBegin=1096 CharacterOffsetEnd=1104 PartOfSpeech=NN] [Text=fibers CharacterOffsetBegin=1105 CharacterOffsetEnd=1111 PartOfSpeech=NNS] [Text=. CharacterOffsetBegin=1111 CharacterOffsetEnd=1112 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Rowe))
+    (VP (VBD said)
+      (SBAR (IN that)
+        (S
+          (NP (DT the) (NN rifle))
+          (VP (MD might)
+            (ADVP (RB also))
+            (VP (VB have)
+              (NP (NN clothing) (NNS fibers)))))))
+    (. .)))
+
+nsubj(said-2, Rowe-1)
+root(ROOT-0, said-2)
+mark(have-8, that-3)
+det(rifle-5, the-4)
+nsubj(have-8, rifle-5)
+aux(have-8, might-6)
+advmod(have-8, also-7)
+ccomp(said-2, have-8)
+nn(fibers-10, clothing-9)
+dobj(have-8, fibers-10)
+
+Sentence #19 (12 tokens):
+a strand of hair behind Slepian's home came from Kopp.
+[Text=a CharacterOffsetBegin=1113 CharacterOffsetEnd=1114 PartOfSpeech=DT] [Text=strand CharacterOffsetBegin=1115 CharacterOffsetEnd=1121 PartOfSpeech=NN] [Text=of CharacterOffsetBegin=1122 CharacterOffsetEnd=1124 PartOfSpeech=IN] [Text=hair CharacterOffsetBegin=1125 CharacterOffsetEnd=1129 PartOfSpeech=NN] [Text=behind CharacterOffsetBegin=1130 CharacterOffsetEnd=1136 PartOfSpeech=IN] [Text=Slepian CharacterOffsetBegin=1137 CharacterOffsetEnd=1144 PartOfSpeech=NNP] [Text='s CharacterOffsetBegin=1144 CharacterOffsetEnd=1146 PartOfSpeech=POS] [Text=home CharacterOffsetBegin=1147 CharacterOffsetEnd=1151 PartOfSpeech=NN] [Text=came CharacterOffsetBegin=1152 CharacterOffsetEnd=1156 PartOfSpeech=VBD] [Text=from CharacterOffsetBegin=1157 CharacterOffsetEnd=1161 PartOfSpeech=IN] [Text=Kopp CharacterOffsetBegin=1162 CharacterOffsetEnd=1166 PartOfSpeech=NNP] [Text=. CharacterOffsetBegin=1166 CharacterOffsetEnd=1167 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP
+      (NP (DT a) (NN strand))
+      (PP (IN of)
+        (NP
+          (NP (NN hair))
+          (PP (IN behind)
+            (NP
+              (NP (NNP Slepian) (POS 's))
+              (NN home))))))
+    (VP (VBD came)
+      (PP (IN from)
+        (NP (NNP Kopp))))
+    (. .)))
+
+det(strand-2, a-1)
+nsubj(came-9, strand-2)
+prep_of(strand-2, hair-4)
+poss(home-8, Slepian-6)
+prep_behind(hair-4, home-8)
+root(ROOT-0, came-9)
+prep_from(came-9, Kopp-11)
+
+Sentence #20 (12 tokens):
+James Kopp is responsible for the death of Dr. Barnett Slepian.
+[Text=James CharacterOffsetBegin=1168 CharacterOffsetEnd=1173 PartOfSpeech=NNP] [Text=Kopp CharacterOffsetBegin=1174 CharacterOffsetEnd=1178 PartOfSpeech=NNP] [Text=is CharacterOffsetBegin=1179 CharacterOffsetEnd=1181 PartOfSpeech=VBZ] [Text=responsible CharacterOffsetBegin=1182 CharacterOffsetEnd=1193 PartOfSpeech=JJ] [Text=for CharacterOffsetBegin=1194 CharacterOffsetEnd=1197 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=1198 CharacterOffsetEnd=1201 PartOfSpeech=DT] [Text=death CharacterOffsetBegin=1202 CharacterOffsetEnd=1207 PartOfSpeech=NN] [Text=of CharacterOffsetBegin=1208 CharacterOffsetEnd=1210 PartOfSpeech=IN] [Text=Dr. CharacterOffsetBegin=1211 CharacterOffsetEnd=1214 PartOfSpeech=NNP] [Text=Barnett CharacterOffsetBegin=1215 CharacterOffsetEnd=1222 PartOfSpeech=NNP] [Text=Slepian CharacterOffsetBegin=1223 CharacterOffsetEnd=1230 PartOfSpeech=NNP] [Text=. CharacterOffsetBegin=1230 CharacterOffsetEnd=1231 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP James) (NNP Kopp))
+    (VP (VBZ is)
+      (ADJP (JJ responsible)
+        (PP (IN for)
+          (NP
+            (NP (DT the) (NN death))
+            (PP (IN of)
+              (NP (NNP Dr.) (NNP Barnett) (NNP Slepian)))))))
+    (. .)))
+
+nn(Kopp-2, James-1)
+nsubj(responsible-4, Kopp-2)
+cop(responsible-4, is-3)
+root(ROOT-0, responsible-4)
+det(death-7, the-6)
+prep_for(responsible-4, death-7)
+nn(Slepian-11, Dr.-9)
+nn(Slepian-11, Barnett-10)
+prep_of(death-7, Slepian-11)
+
+Sentence #21 (6 tokens):
+Kopp will contact a priest.
+[Text=Kopp CharacterOffsetBegin=1232 CharacterOffsetEnd=1236 PartOfSpeech=NNP] [Text=will CharacterOffsetBegin=1237 CharacterOffsetEnd=1241 PartOfSpeech=MD] [Text=contact CharacterOffsetBegin=1242 CharacterOffsetEnd=1249 PartOfSpeech=VB] [Text=a CharacterOffsetBegin=1250 CharacterOffsetEnd=1251 PartOfSpeech=DT] [Text=priest CharacterOffsetBegin=1252 CharacterOffsetEnd=1258 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=1258 CharacterOffsetEnd=1259 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Kopp))
+    (VP (MD will)
+      (VP (VB contact)
+        (NP (DT a) (NN priest))))
+    (. .)))
+
+nsubj(contact-3, Kopp-1)
+aux(contact-3, will-2)
+root(ROOT-0, contact-3)
+det(priest-5, a-4)
+dobj(contact-3, priest-5)
+
+Sentence #22 (4 tokens):
+Kopp did something.
+[Text=Kopp CharacterOffsetBegin=1260 CharacterOffsetEnd=1264 PartOfSpeech=NNP] [Text=did CharacterOffsetBegin=1265 CharacterOffsetEnd=1268 PartOfSpeech=VBD] [Text=something CharacterOffsetBegin=1269 CharacterOffsetEnd=1278 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=1278 CharacterOffsetEnd=1279 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Kopp))
+    (VP (VBD did)
+      (NP (NN something)))
+    (. .)))
+
+nsubj(did-2, Kopp-1)
+root(ROOT-0, did-2)
+dobj(did-2, something-3)
+
+Sentence #23 (7 tokens):
+they had called Kopp a suspect.
+[Text=they CharacterOffsetBegin=1280 CharacterOffsetEnd=1284 PartOfSpeech=PRP] [Text=had CharacterOffsetBegin=1285 CharacterOffsetEnd=1288 PartOfSpeech=VBD] [Text=called CharacterOffsetBegin=1289 CharacterOffsetEnd=1295 PartOfSpeech=VBN] [Text=Kopp CharacterOffsetBegin=1296 CharacterOffsetEnd=1300 PartOfSpeech=NNP] [Text=a CharacterOffsetBegin=1301 CharacterOffsetEnd=1302 PartOfSpeech=DT] [Text=suspect CharacterOffsetBegin=1303 CharacterOffsetEnd=1310 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=1310 CharacterOffsetEnd=1311 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (PRP they))
+    (VP (VBD had)
+      (VP (VBN called)
+        (S
+          (NP (NNP Kopp))
+          (NP (DT a) (NN suspect)))))
+    (. .)))
+
+nsubj(called-3, they-1)
+aux(called-3, had-2)
+root(ROOT-0, called-3)
+nsubj(suspect-6, Kopp-4)
+det(suspect-6, a-5)
+xcomp(called-3, suspect-6)
+
+Sentence #24 (12 tokens):
+investigators said a discovery of a rifle represented a major breakthrough.
+[Text=investigators CharacterOffsetBegin=1312 CharacterOffsetEnd=1325 PartOfSpeech=NNS] [Text=said CharacterOffsetBegin=1326 CharacterOffsetEnd=1330 PartOfSpeech=VBD] [Text=a CharacterOffsetBegin=1331 CharacterOffsetEnd=1332 PartOfSpeech=DT] [Text=discovery CharacterOffsetBegin=1333 CharacterOffsetEnd=1342 PartOfSpeech=NN] [Text=of CharacterOffsetBegin=1343 CharacterOffsetEnd=1345 PartOfSpeech=IN] [Text=a CharacterOffsetBegin=1346 CharacterOffsetEnd=1347 PartOfSpeech=DT] [Text=rifle CharacterOffsetBegin=1348 CharacterOffsetEnd=1353 PartOfSpeech=NN] [Text=represented CharacterOffsetBegin=1354 CharacterOffsetEnd=1365 PartOfSpeech=VBD] [Text=a CharacterOffsetBegin=1366 CharacterOffsetEnd=1367 PartOfSpeech=DT] [Text=major CharacterOffsetBegin=1368 CharacterOffsetEnd=1373 PartOfSpeech=JJ] [Text=breakthrough CharacterOffsetBegin=1374 CharacterOffsetEnd=1386 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=1386 CharacterOffsetEnd=1387 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNS investigators))
+    (VP (VBD said)
+      (SBAR
+        (S
+          (NP
+            (NP (DT a) (NN discovery))
+            (PP (IN of)
+              (NP (DT a) (NN rifle))))
+          (VP (VBD represented)
+            (NP (DT a) (JJ major) (NN breakthrough))))))
+    (. .)))
+
+nsubj(said-2, investigators-1)
+root(ROOT-0, said-2)
+det(discovery-4, a-3)
+nsubj(represented-8, discovery-4)
+det(rifle-7, a-6)
+prep_of(discovery-4, rifle-7)
+ccomp(said-2, represented-8)
+det(breakthrough-11, a-9)
+amod(breakthrough-11, major-10)
+dobj(represented-8, breakthrough-11)
+
+Sentence #25 (17 tokens):
+Kopp also has been linked to a strand of hair found near where the sniper fired.
+[Text=Kopp CharacterOffsetBegin=1388 CharacterOffsetEnd=1392 PartOfSpeech=NNP] [Text=also CharacterOffsetBegin=1393 CharacterOffsetEnd=1397 PartOfSpeech=RB] [Text=has CharacterOffsetBegin=1398 CharacterOffsetEnd=1401 PartOfSpeech=VBZ] [Text=been CharacterOffsetBegin=1402 CharacterOffsetEnd=1406 PartOfSpeech=VBN] [Text=linked CharacterOffsetBegin=1407 CharacterOffsetEnd=1413 PartOfSpeech=VBN] [Text=to CharacterOffsetBegin=1414 CharacterOffsetEnd=1416 PartOfSpeech=TO] [Text=a CharacterOffsetBegin=1417 CharacterOffsetEnd=1418 PartOfSpeech=DT] [Text=strand CharacterOffsetBegin=1419 CharacterOffsetEnd=1425 PartOfSpeech=NN] [Text=of CharacterOffsetBegin=1426 CharacterOffsetEnd=1428 PartOfSpeech=IN] [Text=hair CharacterOffsetBegin=1429 CharacterOffsetEnd=1433 PartOfSpeech=NN] [Text=found CharacterOffsetBegin=1434 CharacterOffsetEnd=1439 PartOfSpeech=VBN] [Text=near CharacterOffsetBegin=1440 CharacterOffsetEnd=1444 PartOfSpeech=IN] [Text=where CharacterOffsetBegin=1445 CharacterOffsetEnd=1450 PartOfSpeech=WRB] [Text=the CharacterOffsetBegin=1451 CharacterOffsetEnd=1454 PartOfSpeech=DT] [Text=sniper CharacterOffsetBegin=1455 CharacterOffsetEnd=1461 PartOfSpeech=NN] [Text=fired CharacterOffsetBegin=1462 CharacterOffsetEnd=1467 PartOfSpeech=VBD] [Text=. CharacterOffsetBegin=1467 CharacterOffsetEnd=1468 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Kopp))
+    (ADVP (RB also))
+    (VP (VBZ has)
+      (VP (VBN been)
+        (VP (VBN linked)
+          (PP (TO to)
+            (NP
+              (NP (DT a) (NN strand))
+              (PP (IN of)
+                (NP
+                  (NP (NN hair))
+                  (VP (VBN found)
+                    (PP (IN near)
+                      (SBAR
+                        (WHADVP (WRB where))
+                        (S
+                          (NP (DT the) (NN sniper))
+                          (VP (VBD fired)))))))))))))
+    (. .)))
+
+nsubjpass(linked-5, Kopp-1)
+advmod(linked-5, also-2)
+aux(linked-5, has-3)
+auxpass(linked-5, been-4)
+root(ROOT-0, linked-5)
+det(strand-8, a-7)
+prep_to(linked-5, strand-8)
+prep_of(strand-8, hair-10)
+partmod(hair-10, found-11)
+advmod(fired-16, where-13)
+det(sniper-15, the-14)
+nsubj(fired-16, sniper-15)
+prepc_near(found-11, fired-16)
+
+Sentence #26 (4 tokens):
+the sniper fired.
+[Text=the CharacterOffsetBegin=1470 CharacterOffsetEnd=1473 PartOfSpeech=DT] [Text=sniper CharacterOffsetBegin=1474 CharacterOffsetEnd=1480 PartOfSpeech=NN] [Text=fired CharacterOffsetBegin=1481 CharacterOffsetEnd=1486 PartOfSpeech=VBD] [Text=. CharacterOffsetBegin=1486 CharacterOffsetEnd=1487 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT the) (NN sniper))
+    (VP (VBD fired))
+    (. .)))
+
+det(sniper-2, the-1)
+nsubj(fired-3, sniper-2)
+root(ROOT-0, fired-3)
+
+Sentence #27 (10 tokens):
+Bin Laden and Kopp have one thing in common.
+[Text=Bin CharacterOffsetBegin=1488 CharacterOffsetEnd=1491 PartOfSpeech=NNP] [Text=Laden CharacterOffsetBegin=1492 CharacterOffsetEnd=1497 PartOfSpeech=NNP] [Text=and CharacterOffsetBegin=1498 CharacterOffsetEnd=1501 PartOfSpeech=CC] [Text=Kopp CharacterOffsetBegin=1502 CharacterOffsetEnd=1506 PartOfSpeech=NNP] [Text=have CharacterOffsetBegin=1507 CharacterOffsetEnd=1511 PartOfSpeech=VBP] [Text=one CharacterOffsetBegin=1512 CharacterOffsetEnd=1515 PartOfSpeech=CD] [Text=thing CharacterOffsetBegin=1516 CharacterOffsetEnd=1521 PartOfSpeech=NN] [Text=in CharacterOffsetBegin=1522 CharacterOffsetEnd=1524 PartOfSpeech=IN] [Text=common CharacterOffsetBegin=1525 CharacterOffsetEnd=1531 PartOfSpeech=JJ] [Text=. CharacterOffsetBegin=1531 CharacterOffsetEnd=1532 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Bin) (NNP Laden)
+      (CC and)
+      (NNP Kopp))
+    (VP (VBP have)
+      (NP
+        (NP (CD one) (NN thing))
+        (PP (IN in)
+          (NP (JJ common)))))
+    (. .)))
+
+nn(Laden-2, Bin-1)
+nsubj(have-5, Laden-2)
+conj_and(Laden-2, Kopp-4)
+nsubj(have-5, Kopp-4)
+root(ROOT-0, have-5)
+num(thing-7, one-6)
+dobj(have-5, thing-7)
+prep_in(thing-7, common-9)
+
+Sentence #28 (9 tokens):
+it is unknown whether Kopp crossed into Mexico.
+[Text=it CharacterOffsetBegin=1533 CharacterOffsetEnd=1535 PartOfSpeech=PRP] [Text=is CharacterOffsetBegin=1536 CharacterOffsetEnd=1538 PartOfSpeech=VBZ] [Text=unknown CharacterOffsetBegin=1539 CharacterOffsetEnd=1546 PartOfSpeech=JJ] [Text=whether CharacterOffsetBegin=1547 CharacterOffsetEnd=1554 PartOfSpeech=IN] [Text=Kopp CharacterOffsetBegin=1555 CharacterOffsetEnd=1559 PartOfSpeech=NNP] [Text=crossed CharacterOffsetBegin=1560 CharacterOffsetEnd=1567 PartOfSpeech=VBD] [Text=into CharacterOffsetBegin=1568 CharacterOffsetEnd=1572 PartOfSpeech=IN] [Text=Mexico CharacterOffsetBegin=1573 CharacterOffsetEnd=1579 PartOfSpeech=NNP] [Text=. CharacterOffsetBegin=1579 CharacterOffsetEnd=1580 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (PRP it))
+    (VP (VBZ is)
+      (ADJP (JJ unknown))
+      (SBAR (IN whether)
+        (S
+          (NP (NNP Kopp))
+          (VP (VBD crossed)
+            (PP (IN into)
+              (NP (NNP Mexico)))))))
+    (. .)))
+
+nsubj(unknown-3, it-1)
+cop(unknown-3, is-2)
+root(ROOT-0, unknown-3)
+mark(crossed-6, whether-4)
+nsubj(crossed-6, Kopp-5)
+ccomp(unknown-3, crossed-6)
+prep_into(crossed-6, Mexico-8)
+
+Sentence #29 (21 tokens):
+Bin Laden and Kopp are the 455th and 456th persons to be placed on the FBI's most wanted list.
+[Text=Bin CharacterOffsetBegin=1581 CharacterOffsetEnd=1584 PartOfSpeech=NNP] [Text=Laden CharacterOffsetBegin=1585 CharacterOffsetEnd=1590 PartOfSpeech=NNP] [Text=and CharacterOffsetBegin=1591 CharacterOffsetEnd=1594 PartOfSpeech=CC] [Text=Kopp CharacterOffsetBegin=1595 CharacterOffsetEnd=1599 PartOfSpeech=NNP] [Text=are CharacterOffsetBegin=1600 CharacterOffsetEnd=1603 PartOfSpeech=VBP] [Text=the CharacterOffsetBegin=1604 CharacterOffsetEnd=1607 PartOfSpeech=DT] [Text=455th CharacterOffsetBegin=1608 CharacterOffsetEnd=1613 PartOfSpeech=NN] [Text=and CharacterOffsetBegin=1614 CharacterOffsetEnd=1617 PartOfSpeech=CC] [Text=456th CharacterOffsetBegin=1618 CharacterOffsetEnd=1623 PartOfSpeech=NN] [Text=persons CharacterOffsetBegin=1624 CharacterOffsetEnd=1631 PartOfSpeech=NNS] [Text=to CharacterOffsetBegin=1632 CharacterOffsetEnd=1634 PartOfSpeech=TO] [Text=be CharacterOffsetBegin=1635 CharacterOffsetEnd=1637 PartOfSpeech=VB] [Text=placed CharacterOffsetBegin=1638 CharacterOffsetEnd=1644 PartOfSpeech=VBN] [Text=on CharacterOffsetBegin=1645 CharacterOffsetEnd=1647 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=1648 CharacterOffsetEnd=1651 PartOfSpeech=DT] [Text=FBI CharacterOffsetBegin=1652 CharacterOffsetEnd=1655 PartOfSpeech=NNP] [Text='s CharacterOffsetBegin=1655 CharacterOffsetEnd=1657 PartOfSpeech=POS] [Text=most CharacterOffsetBegin=1658 CharacterOffsetEnd=1662 PartOfSpeech=JJS] [Text=wanted CharacterOffsetBegin=1663 CharacterOffsetEnd=1669 PartOfSpeech=VBD] [Text=list CharacterOffsetBegin=1670 CharacterOffsetEnd=1674 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=1674 CharacterOffsetEnd=1675 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Bin) (NNP Laden)
+      (CC and)
+      (NNP Kopp))
+    (VP (VBP are)
+      (NP
+        (NP (DT the)
+          (NP (NN 455th)
+            (CC and)
+            (NN 456th))
+          (NNS persons))
+        (SBAR
+          (S
+            (VP (TO to)
+              (VP (VB be)
+                (VP (VBN placed)
+                  (PP (IN on)
+                    (NP
+                      (NP
+                        (NP (DT the) (NNP FBI) (POS 's))
+                        (JJS most))
+                      (SBAR
+                        (S
+                          (VP (VBD wanted)
+                            (NP (NN list))))))))))))))
+    (. .)))
+
+nn(Laden-2, Bin-1)
+nsubj(persons-10, Laden-2)
+conj_and(Laden-2, Kopp-4)
+nsubj(persons-10, Kopp-4)
+cop(persons-10, are-5)
+det(persons-10, the-6)
+nn(persons-10, 455th-7)
+conj_and(455th-7, 456th-9)
+nn(persons-10, 456th-9)
+root(ROOT-0, persons-10)
+aux(placed-13, to-11)
+auxpass(placed-13, be-12)
+infmod(persons-10, placed-13)
+det(FBI-16, the-15)
+prep_on(placed-13, FBI-16)
+possessive(FBI-16, 's-17)
+amod(FBI-16, most-18)
+rcmod(FBI-16, wanted-19)
+dobj(wanted-19, list-20)
+
+Sentence #30 (7 tokens):
+another eight suspects have been apprehended.
+[Text=another CharacterOffsetBegin=1676 CharacterOffsetEnd=1683 PartOfSpeech=DT] [Text=eight CharacterOffsetBegin=1684 CharacterOffsetEnd=1689 PartOfSpeech=CD] [Text=suspects CharacterOffsetBegin=1690 CharacterOffsetEnd=1698 PartOfSpeech=NNS] [Text=have CharacterOffsetBegin=1699 CharacterOffsetEnd=1703 PartOfSpeech=VBP] [Text=been CharacterOffsetBegin=1704 CharacterOffsetEnd=1708 PartOfSpeech=VBN] [Text=apprehended CharacterOffsetBegin=1709 CharacterOffsetEnd=1720 PartOfSpeech=VBN] [Text=. CharacterOffsetBegin=1720 CharacterOffsetEnd=1721 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT another) (CD eight) (NNS suspects))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBN apprehended))))
+    (. .)))
+
+det(suspects-3, another-1)
+num(suspects-3, eight-2)
+nsubjpass(apprehended-6, suspects-3)
+aux(apprehended-6, have-4)
+auxpass(apprehended-6, been-5)
+root(ROOT-0, apprehended-6)
+
+Sentence #31 (5 tokens):
+he has felony convictions.
+[Text=he CharacterOffsetBegin=1722 CharacterOffsetEnd=1724 PartOfSpeech=PRP] [Text=has CharacterOffsetBegin=1725 CharacterOffsetEnd=1728 PartOfSpeech=VBZ] [Text=felony CharacterOffsetBegin=1729 CharacterOffsetEnd=1735 PartOfSpeech=NN] [Text=convictions CharacterOffsetBegin=1736 CharacterOffsetEnd=1747 PartOfSpeech=NNS] [Text=. CharacterOffsetBegin=1747 CharacterOffsetEnd=1748 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (PRP he))
+    (VP (VBZ has)
+      (NP (NN felony) (NNS convictions)))
+    (. .)))
+
+nsubj(has-2, he-1)
+root(ROOT-0, has-2)
+nn(convictions-4, felony-3)
+dobj(has-2, convictions-4)
+
+Sentence #32 (6 tokens):
+there was a memorial service.
+[Text=there CharacterOffsetBegin=1749 CharacterOffsetEnd=1754 PartOfSpeech=EX] [Text=was CharacterOffsetBegin=1755 CharacterOffsetEnd=1758 PartOfSpeech=VBD] [Text=a CharacterOffsetBegin=1759 CharacterOffsetEnd=1760 PartOfSpeech=DT] [Text=memorial CharacterOffsetBegin=1761 CharacterOffsetEnd=1769 PartOfSpeech=NN] [Text=service CharacterOffsetBegin=1770 CharacterOffsetEnd=1777 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=1777 CharacterOffsetEnd=1778 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBD was)
+      (NP (DT a) (NN memorial) (NN service)))
+    (. .)))
+
+expl(was-2, there-1)
+root(ROOT-0, was-2)
+det(service-5, a-3)
+nn(service-5, memorial-4)
+nsubj(was-2, service-5)
+
+Sentence #33 (7 tokens):
+the police know where Kopp is.
+[Text=the CharacterOffsetBegin=1779 CharacterOffsetEnd=1782 PartOfSpeech=DT] [Text=police CharacterOffsetBegin=1783 CharacterOffsetEnd=1789 PartOfSpeech=NNS] [Text=know CharacterOffsetBegin=1790 CharacterOffsetEnd=1794 PartOfSpeech=VBP] [Text=where CharacterOffsetBegin=1795 CharacterOffsetEnd=1800 PartOfSpeech=WRB] [Text=Kopp CharacterOffsetBegin=1801 CharacterOffsetEnd=1805 PartOfSpeech=NNP] [Text=is CharacterOffsetBegin=1806 CharacterOffsetEnd=1808 PartOfSpeech=VBZ] [Text=. CharacterOffsetBegin=1808 CharacterOffsetEnd=1809 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT the) (NNS police))
+    (VP (VBP know)
+      (SBAR
+        (WHADVP (WRB where))
+        (S
+          (NP (NNP Kopp))
+          (VP (VBZ is)))))
+    (. .)))
+
+det(police-2, the-1)
+nsubj(know-3, police-2)
+root(ROOT-0, know-3)
+advmod(is-6, where-4)
+nsubj(is-6, Kopp-5)
+advcl(know-3, is-6)
+
+Sentence #34 (5 tokens):
+there was a service.
+[Text=there CharacterOffsetBegin=1810 CharacterOffsetEnd=1815 PartOfSpeech=EX] [Text=was CharacterOffsetBegin=1816 CharacterOffsetEnd=1819 PartOfSpeech=VBD] [Text=a CharacterOffsetBegin=1820 CharacterOffsetEnd=1821 PartOfSpeech=DT] [Text=service CharacterOffsetBegin=1822 CharacterOffsetEnd=1829 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=1829 CharacterOffsetEnd=1830 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBD was)
+      (NP (DT a) (NN service)))
+    (. .)))
+
+expl(was-2, there-1)
+root(ROOT-0, was-2)
+det(service-4, a-3)
+nsubj(was-2, service-4)
+
+Sentence #35 (13 tokens):
+Emily Lyons has undergone a number of operations since the clinic bombing.
+[Text=Emily CharacterOffsetBegin=1831 CharacterOffsetEnd=1836 PartOfSpeech=NNP] [Text=Lyons CharacterOffsetBegin=1837 CharacterOffsetEnd=1842 PartOfSpeech=NNP] [Text=has CharacterOffsetBegin=1843 CharacterOffsetEnd=1846 PartOfSpeech=VBZ] [Text=undergone CharacterOffsetBegin=1847 CharacterOffsetEnd=1856 PartOfSpeech=VBN] [Text=a CharacterOffsetBegin=1857 CharacterOffsetEnd=1858 PartOfSpeech=DT] [Text=number CharacterOffsetBegin=1859 CharacterOffsetEnd=1865 PartOfSpeech=NN] [Text=of CharacterOffsetBegin=1866 CharacterOffsetEnd=1868 PartOfSpeech=IN] [Text=operations CharacterOffsetBegin=1869 CharacterOffsetEnd=1879 PartOfSpeech=NNS] [Text=since CharacterOffsetBegin=1880 CharacterOffsetEnd=1885 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=1886 CharacterOffsetEnd=1889 PartOfSpeech=DT] [Text=clinic CharacterOffsetBegin=1890 CharacterOffsetEnd=1896 PartOfSpeech=NN] [Text=bombing CharacterOffsetBegin=1897 CharacterOffsetEnd=1904 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=1904 CharacterOffsetEnd=1905 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Emily) (NNP Lyons))
+    (VP (VBZ has)
+      (VP (VBN undergone)
+        (NP
+          (NP (DT a) (NN number))
+          (PP (IN of)
+            (NP (NNS operations))))
+        (PP (IN since)
+          (NP (DT the) (NN clinic) (NN bombing)))))
+    (. .)))
+
+nn(Lyons-2, Emily-1)
+nsubj(undergone-4, Lyons-2)
+aux(undergone-4, has-3)
+root(ROOT-0, undergone-4)
+det(number-6, a-5)
+dobj(undergone-4, number-6)
+prep_of(number-6, operations-8)
+det(bombing-12, the-10)
+nn(bombing-12, clinic-11)
+prep_since(undergone-4, bombing-12)
+
+Sentence #36 (7 tokens):
+a clinic bombing wounded a nurse.
+[Text=a CharacterOffsetBegin=1906 CharacterOffsetEnd=1907 PartOfSpeech=DT] [Text=clinic CharacterOffsetBegin=1908 CharacterOffsetEnd=1914 PartOfSpeech=NN] [Text=bombing CharacterOffsetBegin=1915 CharacterOffsetEnd=1922 PartOfSpeech=NN] [Text=wounded CharacterOffsetBegin=1923 CharacterOffsetEnd=1930 PartOfSpeech=VBD] [Text=a CharacterOffsetBegin=1931 CharacterOffsetEnd=1932 PartOfSpeech=DT] [Text=nurse CharacterOffsetBegin=1933 CharacterOffsetEnd=1938 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=1938 CharacterOffsetEnd=1939 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT a) (NN clinic) (NN bombing))
+    (VP (VBD wounded)
+      (NP (DT a) (NN nurse)))
+    (. .)))
+
+det(bombing-3, a-1)
+nn(bombing-3, clinic-2)
+nsubj(wounded-4, bombing-3)
+root(ROOT-0, wounded-4)
+det(nurse-6, a-5)
+dobj(wounded-4, nurse-6)
+
+Sentence #37 (12 tokens):
+all arson and bombings at clinics still make the national news.
+[Text=all CharacterOffsetBegin=1940 CharacterOffsetEnd=1943 PartOfSpeech=DT] [Text=arson CharacterOffsetBegin=1944 CharacterOffsetEnd=1949 PartOfSpeech=NN] [Text=and CharacterOffsetBegin=1950 CharacterOffsetEnd=1953 PartOfSpeech=CC] [Text=bombings CharacterOffsetBegin=1954 CharacterOffsetEnd=1962 PartOfSpeech=NNS] [Text=at CharacterOffsetBegin=1963 CharacterOffsetEnd=1965 PartOfSpeech=IN] [Text=clinics CharacterOffsetBegin=1966 CharacterOffsetEnd=1973 PartOfSpeech=NNS] [Text=still CharacterOffsetBegin=1974 CharacterOffsetEnd=1979 PartOfSpeech=RB] [Text=make CharacterOffsetBegin=1980 CharacterOffsetEnd=1984 PartOfSpeech=VBP] [Text=the CharacterOffsetBegin=1985 CharacterOffsetEnd=1988 PartOfSpeech=DT] [Text=national CharacterOffsetBegin=1989 CharacterOffsetEnd=1997 PartOfSpeech=JJ] [Text=news CharacterOffsetBegin=1998 CharacterOffsetEnd=2002 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=2002 CharacterOffsetEnd=2003 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP
+      (NP (DT all) (NN arson)
+        (CC and)
+        (NNS bombings))
+      (PP (IN at)
+        (NP (NNS clinics))))
+    (ADVP (RB still))
+    (VP (VBP make)
+      (NP (DT the) (JJ national) (NN news)))
+    (. .)))
+
+det(arson-2, all-1)
+nsubj(make-8, arson-2)
+conj_and(arson-2, bombings-4)
+nsubj(make-8, bombings-4)
+prep_at(arson-2, clinics-6)
+advmod(make-8, still-7)
+root(ROOT-0, make-8)
+det(news-11, the-9)
+amod(news-11, national-10)
+dobj(make-8, news-11)
+
+Sentence #38 (8 tokens):
+conservatives are working to dismantle reproductive rights.
+[Text=conservatives CharacterOffsetBegin=2004 CharacterOffsetEnd=2017 PartOfSpeech=NNS] [Text=are CharacterOffsetBegin=2018 CharacterOffsetEnd=2021 PartOfSpeech=VBP] [Text=working CharacterOffsetBegin=2022 CharacterOffsetEnd=2029 PartOfSpeech=VBG] [Text=to CharacterOffsetBegin=2030 CharacterOffsetEnd=2032 PartOfSpeech=TO] [Text=dismantle CharacterOffsetBegin=2033 CharacterOffsetEnd=2042 PartOfSpeech=VB] [Text=reproductive CharacterOffsetBegin=2043 CharacterOffsetEnd=2055 PartOfSpeech=JJ] [Text=rights CharacterOffsetBegin=2056 CharacterOffsetEnd=2062 PartOfSpeech=NNS] [Text=. CharacterOffsetBegin=2062 CharacterOffsetEnd=2063 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNS conservatives))
+    (VP (VBP are)
+      (VP (VBG working)
+        (S
+          (VP (TO to)
+            (VP (VB dismantle)
+              (NP (JJ reproductive) (NNS rights)))))))
+    (. .)))
+
+nsubj(working-3, conservatives-1)
+xsubj(dismantle-5, conservatives-1)
+aux(working-3, are-2)
+root(ROOT-0, working-3)
+aux(dismantle-5, to-4)
+xcomp(working-3, dismantle-5)
+amod(rights-7, reproductive-6)
+dobj(dismantle-5, rights-7)
+
+Sentence #39 (12 tokens):
+conservatives in Congress and in state legislatures will dismantle reproductive rights.
+[Text=conservatives CharacterOffsetBegin=2064 CharacterOffsetEnd=2077 PartOfSpeech=NNS] [Text=in CharacterOffsetBegin=2078 CharacterOffsetEnd=2080 PartOfSpeech=IN] [Text=Congress CharacterOffsetBegin=2081 CharacterOffsetEnd=2089 PartOfSpeech=NNP] [Text=and CharacterOffsetBegin=2090 CharacterOffsetEnd=2093 PartOfSpeech=CC] [Text=in CharacterOffsetBegin=2094 CharacterOffsetEnd=2096 PartOfSpeech=IN] [Text=state CharacterOffsetBegin=2097 CharacterOffsetEnd=2102 PartOfSpeech=NN] [Text=legislatures CharacterOffsetBegin=2103 CharacterOffsetEnd=2115 PartOfSpeech=NNS] [Text=will CharacterOffsetBegin=2116 CharacterOffsetEnd=2120 PartOfSpeech=MD] [Text=dismantle CharacterOffsetBegin=2121 CharacterOffsetEnd=2130 PartOfSpeech=VB] [Text=reproductive CharacterOffsetBegin=2131 CharacterOffsetEnd=2143 PartOfSpeech=JJ] [Text=rights CharacterOffsetBegin=2144 CharacterOffsetEnd=2150 PartOfSpeech=NNS] [Text=. CharacterOffsetBegin=2150 CharacterOffsetEnd=2151 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP
+      (NP (NNS conservatives))
+      (PP
+        (PP (IN in)
+          (NP (NNP Congress)))
+        (CC and)
+        (PP (IN in)
+          (NP (NN state) (NNS legislatures)))))
+    (VP (MD will)
+      (VP (VB dismantle)
+        (NP (JJ reproductive) (NNS rights))))
+    (. .)))
+
+nsubj(dismantle-9, conservatives-1)
+prep_in(conservatives-1, Congress-3)
+nn(legislatures-7, state-6)
+prep_in(conservatives-1, legislatures-7)
+conj_and(Congress-3, legislatures-7)
+aux(dismantle-9, will-8)
+root(ROOT-0, dismantle-9)
+amod(rights-11, reproductive-10)
+dobj(dismantle-9, rights-11)
+
+Sentence #40 (5 tokens):
+strong condemnations are warranted.
+[Text=strong CharacterOffsetBegin=2152 CharacterOffsetEnd=2158 PartOfSpeech=JJ] [Text=condemnations CharacterOffsetBegin=2159 CharacterOffsetEnd=2172 PartOfSpeech=NNS] [Text=are CharacterOffsetBegin=2173 CharacterOffsetEnd=2176 PartOfSpeech=VBP] [Text=warranted CharacterOffsetBegin=2177 CharacterOffsetEnd=2186 PartOfSpeech=VBN] [Text=. CharacterOffsetBegin=2186 CharacterOffsetEnd=2187 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (JJ strong) (NNS condemnations))
+    (VP (VBP are)
+      (VP (VBN warranted)))
+    (. .)))
+
+amod(condemnations-2, strong-1)
+nsubjpass(warranted-4, condemnations-2)
+auxpass(warranted-4, are-3)
+root(ROOT-0, warranted-4)
+
+Sentence #41 (4 tokens):
+doctors are working.
+[Text=doctors CharacterOffsetBegin=2188 CharacterOffsetEnd=2195 PartOfSpeech=NNS] [Text=are CharacterOffsetBegin=2196 CharacterOffsetEnd=2199 PartOfSpeech=VBP] [Text=working CharacterOffsetBegin=2200 CharacterOffsetEnd=2207 PartOfSpeech=VBG] [Text=. CharacterOffsetBegin=2207 CharacterOffsetEnd=2208 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNS doctors))
+    (VP (VBP are)
+      (VP (VBG working)))
+    (. .)))
+
+nsubj(working-3, doctors-1)
+aux(working-3, are-2)
+root(ROOT-0, working-3)
+
+Sentence #42 (14 tokens):
+more than 80 percent of counties in this country have an abortion provider.
+[Text=more CharacterOffsetBegin=2209 CharacterOffsetEnd=2213 PartOfSpeech=JJR] [Text=than CharacterOffsetBegin=2214 CharacterOffsetEnd=2218 PartOfSpeech=IN] [Text=80 CharacterOffsetBegin=2219 CharacterOffsetEnd=2221 PartOfSpeech=CD] [Text=percent CharacterOffsetBegin=2222 CharacterOffsetEnd=2229 PartOfSpeech=NN] [Text=of CharacterOffsetBegin=2230 CharacterOffsetEnd=2232 PartOfSpeech=IN] [Text=counties CharacterOffsetBegin=2233 CharacterOffsetEnd=2241 PartOfSpeech=NNS] [Text=in CharacterOffsetBegin=2242 CharacterOffsetEnd=2244 PartOfSpeech=IN] [Text=this CharacterOffsetBegin=2245 CharacterOffsetEnd=2249 PartOfSpeech=DT] [Text=country CharacterOffsetBegin=2250 CharacterOffsetEnd=2257 PartOfSpeech=NN] [Text=have CharacterOffsetBegin=2258 CharacterOffsetEnd=2262 PartOfSpeech=VBP] [Text=an CharacterOffsetBegin=2263 CharacterOffsetEnd=2265 PartOfSpeech=DT] [Text=abortion CharacterOffsetBegin=2266 CharacterOffsetEnd=2274 PartOfSpeech=NN] [Text=provider CharacterOffsetBegin=2275 CharacterOffsetEnd=2283 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=2283 CharacterOffsetEnd=2284 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP
+      (NP
+        (QP
+          (XS (JJR more) (IN than))
+          (CD 80))
+        (NN percent))
+      (PP (IN of)
+        (NP
+          (NP (NNS counties))
+          (PP (IN in)
+            (NP (DT this) (NN country))))))
+    (VP (VBP have)
+      (NP (DT an) (NN abortion) (NN provider)))
+    (. .)))
+
+mwe(than-2, more-1)
+quantmod(80-3, than-2)
+num(percent-4, 80-3)
+nsubj(have-10, percent-4)
+prep_of(percent-4, counties-6)
+det(country-9, this-8)
+prep_in(counties-6, country-9)
+root(ROOT-0, have-10)
+det(provider-13, an-11)
+nn(provider-13, abortion-12)
+dobj(have-10, provider-13)
+
+Sentence #43 (9 tokens):
+additional details of the slaying emerged on Sunday.
+[Text=additional CharacterOffsetBegin=2285 CharacterOffsetEnd=2295 PartOfSpeech=JJ] [Text=details CharacterOffsetBegin=2296 CharacterOffsetEnd=2303 PartOfSpeech=NNS] [Text=of CharacterOffsetBegin=2304 CharacterOffsetEnd=2306 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=2307 CharacterOffsetEnd=2310 PartOfSpeech=DT] [Text=slaying CharacterOffsetBegin=2311 CharacterOffsetEnd=2318 PartOfSpeech=NN] [Text=emerged CharacterOffsetBegin=2319 CharacterOffsetEnd=2326 PartOfSpeech=VBD] [Text=on CharacterOffsetBegin=2327 CharacterOffsetEnd=2329 PartOfSpeech=IN] [Text=Sunday CharacterOffsetBegin=2330 CharacterOffsetEnd=2336 PartOfSpeech=NNP] [Text=. CharacterOffsetBegin=2336 CharacterOffsetEnd=2337 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP
+      (NP (JJ additional) (NNS details))
+      (PP (IN of)
+        (NP (DT the) (NN slaying))))
+    (VP (VBD emerged)
+      (PP (IN on)
+        (NP (NNP Sunday))))
+    (. .)))
+
+amod(details-2, additional-1)
+nsubj(emerged-6, details-2)
+det(slaying-5, the-4)
+prep_of(details-2, slaying-5)
+root(ROOT-0, emerged-6)
+prep_on(emerged-6, Sunday-8)
+
+Sentence #44 (12 tokens):
+the sniper's bullet entered through a partially draped kitchen window.
+[Text=the CharacterOffsetBegin=2338 CharacterOffsetEnd=2341 PartOfSpeech=DT] [Text=sniper CharacterOffsetBegin=2342 CharacterOffsetEnd=2348 PartOfSpeech=NN] [Text='s CharacterOffsetBegin=2348 CharacterOffsetEnd=2350 PartOfSpeech=POS] [Text=bullet CharacterOffsetBegin=2351 CharacterOffsetEnd=2357 PartOfSpeech=NN] [Text=entered CharacterOffsetBegin=2358 CharacterOffsetEnd=2365 PartOfSpeech=VBD] [Text=through CharacterOffsetBegin=2366 CharacterOffsetEnd=2373 PartOfSpeech=IN] [Text=a CharacterOffsetBegin=2374 CharacterOffsetEnd=2375 PartOfSpeech=DT] [Text=partially CharacterOffsetBegin=2376 CharacterOffsetEnd=2385 PartOfSpeech=RB] [Text=draped CharacterOffsetBegin=2386 CharacterOffsetEnd=2392 PartOfSpeech=VBN] [Text=kitchen CharacterOffsetBegin=2393 CharacterOffsetEnd=2400 PartOfSpeech=NN] [Text=window CharacterOffsetBegin=2401 CharacterOffsetEnd=2407 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=2407 CharacterOffsetEnd=2408 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP
+      (NP (DT the) (NN sniper) (POS 's))
+      (NN bullet))
+    (VP (VBD entered)
+      (PP (IN through)
+        (NP (DT a)
+          (ADJP (RB partially)
+            (S
+              (VP (VBN draped))))
+          (NN kitchen) (NN window))))
+    (. .)))
+
+det(sniper-2, the-1)
+poss(bullet-4, sniper-2)
+nsubj(entered-5, bullet-4)
+root(ROOT-0, entered-5)
+det(window-11, a-7)
+amod(window-11, partially-8)
+dep(partially-8, draped-9)
+nn(window-11, kitchen-10)
+prep_through(entered-5, window-11)
+
+Sentence #45 (17 tokens):
+Murray said that the doctor's wife and one of his sons were in the kitchen.
+[Text=Murray CharacterOffsetBegin=2409 CharacterOffsetEnd=2415 PartOfSpeech=NNP] [Text=said CharacterOffsetBegin=2416 CharacterOffsetEnd=2420 PartOfSpeech=VBD] [Text=that CharacterOffsetBegin=2421 CharacterOffsetEnd=2425 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=2426 CharacterOffsetEnd=2429 PartOfSpeech=DT] [Text=doctor CharacterOffsetBegin=2430 CharacterOffsetEnd=2436 PartOfSpeech=NN] [Text='s CharacterOffsetBegin=2436 CharacterOffsetEnd=2438 PartOfSpeech=POS] [Text=wife CharacterOffsetBegin=2439 CharacterOffsetEnd=2443 PartOfSpeech=NN] [Text=and CharacterOffsetBegin=2444 CharacterOffsetEnd=2447 PartOfSpeech=CC] [Text=one CharacterOffsetBegin=2448 CharacterOffsetEnd=2451 PartOfSpeech=CD] [Text=of CharacterOffsetBegin=2452 CharacterOffsetEnd=2454 PartOfSpeech=IN] [Text=his CharacterOffsetBegin=2455 CharacterOffsetEnd=2458 PartOfSpeech=PRP$] [Text=sons CharacterOffsetBegin=2459 CharacterOffsetEnd=2463 PartOfSpeech=NNS] [Text=were CharacterOffsetBegin=2464 CharacterOffsetEnd=2468 PartOfSpeech=VBD] [Text=in CharacterOffsetBegin=2469 CharacterOffsetEnd=2471 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=2472 CharacterOffsetEnd=2475 PartOfSpeech=DT] [Text=kitchen CharacterOffsetBegin=2476 CharacterOffsetEnd=2483 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=2483 CharacterOffsetEnd=2484 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Murray))
+    (VP (VBD said)
+      (SBAR (IN that)
+        (S
+          (NP
+            (NP
+              (NP (DT the) (NN doctor) (POS 's))
+              (NN wife))
+            (CC and)
+            (NP
+              (NP (CD one))
+              (PP (IN of)
+                (NP (PRP$ his) (NNS sons)))))
+          (VP (VBD were)
+            (PP (IN in)
+              (NP (DT the) (NN kitchen)))))))
+    (. .)))
+
+nsubj(said-2, Murray-1)
+root(ROOT-0, said-2)
+mark(were-13, that-3)
+det(doctor-5, the-4)
+poss(wife-7, doctor-5)
+nsubj(were-13, wife-7)
+conj_and(wife-7, one-9)
+nsubj(were-13, one-9)
+poss(sons-12, his-11)
+prep_of(one-9, sons-12)
+ccomp(said-2, were-13)
+det(kitchen-16, the-15)
+prep_in(were-13, kitchen-16)
+
+Sentence #46 (10 tokens):
+Donald Spitz described Slepian's killer as a hero.
+[Text=Donald CharacterOffsetBegin=2485 CharacterOffsetEnd=2491 PartOfSpeech=NNP] [Text=Spitz CharacterOffsetBegin=2492 CharacterOffsetEnd=2497 PartOfSpeech=NNP] [Text=described CharacterOffsetBegin=2498 CharacterOffsetEnd=2507 PartOfSpeech=VBD] [Text=Slepian CharacterOffsetBegin=2508 CharacterOffsetEnd=2515 PartOfSpeech=NNP] [Text='s CharacterOffsetBegin=2515 CharacterOffsetEnd=2517 PartOfSpeech=POS] [Text=killer CharacterOffsetBegin=2518 CharacterOffsetEnd=2524 PartOfSpeech=NN] [Text=as CharacterOffsetBegin=2525 CharacterOffsetEnd=2527 PartOfSpeech=IN] [Text=a CharacterOffsetBegin=2528 CharacterOffsetEnd=2529 PartOfSpeech=DT] [Text=hero CharacterOffsetBegin=2530 CharacterOffsetEnd=2534 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=2534 CharacterOffsetEnd=2535 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Donald) (NNP Spitz))
+    (VP (VBD described)
+      (NP
+        (NP (NNP Slepian) (POS 's))
+        (NN killer))
+      (PP (IN as)
+        (NP (DT a) (NN hero))))
+    (. .)))
+
+nn(Spitz-2, Donald-1)
+nsubj(described-3, Spitz-2)
+root(ROOT-0, described-3)
+poss(killer-6, Slepian-4)
+dobj(described-3, killer-6)
+det(hero-9, a-8)
+prep_as(described-3, hero-9)
+
+Sentence #47 (6 tokens):
+they call these doctors murderers.
+[Text=they CharacterOffsetBegin=2536 CharacterOffsetEnd=2540 PartOfSpeech=PRP] [Text=call CharacterOffsetBegin=2541 CharacterOffsetEnd=2545 PartOfSpeech=VBP] [Text=these CharacterOffsetBegin=2546 CharacterOffsetEnd=2551 PartOfSpeech=DT] [Text=doctors CharacterOffsetBegin=2552 CharacterOffsetEnd=2559 PartOfSpeech=NNS] [Text=murderers CharacterOffsetBegin=2560 CharacterOffsetEnd=2569 PartOfSpeech=NNS] [Text=. CharacterOffsetBegin=2569 CharacterOffsetEnd=2570 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (PRP they))
+    (VP (VBP call)
+      (NP (DT these) (NNS doctors) (NNS murderers)))
+    (. .)))
+
+nsubj(call-2, they-1)
+root(ROOT-0, call-2)
+det(murderers-5, these-3)
+nn(murderers-5, doctors-4)
+dobj(call-2, murderers-5)
+
+Sentence #48 (9 tokens):
+Charles Schumer has raised Slepian's death himself.
+[Text=Charles CharacterOffsetBegin=2571 CharacterOffsetEnd=2578 PartOfSpeech=NNP] [Text=Schumer CharacterOffsetBegin=2579 CharacterOffsetEnd=2586 PartOfSpeech=NNP] [Text=has CharacterOffsetBegin=2587 CharacterOffsetEnd=2590 PartOfSpeech=VBZ] [Text=raised CharacterOffsetBegin=2591 CharacterOffsetEnd=2597 PartOfSpeech=VBN] [Text=Slepian CharacterOffsetBegin=2598 CharacterOffsetEnd=2605 PartOfSpeech=NNP] [Text='s CharacterOffsetBegin=2605 CharacterOffsetEnd=2607 PartOfSpeech=POS] [Text=death CharacterOffsetBegin=2608 CharacterOffsetEnd=2613 PartOfSpeech=NN] [Text=himself CharacterOffsetBegin=2614 CharacterOffsetEnd=2621 PartOfSpeech=PRP] [Text=. CharacterOffsetBegin=2621 CharacterOffsetEnd=2622 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Charles) (NNP Schumer))
+    (VP (VBZ has)
+      (VP (VBN raised)
+        (S
+          (NP
+            (NP (NNP Slepian) (POS 's))
+            (NN death))
+          (NP (PRP himself)))))
+    (. .)))
+
+nn(Schumer-2, Charles-1)
+nsubj(raised-4, Schumer-2)
+aux(raised-4, has-3)
+root(ROOT-0, raised-4)
+poss(death-7, Slepian-5)
+nsubj(himself-8, death-7)
+xcomp(raised-4, himself-8)
+
+Sentence #49 (5 tokens):
+suspects have been identified.
+[Text=suspects CharacterOffsetBegin=2623 CharacterOffsetEnd=2631 PartOfSpeech=NNS] [Text=have CharacterOffsetBegin=2632 CharacterOffsetEnd=2636 PartOfSpeech=VBP] [Text=been CharacterOffsetBegin=2637 CharacterOffsetEnd=2641 PartOfSpeech=VBN] [Text=identified CharacterOffsetBegin=2642 CharacterOffsetEnd=2652 PartOfSpeech=VBN] [Text=. CharacterOffsetBegin=2652 CharacterOffsetEnd=2653 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNS suspects))
+    (VP (VBP have)
+      (VP (VBN been)
+        (VP (VBN identified))))
+    (. .)))
+
+nsubjpass(identified-4, suspects-1)
+aux(identified-4, have-2)
+auxpass(identified-4, been-3)
+root(ROOT-0, identified-4)
+
+Sentence #50 (12 tokens):
+there will be a news conference to screen a television advertisement.
+[Text=there CharacterOffsetBegin=2654 CharacterOffsetEnd=2659 PartOfSpeech=RB] [Text=will CharacterOffsetBegin=2660 CharacterOffsetEnd=2664 PartOfSpeech=MD] [Text=be CharacterOffsetBegin=2665 CharacterOffsetEnd=2667 PartOfSpeech=VB] [Text=a CharacterOffsetBegin=2668 CharacterOffsetEnd=2669 PartOfSpeech=DT] [Text=news CharacterOffsetBegin=2670 CharacterOffsetEnd=2674 PartOfSpeech=NN] [Text=conference CharacterOffsetBegin=2675 CharacterOffsetEnd=2685 PartOfSpeech=NN] [Text=to CharacterOffsetBegin=2686 CharacterOffsetEnd=2688 PartOfSpeech=TO] [Text=screen CharacterOffsetBegin=2689 CharacterOffsetEnd=2695 PartOfSpeech=VB] [Text=a CharacterOffsetBegin=2696 CharacterOffsetEnd=2697 PartOfSpeech=DT] [Text=television CharacterOffsetBegin=2698 CharacterOffsetEnd=2708 PartOfSpeech=NN] [Text=advertisement CharacterOffsetBegin=2709 CharacterOffsetEnd=2722 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=2722 CharacterOffsetEnd=2723 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (RB there))
+    (VP (MD will)
+      (VP (VB be)
+        (NP (DT a) (NN news) (NN conference)
+          (S
+            (VP (TO to)
+              (VP (VB screen)
+                (NP (DT a) (NN television) (NN advertisement))))))))
+    (. .)))
+
+nsubj(conference-6, there-1)
+aux(conference-6, will-2)
+cop(conference-6, be-3)
+det(conference-6, a-4)
+nn(conference-6, news-5)
+root(ROOT-0, conference-6)
+aux(screen-8, to-7)
+infmod(conference-6, screen-8)
+det(advertisement-11, a-9)
+nn(advertisement-11, television-10)
+dobj(screen-8, advertisement-11)
+
+Sentence #51 (12 tokens):
+David Eichenbaum is working for someone in this year's campaign.
+[Text=David CharacterOffsetBegin=2724 CharacterOffsetEnd=2729 PartOfSpeech=NNP] [Text=Eichenbaum CharacterOffsetBegin=2730 CharacterOffsetEnd=2740 PartOfSpeech=NNP] [Text=is CharacterOffsetBegin=2741 CharacterOffsetEnd=2743 PartOfSpeech=VBZ] [Text=working CharacterOffsetBegin=2744 CharacterOffsetEnd=2751 PartOfSpeech=VBG] [Text=for CharacterOffsetBegin=2752 CharacterOffsetEnd=2755 PartOfSpeech=IN] [Text=someone CharacterOffsetBegin=2756 CharacterOffsetEnd=2763 PartOfSpeech=NN] [Text=in CharacterOffsetBegin=2764 CharacterOffsetEnd=2766 PartOfSpeech=IN] [Text=this CharacterOffsetBegin=2767 CharacterOffsetEnd=2771 PartOfSpeech=DT] [Text=year CharacterOffsetBegin=2772 CharacterOffsetEnd=2776 PartOfSpeech=NN] [Text='s CharacterOffsetBegin=2776 CharacterOffsetEnd=2778 PartOfSpeech=POS] [Text=campaign CharacterOffsetBegin=2779 CharacterOffsetEnd=2787 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=2787 CharacterOffsetEnd=2788 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP David) (NNP Eichenbaum))
+    (VP (VBZ is)
+      (VP (VBG working)
+        (PP (IN for)
+          (NP
+            (NP (NN someone))
+            (PP (IN in)
+              (NP
+                (NP (DT this) (NN year) (POS 's))
+                (NN campaign)))))))
+    (. .)))
+
+nn(Eichenbaum-2, David-1)
+nsubj(working-4, Eichenbaum-2)
+aux(working-4, is-3)
+root(ROOT-0, working-4)
+prep_for(working-4, someone-6)
+det(year-9, this-8)
+poss(campaign-11, year-9)
+prep_in(someone-6, campaign-11)
+
+Sentence #52 (5 tokens):
+there was an incident.
+[Text=there CharacterOffsetBegin=2789 CharacterOffsetEnd=2794 PartOfSpeech=EX] [Text=was CharacterOffsetBegin=2795 CharacterOffsetEnd=2798 PartOfSpeech=VBD] [Text=an CharacterOffsetBegin=2799 CharacterOffsetEnd=2801 PartOfSpeech=DT] [Text=incident CharacterOffsetBegin=2802 CharacterOffsetEnd=2810 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=2810 CharacterOffsetEnd=2811 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBD was)
+      (NP (DT an) (NN incident)))
+    (. .)))
+
+expl(was-2, there-1)
+root(ROOT-0, was-2)
+det(incident-4, an-3)
+nsubj(was-2, incident-4)
+
+Sentence #53 (6 tokens):
+Steven Goldstein was less reticent.
+[Text=Steven CharacterOffsetBegin=2812 CharacterOffsetEnd=2818 PartOfSpeech=NNP] [Text=Goldstein CharacterOffsetBegin=2819 CharacterOffsetEnd=2828 PartOfSpeech=NNP] [Text=was CharacterOffsetBegin=2829 CharacterOffsetEnd=2832 PartOfSpeech=VBD] [Text=less CharacterOffsetBegin=2833 CharacterOffsetEnd=2837 PartOfSpeech=RBR] [Text=reticent CharacterOffsetBegin=2838 CharacterOffsetEnd=2846 PartOfSpeech=JJ] [Text=. CharacterOffsetBegin=2846 CharacterOffsetEnd=2847 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Steven) (NNP Goldstein))
+    (VP (VBD was)
+      (ADJP (RBR less) (JJ reticent)))
+    (. .)))
+
+nn(Goldstein-2, Steven-1)
+nsubj(reticent-5, Goldstein-2)
+cop(reticent-5, was-3)
+advmod(reticent-5, less-4)
+root(ROOT-0, reticent-5)
+
+Sentence #54 (5 tokens):
+Spitzer will be elected.
+[Text=Spitzer CharacterOffsetBegin=2848 CharacterOffsetEnd=2855 PartOfSpeech=NNP] [Text=will CharacterOffsetBegin=2856 CharacterOffsetEnd=2860 PartOfSpeech=MD] [Text=be CharacterOffsetBegin=2861 CharacterOffsetEnd=2863 PartOfSpeech=VB] [Text=elected CharacterOffsetBegin=2864 CharacterOffsetEnd=2871 PartOfSpeech=VBN] [Text=. CharacterOffsetBegin=2871 CharacterOffsetEnd=2872 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Spitzer))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN elected))))
+    (. .)))
+
+nsubjpass(elected-4, Spitzer-1)
+aux(elected-4, will-2)
+auxpass(elected-4, be-3)
+root(ROOT-0, elected-4)
+
+Sentence #55 (23 tokens):
+Goldstein defended the use of the issue by noting that the attorney general has direct impact on the issue of clinic access.
+[Text=Goldstein CharacterOffsetBegin=2873 CharacterOffsetEnd=2882 PartOfSpeech=NNP] [Text=defended CharacterOffsetBegin=2883 CharacterOffsetEnd=2891 PartOfSpeech=VBD] [Text=the CharacterOffsetBegin=2892 CharacterOffsetEnd=2895 PartOfSpeech=DT] [Text=use CharacterOffsetBegin=2896 CharacterOffsetEnd=2899 PartOfSpeech=NN] [Text=of CharacterOffsetBegin=2900 CharacterOffsetEnd=2902 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=2903 CharacterOffsetEnd=2906 PartOfSpeech=DT] [Text=issue CharacterOffsetBegin=2907 CharacterOffsetEnd=2912 PartOfSpeech=NN] [Text=by CharacterOffsetBegin=2913 CharacterOffsetEnd=2915 PartOfSpeech=IN] [Text=noting CharacterOffsetBegin=2916 CharacterOffsetEnd=2922 PartOfSpeech=VBG] [Text=that CharacterOffsetBegin=2923 CharacterOffsetEnd=2927 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=2928 CharacterOffsetEnd=2931 PartOfSpeech=DT] [Text=attorney CharacterOffsetBegin=2932 CharacterOffsetEnd=2940 PartOfSpeech=NN] [Text=general CharacterOffsetBegin=2941 CharacterOffsetEnd=2948 PartOfSpeech=NN] [Text=has CharacterOffsetBegin=2949 CharacterOffsetEnd=2952 PartOfSpeech=VBZ] [Text=direct CharacterOffsetBegin=2953 CharacterOffsetEnd=2959 PartOfSpeech=JJ] [Text=impact CharacterOffsetBegin=2960 CharacterOffsetEnd=2966 PartOfSpeech=NN] [Text=on CharacterOffsetBegin=2967 CharacterOffsetEnd=2969 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=2970 CharacterOffsetEnd=2973 PartOfSpeech=DT] [Text=issue CharacterOffsetBegin=2974 CharacterOffsetEnd=2979 PartOfSpeech=NN] [Text=of CharacterOffsetBegin=2980 CharacterOffsetEnd=2982 PartOfSpeech=IN] [Text=clinic CharacterOffsetBegin=2983 CharacterOffsetEnd=2989 PartOfSpeech=NN] [Text=access CharacterOffsetBegin=2990 CharacterOffsetEnd=2996 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=2996 CharacterOffsetEnd=2997 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Goldstein))
+    (VP (VBD defended)
+      (NP
+        (NP (DT the) (NN use))
+        (PP (IN of)
+          (NP (DT the) (NN issue))))
+      (PP (IN by)
+        (S
+          (VP (VBG noting)
+            (SBAR (IN that)
+              (S
+                (NP (DT the) (NN attorney) (NN general))
+                (VP (VBZ has)
+                  (NP
+                    (NP (JJ direct) (NN impact))
+                    (PP (IN on)
+                      (NP
+                        (NP (DT the) (NN issue))
+                        (PP (IN of)
+                          (NP (NN clinic) (NN access)))))))))))))
+    (. .)))
+
+nsubj(defended-2, Goldstein-1)
+root(ROOT-0, defended-2)
+det(use-4, the-3)
+dobj(defended-2, use-4)
+det(issue-7, the-6)
+prep_of(use-4, issue-7)
+prepc_by(defended-2, noting-9)
+mark(has-14, that-10)
+det(general-13, the-11)
+nn(general-13, attorney-12)
+nsubj(has-14, general-13)
+ccomp(noting-9, has-14)
+amod(impact-16, direct-15)
+dobj(has-14, impact-16)
+det(issue-19, the-18)
+prep_on(impact-16, issue-19)
+nn(access-22, clinic-21)
+prep_of(issue-19, access-22)
+
+Sentence #56 (18 tokens):
+Eliot Spitzer will exploit the unfortunate murder of Slepian as a steppingstone for his own political ambitions.
+[Text=Eliot CharacterOffsetBegin=2998 CharacterOffsetEnd=3003 PartOfSpeech=NNP] [Text=Spitzer CharacterOffsetBegin=3004 CharacterOffsetEnd=3011 PartOfSpeech=NNP] [Text=will CharacterOffsetBegin=3012 CharacterOffsetEnd=3016 PartOfSpeech=MD] [Text=exploit CharacterOffsetBegin=3017 CharacterOffsetEnd=3024 PartOfSpeech=VB] [Text=the CharacterOffsetBegin=3025 CharacterOffsetEnd=3028 PartOfSpeech=DT] [Text=unfortunate CharacterOffsetBegin=3029 CharacterOffsetEnd=3040 PartOfSpeech=JJ] [Text=murder CharacterOffsetBegin=3041 CharacterOffsetEnd=3047 PartOfSpeech=NN] [Text=of CharacterOffsetBegin=3048 CharacterOffsetEnd=3050 PartOfSpeech=IN] [Text=Slepian CharacterOffsetBegin=3051 CharacterOffsetEnd=3058 PartOfSpeech=NNP] [Text=as CharacterOffsetBegin=3059 CharacterOffsetEnd=3061 PartOfSpeech=IN] [Text=a CharacterOffsetBegin=3062 CharacterOffsetEnd=3063 PartOfSpeech=DT] [Text=steppingstone CharacterOffsetBegin=3064 CharacterOffsetEnd=3077 PartOfSpeech=NN] [Text=for CharacterOffsetBegin=3078 CharacterOffsetEnd=3081 PartOfSpeech=IN] [Text=his CharacterOffsetBegin=3082 CharacterOffsetEnd=3085 PartOfSpeech=PRP$] [Text=own CharacterOffsetBegin=3086 CharacterOffsetEnd=3089 PartOfSpeech=JJ] [Text=political CharacterOffsetBegin=3090 CharacterOffsetEnd=3099 PartOfSpeech=JJ] [Text=ambitions CharacterOffsetBegin=3100 CharacterOffsetEnd=3109 PartOfSpeech=NNS] [Text=. CharacterOffsetBegin=3109 CharacterOffsetEnd=3110 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Eliot) (NNP Spitzer))
+    (VP (MD will)
+      (VP (VB exploit)
+        (NP
+          (NP (DT the)
+            (ADJP (JJ unfortunate))
+            (NN murder))
+          (PP (IN of)
+            (NP (NNP Slepian))))
+        (PP (IN as)
+          (NP
+            (NP (DT a) (NN steppingstone))
+            (PP (IN for)
+              (NP (PRP$ his) (JJ own) (JJ political) (NNS ambitions)))))))
+    (. .)))
+
+nn(Spitzer-2, Eliot-1)
+nsubj(exploit-4, Spitzer-2)
+aux(exploit-4, will-3)
+root(ROOT-0, exploit-4)
+det(murder-7, the-5)
+amod(murder-7, unfortunate-6)
+dobj(exploit-4, murder-7)
+prep_of(murder-7, Slepian-9)
+det(steppingstone-12, a-11)
+prep_as(exploit-4, steppingstone-12)
+poss(ambitions-17, his-14)
+amod(ambitions-17, own-15)
+amod(ambitions-17, political-16)
+prep_for(steppingstone-12, ambitions-17)
+
+Sentence #57 (8 tokens):
+there is political hay to be made.
+[Text=there CharacterOffsetBegin=3111 CharacterOffsetEnd=3116 PartOfSpeech=EX] [Text=is CharacterOffsetBegin=3117 CharacterOffsetEnd=3119 PartOfSpeech=VBZ] [Text=political CharacterOffsetBegin=3120 CharacterOffsetEnd=3129 PartOfSpeech=JJ] [Text=hay CharacterOffsetBegin=3130 CharacterOffsetEnd=3133 PartOfSpeech=NN] [Text=to CharacterOffsetBegin=3134 CharacterOffsetEnd=3136 PartOfSpeech=TO] [Text=be CharacterOffsetBegin=3137 CharacterOffsetEnd=3139 PartOfSpeech=VB] [Text=made CharacterOffsetBegin=3140 CharacterOffsetEnd=3144 PartOfSpeech=VBN] [Text=. CharacterOffsetBegin=3144 CharacterOffsetEnd=3145 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP (JJ political) (NN hay)
+        (S
+          (VP (TO to)
+            (VP (VB be)
+              (VP (VBN made)))))))
+    (. .)))
+
+expl(is-2, there-1)
+root(ROOT-0, is-2)
+amod(hay-4, political-3)
+nsubj(is-2, hay-4)
+aux(made-7, to-5)
+auxpass(made-7, be-6)
+infmod(hay-4, made-7)
+
+Sentence #58 (6 tokens):
+political hay will be made.
+[Text=political CharacterOffsetBegin=3146 CharacterOffsetEnd=3155 PartOfSpeech=JJ] [Text=hay CharacterOffsetBegin=3156 CharacterOffsetEnd=3159 PartOfSpeech=NN] [Text=will CharacterOffsetBegin=3160 CharacterOffsetEnd=3164 PartOfSpeech=MD] [Text=be CharacterOffsetBegin=3165 CharacterOffsetEnd=3167 PartOfSpeech=VB] [Text=made CharacterOffsetBegin=3168 CharacterOffsetEnd=3172 PartOfSpeech=VBN] [Text=. CharacterOffsetBegin=3172 CharacterOffsetEnd=3173 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (JJ political) (NN hay))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN made))))
+    (. .)))
+
+amod(hay-2, political-1)
+nsubjpass(made-5, hay-2)
+aux(made-5, will-3)
+auxpass(made-5, be-4)
+root(ROOT-0, made-5)
+
+Sentence #59 (13 tokens):
+Maureen Connelly was working for at least one candidate in the election.
+[Text=Maureen CharacterOffsetBegin=3174 CharacterOffsetEnd=3181 PartOfSpeech=NNP] [Text=Connelly CharacterOffsetBegin=3182 CharacterOffsetEnd=3190 PartOfSpeech=NNP] [Text=was CharacterOffsetBegin=3191 CharacterOffsetEnd=3194 PartOfSpeech=VBD] [Text=working CharacterOffsetBegin=3195 CharacterOffsetEnd=3202 PartOfSpeech=VBG] [Text=for CharacterOffsetBegin=3203 CharacterOffsetEnd=3206 PartOfSpeech=IN] [Text=at CharacterOffsetBegin=3207 CharacterOffsetEnd=3209 PartOfSpeech=IN] [Text=least CharacterOffsetBegin=3210 CharacterOffsetEnd=3215 PartOfSpeech=JJS] [Text=one CharacterOffsetBegin=3216 CharacterOffsetEnd=3219 PartOfSpeech=CD] [Text=candidate CharacterOffsetBegin=3220 CharacterOffsetEnd=3229 PartOfSpeech=NN] [Text=in CharacterOffsetBegin=3230 CharacterOffsetEnd=3232 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=3233 CharacterOffsetEnd=3236 PartOfSpeech=DT] [Text=election CharacterOffsetBegin=3237 CharacterOffsetEnd=3245 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=3245 CharacterOffsetEnd=3246 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Maureen) (NNP Connelly))
+    (VP (VBD was)
+      (VP (VBG working)
+        (PP (IN for)
+          (NP
+            (NP
+              (QP
+                (XS (IN at) (JJS least))
+                (CD one))
+              (NN candidate))
+            (PP (IN in)
+              (NP (DT the) (NN election)))))))
+    (. .)))
+
+nn(Connelly-2, Maureen-1)
+nsubj(working-4, Connelly-2)
+aux(working-4, was-3)
+root(ROOT-0, working-4)
+quantmod(one-8, at-6)
+mwe(at-6, least-7)
+pobj(at-6, least-7)
+num(candidate-9, one-8)
+prep_for(working-4, candidate-9)
+det(election-12, the-11)
+prep_in(candidate-9, election-12)
+
+Sentence #60 (7 tokens):
+the antiabortion activist fled to Mexico.
+[Text=the CharacterOffsetBegin=3247 CharacterOffsetEnd=3250 PartOfSpeech=DT] [Text=antiabortion CharacterOffsetBegin=3251 CharacterOffsetEnd=3263 PartOfSpeech=JJ] [Text=activist CharacterOffsetBegin=3264 CharacterOffsetEnd=3272 PartOfSpeech=NN] [Text=fled CharacterOffsetBegin=3273 CharacterOffsetEnd=3277 PartOfSpeech=VBD] [Text=to CharacterOffsetBegin=3278 CharacterOffsetEnd=3280 PartOfSpeech=TO] [Text=Mexico CharacterOffsetBegin=3281 CharacterOffsetEnd=3287 PartOfSpeech=NNP] [Text=. CharacterOffsetBegin=3287 CharacterOffsetEnd=3288 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT the) (JJ antiabortion) (NN activist))
+    (VP (VBD fled)
+      (PP (TO to)
+        (NP (NNP Mexico))))
+    (. .)))
+
+det(activist-3, the-1)
+amod(activist-3, antiabortion-2)
+nsubj(fled-4, activist-3)
+root(ROOT-0, fled-4)
+prep_to(fled-4, Mexico-6)
+
+Sentence #61 (8 tokens):
+a task force is investigating the similarities.
+[Text=a CharacterOffsetBegin=3289 CharacterOffsetEnd=3290 PartOfSpeech=DT] [Text=task CharacterOffsetBegin=3291 CharacterOffsetEnd=3295 PartOfSpeech=NN] [Text=force CharacterOffsetBegin=3296 CharacterOffsetEnd=3301 PartOfSpeech=NN] [Text=is CharacterOffsetBegin=3302 CharacterOffsetEnd=3304 PartOfSpeech=VBZ] [Text=investigating CharacterOffsetBegin=3305 CharacterOffsetEnd=3318 PartOfSpeech=VBG] [Text=the CharacterOffsetBegin=3319 CharacterOffsetEnd=3322 PartOfSpeech=DT] [Text=similarities CharacterOffsetBegin=3323 CharacterOffsetEnd=3335 PartOfSpeech=NNS] [Text=. CharacterOffsetBegin=3335 CharacterOffsetEnd=3336 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT a) (NN task) (NN force))
+    (VP (VBZ is)
+      (VP (VBG investigating)
+        (NP (DT the) (NNS similarities))))
+    (. .)))
+
+det(force-3, a-1)
+nn(force-3, task-2)
+nsubj(investigating-5, force-3)
+aux(investigating-5, is-4)
+root(ROOT-0, investigating-5)
+det(similarities-7, the-6)
+dobj(investigating-5, similarities-7)
+
+Sentence #62 (6 tokens):
+the men were termed suspects.
+[Text=the CharacterOffsetBegin=3337 CharacterOffsetEnd=3340 PartOfSpeech=DT] [Text=men CharacterOffsetBegin=3341 CharacterOffsetEnd=3344 PartOfSpeech=NNS] [Text=were CharacterOffsetBegin=3345 CharacterOffsetEnd=3349 PartOfSpeech=VBD] [Text=termed CharacterOffsetBegin=3350 CharacterOffsetEnd=3356 PartOfSpeech=VBN] [Text=suspects CharacterOffsetBegin=3357 CharacterOffsetEnd=3365 PartOfSpeech=NNS] [Text=. CharacterOffsetBegin=3365 CharacterOffsetEnd=3366 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT the) (NNS men))
+    (VP (VBD were)
+      (VP (VBN termed)
+        (NP (NNS suspects))))
+    (. .)))
+
+det(men-2, the-1)
+nsubjpass(termed-4, men-2)
+auxpass(termed-4, were-3)
+root(ROOT-0, termed-4)
+dobj(termed-4, suspects-5)
+
+Sentence #63 (7 tokens):
+an abortion opponent is being sought.
+[Text=an CharacterOffsetBegin=3367 CharacterOffsetEnd=3369 PartOfSpeech=DT] [Text=abortion CharacterOffsetBegin=3370 CharacterOffsetEnd=3378 PartOfSpeech=NN] [Text=opponent CharacterOffsetBegin=3379 CharacterOffsetEnd=3387 PartOfSpeech=NN] [Text=is CharacterOffsetBegin=3388 CharacterOffsetEnd=3390 PartOfSpeech=VBZ] [Text=being CharacterOffsetBegin=3391 CharacterOffsetEnd=3396 PartOfSpeech=VBG] [Text=sought CharacterOffsetBegin=3397 CharacterOffsetEnd=3403 PartOfSpeech=VBN] [Text=. CharacterOffsetBegin=3403 CharacterOffsetEnd=3404 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT an) (NN abortion) (NN opponent))
+    (VP (VBZ is)
+      (VP (VBG being)
+        (VP (VBN sought))))
+    (. .)))
+
+det(opponent-3, an-1)
+nn(opponent-3, abortion-2)
+nsubjpass(sought-6, opponent-3)
+aux(sought-6, is-4)
+auxpass(sought-6, being-5)
+root(ROOT-0, sought-6)
+
+Sentence #64 (9 tokens):
+a police officer on duty took their names.
+[Text=a CharacterOffsetBegin=3405 CharacterOffsetEnd=3406 PartOfSpeech=DT] [Text=police CharacterOffsetBegin=3407 CharacterOffsetEnd=3413 PartOfSpeech=NN] [Text=officer CharacterOffsetBegin=3414 CharacterOffsetEnd=3421 PartOfSpeech=NN] [Text=on CharacterOffsetBegin=3422 CharacterOffsetEnd=3424 PartOfSpeech=IN] [Text=duty CharacterOffsetBegin=3425 CharacterOffsetEnd=3429 PartOfSpeech=NN] [Text=took CharacterOffsetBegin=3430 CharacterOffsetEnd=3434 PartOfSpeech=VBD] [Text=their CharacterOffsetBegin=3435 CharacterOffsetEnd=3440 PartOfSpeech=PRP$] [Text=names CharacterOffsetBegin=3441 CharacterOffsetEnd=3446 PartOfSpeech=NNS] [Text=. CharacterOffsetBegin=3446 CharacterOffsetEnd=3447 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP
+      (NP (DT a) (NN police) (NN officer))
+      (PP (IN on)
+        (NP (NN duty))))
+    (VP (VBD took)
+      (NP (PRP$ their) (NNS names)))
+    (. .)))
+
+det(officer-3, a-1)
+nn(officer-3, police-2)
+nsubj(took-6, officer-3)
+prep_on(officer-3, duty-5)
+root(ROOT-0, took-6)
+poss(names-8, their-7)
+dobj(took-6, names-8)
+
+Sentence #65 (9 tokens):
+they were  in the area after the homicide.
+[Text=they CharacterOffsetBegin=3448 CharacterOffsetEnd=3452 PartOfSpeech=PRP] [Text=were CharacterOffsetBegin=3453 CharacterOffsetEnd=3457 PartOfSpeech=VBD] [Text=in CharacterOffsetBegin=3459 CharacterOffsetEnd=3461 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=3462 CharacterOffsetEnd=3465 PartOfSpeech=DT] [Text=area CharacterOffsetBegin=3466 CharacterOffsetEnd=3470 PartOfSpeech=NN] [Text=after CharacterOffsetBegin=3471 CharacterOffsetEnd=3476 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=3477 CharacterOffsetEnd=3480 PartOfSpeech=DT] [Text=homicide CharacterOffsetBegin=3481 CharacterOffsetEnd=3489 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=3489 CharacterOffsetEnd=3490 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (PRP they))
+    (VP (VBD were)
+      (PP (IN in)
+        (NP
+          (NP (DT the) (NN area))
+          (PP (IN after)
+            (NP (DT the) (NN homicide))))))
+    (. .)))
+
+nsubj(were-2, they-1)
+root(ROOT-0, were-2)
+det(area-5, the-4)
+prep_in(were-2, area-5)
+det(homicide-8, the-7)
+prep_after(area-5, homicide-8)
+
+Sentence #66 (5 tokens):
+there was a homicide.
+[Text=there CharacterOffsetBegin=3491 CharacterOffsetEnd=3496 PartOfSpeech=EX] [Text=was CharacterOffsetBegin=3497 CharacterOffsetEnd=3500 PartOfSpeech=VBD] [Text=a CharacterOffsetBegin=3501 CharacterOffsetEnd=3502 PartOfSpeech=DT] [Text=homicide CharacterOffsetBegin=3503 CharacterOffsetEnd=3511 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=3511 CharacterOffsetEnd=3512 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBD was)
+      (NP (DT a) (NN homicide)))
+    (. .)))
+
+expl(was-2, there-1)
+root(ROOT-0, was-2)
+det(homicide-4, a-3)
+nsubj(was-2, homicide-4)
+
+Sentence #67 (9 tokens):
+the two men live in the Cleveland area.
+[Text=the CharacterOffsetBegin=3513 CharacterOffsetEnd=3516 PartOfSpeech=DT] [Text=two CharacterOffsetBegin=3517 CharacterOffsetEnd=3520 PartOfSpeech=CD] [Text=men CharacterOffsetBegin=3521 CharacterOffsetEnd=3524 PartOfSpeech=NNS] [Text=live CharacterOffsetBegin=3525 CharacterOffsetEnd=3529 PartOfSpeech=VBP] [Text=in CharacterOffsetBegin=3530 CharacterOffsetEnd=3532 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=3533 CharacterOffsetEnd=3536 PartOfSpeech=DT] [Text=Cleveland CharacterOffsetBegin=3537 CharacterOffsetEnd=3546 PartOfSpeech=NNP] [Text=area CharacterOffsetBegin=3547 CharacterOffsetEnd=3551 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=3551 CharacterOffsetEnd=3552 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT the) (CD two) (NNS men))
+    (VP (VBP live)
+      (PP (IN in)
+        (NP (DT the) (NNP Cleveland) (NN area))))
+    (. .)))
+
+det(men-3, the-1)
+num(men-3, two-2)
+nsubj(live-4, men-3)
+root(ROOT-0, live-4)
+det(area-8, the-6)
+nn(area-8, Cleveland-7)
+prep_in(live-4, area-8)
+
+Sentence #68 (10 tokens):
+there is a Soviet domination of the Czech Republic.
+[Text=there CharacterOffsetBegin=3553 CharacterOffsetEnd=3558 PartOfSpeech=EX] [Text=is CharacterOffsetBegin=3559 CharacterOffsetEnd=3561 PartOfSpeech=VBZ] [Text=a CharacterOffsetBegin=3562 CharacterOffsetEnd=3563 PartOfSpeech=DT] [Text=Soviet CharacterOffsetBegin=3564 CharacterOffsetEnd=3570 PartOfSpeech=JJ] [Text=domination CharacterOffsetBegin=3571 CharacterOffsetEnd=3581 PartOfSpeech=NN] [Text=of CharacterOffsetBegin=3582 CharacterOffsetEnd=3584 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=3585 CharacterOffsetEnd=3588 PartOfSpeech=DT] [Text=Czech CharacterOffsetBegin=3589 CharacterOffsetEnd=3594 PartOfSpeech=NNP] [Text=Republic CharacterOffsetBegin=3595 CharacterOffsetEnd=3603 PartOfSpeech=NNP] [Text=. CharacterOffsetBegin=3603 CharacterOffsetEnd=3604 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP (DT a) (JJ Soviet) (NN domination))
+        (PP (IN of)
+          (NP (DT the) (NNP Czech) (NNP Republic)))))
+    (. .)))
+
+expl(is-2, there-1)
+root(ROOT-0, is-2)
+det(domination-5, a-3)
+amod(domination-5, Soviet-4)
+nsubj(is-2, domination-5)
+det(Republic-9, the-7)
+nn(Republic-9, Czech-8)
+prep_of(domination-5, Republic-9)
+
+Sentence #69 (7 tokens):
+Albright made secret of her joy.
+[Text=Albright CharacterOffsetBegin=3605 CharacterOffsetEnd=3613 PartOfSpeech=NNP] [Text=made CharacterOffsetBegin=3614 CharacterOffsetEnd=3618 PartOfSpeech=VBD] [Text=secret CharacterOffsetBegin=3619 CharacterOffsetEnd=3625 PartOfSpeech=NN] [Text=of CharacterOffsetBegin=3626 CharacterOffsetEnd=3628 PartOfSpeech=IN] [Text=her CharacterOffsetBegin=3629 CharacterOffsetEnd=3632 PartOfSpeech=PRP$] [Text=joy CharacterOffsetBegin=3633 CharacterOffsetEnd=3636 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=3636 CharacterOffsetEnd=3637 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Albright))
+    (VP (VBD made)
+      (NP
+        (NP (NN secret))
+        (PP (IN of)
+          (NP (PRP$ her) (NN joy)))))
+    (. .)))
+
+nsubj(made-2, Albright-1)
+root(ROOT-0, made-2)
+dobj(made-2, secret-3)
+poss(joy-6, her-5)
+prep_of(secret-3, joy-6)
+
+Sentence #70 (14 tokens):
+the speaker said that `Hallelujah' was an old Central European expression.
+[Text=the CharacterOffsetBegin=3638 CharacterOffsetEnd=3641 PartOfSpeech=DT] [Text=speaker CharacterOffsetBegin=3642 CharacterOffsetEnd=3649 PartOfSpeech=NN] [Text=said CharacterOffsetBegin=3650 CharacterOffsetEnd=3654 PartOfSpeech=VBD] [Text=that CharacterOffsetBegin=3655 CharacterOffsetEnd=3659 PartOfSpeech=IN] [Text=` CharacterOffsetBegin=3660 CharacterOffsetEnd=3661 PartOfSpeech=``] [Text=Hallelujah CharacterOffsetBegin=3661 CharacterOffsetEnd=3671 PartOfSpeech=NNP] [Text=' CharacterOffsetBegin=3671 CharacterOffsetEnd=3672 PartOfSpeech=''] [Text=was CharacterOffsetBegin=3673 CharacterOffsetEnd=3676 PartOfSpeech=VBD] [Text=an CharacterOffsetBegin=3677 CharacterOffsetEnd=3679 PartOfSpeech=DT] [Text=old CharacterOffsetBegin=3680 CharacterOffsetEnd=3683 PartOfSpeech=JJ] [Text=Central CharacterOffsetBegin=3684 CharacterOffsetEnd=3691 PartOfSpeech=JJ] [Text=European CharacterOffsetBegin=3692 CharacterOffsetEnd=3700 PartOfSpeech=JJ] [Text=expression CharacterOffsetBegin=3701 CharacterOffsetEnd=3711 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=3711 CharacterOffsetEnd=3712 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT the) (NN speaker))
+    (VP (VBD said)
+      (SBAR (IN that)
+        (S (`` `)
+          (NP (NNP Hallelujah))
+          ('' ')
+          (VP (VBD was)
+            (NP (DT an)
+              (ADJP (JJ old) (JJ Central))
+              (JJ European) (NN expression))))))
+    (. .)))
+
+det(speaker-2, the-1)
+nsubj(said-3, speaker-2)
+root(ROOT-0, said-3)
+mark(expression-13, that-4)
+nsubj(expression-13, Hallelujah-6)
+cop(expression-13, was-8)
+det(expression-13, an-9)
+amod(Central-11, old-10)
+amod(expression-13, Central-11)
+amod(expression-13, European-12)
+ccomp(said-3, expression-13)
+
+Sentence #71 (7 tokens):
+there was an enlargement of NATO.
+[Text=there CharacterOffsetBegin=3713 CharacterOffsetEnd=3718 PartOfSpeech=EX] [Text=was CharacterOffsetBegin=3719 CharacterOffsetEnd=3722 PartOfSpeech=VBD] [Text=an CharacterOffsetBegin=3723 CharacterOffsetEnd=3725 PartOfSpeech=DT] [Text=enlargement CharacterOffsetBegin=3726 CharacterOffsetEnd=3737 PartOfSpeech=NN] [Text=of CharacterOffsetBegin=3738 CharacterOffsetEnd=3740 PartOfSpeech=IN] [Text=NATO CharacterOffsetBegin=3741 CharacterOffsetEnd=3745 PartOfSpeech=NNP] [Text=. CharacterOffsetBegin=3745 CharacterOffsetEnd=3746 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (NN enlargement))
+        (PP (IN of)
+          (NP (NNP NATO)))))
+    (. .)))
+
+expl(was-2, there-1)
+root(ROOT-0, was-2)
+det(enlargement-4, an-3)
+nsubj(was-2, enlargement-4)
+prep_of(enlargement-4, NATO-6)
+
+Sentence #72 (17 tokens):
+proponents said the goal to enlarge NATO grew out of a desire to cement democratic gains.
+[Text=proponents CharacterOffsetBegin=3747 CharacterOffsetEnd=3757 PartOfSpeech=NNS] [Text=said CharacterOffsetBegin=3758 CharacterOffsetEnd=3762 PartOfSpeech=VBD] [Text=the CharacterOffsetBegin=3763 CharacterOffsetEnd=3766 PartOfSpeech=DT] [Text=goal CharacterOffsetBegin=3767 CharacterOffsetEnd=3771 PartOfSpeech=NN] [Text=to CharacterOffsetBegin=3772 CharacterOffsetEnd=3774 PartOfSpeech=TO] [Text=enlarge CharacterOffsetBegin=3775 CharacterOffsetEnd=3782 PartOfSpeech=VB] [Text=NATO CharacterOffsetBegin=3783 CharacterOffsetEnd=3787 PartOfSpeech=NNP] [Text=grew CharacterOffsetBegin=3788 CharacterOffsetEnd=3792 PartOfSpeech=VBD] [Text=out CharacterOffsetBegin=3793 CharacterOffsetEnd=3796 PartOfSpeech=IN] [Text=of CharacterOffsetBegin=3797 CharacterOffsetEnd=3799 PartOfSpeech=IN] [Text=a CharacterOffsetBegin=3800 CharacterOffsetEnd=3801 PartOfSpeech=DT] [Text=desire CharacterOffsetBegin=3802 CharacterOffsetEnd=3808 PartOfSpeech=NN] [Text=to CharacterOffsetBegin=3809 CharacterOffsetEnd=3811 PartOfSpeech=TO] [Text=cement CharacterOffsetBegin=3812 CharacterOffsetEnd=3818 PartOfSpeech=VB] [Text=democratic CharacterOffsetBegin=3819 CharacterOffsetEnd=3829 PartOfSpeech=JJ] [Text=gains CharacterOffsetBegin=3830 CharacterOffsetEnd=3835 PartOfSpeech=NNS] [Text=. CharacterOffsetBegin=3835 CharacterOffsetEnd=3836 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNS proponents))
+    (VP (VBD said)
+      (NP (DT the) (NN goal)
+        (S
+          (VP (TO to)
+            (VP (VB enlarge)
+              (SBAR
+                (S
+                  (NP (NNP NATO))
+                  (VP (VBD grew)
+                    (PRT (IN out))
+                    (PP (IN of)
+                      (NP (DT a) (NN desire)))
+                    (S
+                      (VP (TO to)
+                        (VP (VB cement)
+                          (NP (JJ democratic) (NNS gains)))))))))))))
+    (. .)))
+
+nsubj(said-2, proponents-1)
+root(ROOT-0, said-2)
+det(goal-4, the-3)
+dobj(said-2, goal-4)
+aux(enlarge-6, to-5)
+infmod(goal-4, enlarge-6)
+nsubj(grew-8, NATO-7)
+xsubj(cement-14, NATO-7)
+ccomp(enlarge-6, grew-8)
+det(desire-12, a-11)
+prep_out_of(grew-8, desire-12)
+aux(cement-14, to-13)
+xcomp(grew-8, cement-14)
+amod(gains-16, democratic-15)
+dobj(cement-14, gains-16)
+
+Sentence #73 (17 tokens):
+the speaker and his people will continue to erase the line drawn in Europe by Stalin.
+[Text=the CharacterOffsetBegin=3837 CharacterOffsetEnd=3840 PartOfSpeech=DT] [Text=speaker CharacterOffsetBegin=3841 CharacterOffsetEnd=3848 PartOfSpeech=NN] [Text=and CharacterOffsetBegin=3849 CharacterOffsetEnd=3852 PartOfSpeech=CC] [Text=his CharacterOffsetBegin=3853 CharacterOffsetEnd=3856 PartOfSpeech=PRP$] [Text=people CharacterOffsetBegin=3857 CharacterOffsetEnd=3863 PartOfSpeech=NNS] [Text=will CharacterOffsetBegin=3864 CharacterOffsetEnd=3868 PartOfSpeech=MD] [Text=continue CharacterOffsetBegin=3869 CharacterOffsetEnd=3877 PartOfSpeech=VB] [Text=to CharacterOffsetBegin=3878 CharacterOffsetEnd=3880 PartOfSpeech=TO] [Text=erase CharacterOffsetBegin=3881 CharacterOffsetEnd=3886 PartOfSpeech=VB] [Text=the CharacterOffsetBegin=3887 CharacterOffsetEnd=3890 PartOfSpeech=DT] [Text=line CharacterOffsetBegin=3891 CharacterOffsetEnd=3895 PartOfSpeech=NN] [Text=drawn CharacterOffsetBegin=3896 CharacterOffsetEnd=3901 PartOfSpeech=VBN] [Text=in CharacterOffsetBegin=3902 CharacterOffsetEnd=3904 PartOfSpeech=IN] [Text=Europe CharacterOffsetBegin=3905 CharacterOffsetEnd=3911 PartOfSpeech=NNP] [Text=by CharacterOffsetBegin=3912 CharacterOffsetEnd=3914 PartOfSpeech=IN] [Text=Stalin CharacterOffsetBegin=3915 CharacterOffsetEnd=3921 PartOfSpeech=NNP] [Text=. CharacterOffsetBegin=3921 CharacterOffsetEnd=3922 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP
+      (NP (DT the) (NN speaker))
+      (CC and)
+      (NP (PRP$ his) (NNS people)))
+    (VP (MD will)
+      (VP (VB continue)
+        (S
+          (VP (TO to)
+            (VP (VB erase)
+              (NP
+                (NP (DT the) (NN line))
+                (VP (VBN drawn)
+                  (PP (IN in)
+                    (NP (NNP Europe)))
+                  (PP (IN by)
+                    (NP (NNP Stalin))))))))))
+    (. .)))
+
+det(speaker-2, the-1)
+nsubj(continue-7, speaker-2)
+xsubj(erase-9, speaker-2)
+poss(people-5, his-4)
+conj_and(speaker-2, people-5)
+nsubj(continue-7, people-5)
+xsubj(erase-9, people-5)
+aux(continue-7, will-6)
+root(ROOT-0, continue-7)
+aux(erase-9, to-8)
+xcomp(continue-7, erase-9)
+det(line-11, the-10)
+dobj(erase-9, line-11)
+partmod(line-11, drawn-12)
+prep_in(drawn-12, Europe-14)
+agent(drawn-12, Stalin-16)
+
+Sentence #74 (16 tokens):
+the speaker and his people will be erasing the line drawn in Europe by Stalin.
+[Text=the CharacterOffsetBegin=3923 CharacterOffsetEnd=3926 PartOfSpeech=DT] [Text=speaker CharacterOffsetBegin=3927 CharacterOffsetEnd=3934 PartOfSpeech=NN] [Text=and CharacterOffsetBegin=3935 CharacterOffsetEnd=3938 PartOfSpeech=CC] [Text=his CharacterOffsetBegin=3939 CharacterOffsetEnd=3942 PartOfSpeech=PRP$] [Text=people CharacterOffsetBegin=3943 CharacterOffsetEnd=3949 PartOfSpeech=NNS] [Text=will CharacterOffsetBegin=3950 CharacterOffsetEnd=3954 PartOfSpeech=MD] [Text=be CharacterOffsetBegin=3955 CharacterOffsetEnd=3957 PartOfSpeech=VB] [Text=erasing CharacterOffsetBegin=3958 CharacterOffsetEnd=3965 PartOfSpeech=VBG] [Text=the CharacterOffsetBegin=3966 CharacterOffsetEnd=3969 PartOfSpeech=DT] [Text=line CharacterOffsetBegin=3970 CharacterOffsetEnd=3974 PartOfSpeech=NN] [Text=drawn CharacterOffsetBegin=3975 CharacterOffsetEnd=3980 PartOfSpeech=VBN] [Text=in CharacterOffsetBegin=3981 CharacterOffsetEnd=3983 PartOfSpeech=IN] [Text=Europe CharacterOffsetBegin=3984 CharacterOffsetEnd=3990 PartOfSpeech=NNP] [Text=by CharacterOffsetBegin=3991 CharacterOffsetEnd=3993 PartOfSpeech=IN] [Text=Stalin CharacterOffsetBegin=3994 CharacterOffsetEnd=4000 PartOfSpeech=NNP] [Text=. CharacterOffsetBegin=4000 CharacterOffsetEnd=4001 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP
+      (NP (DT the) (NN speaker))
+      (CC and)
+      (NP (PRP$ his) (NNS people)))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBG erasing)
+          (NP
+            (NP (DT the) (NN line))
+            (VP (VBN drawn)
+              (PP (IN in)
+                (NP (NNP Europe)))
+              (PP (IN by)
+                (NP (NNP Stalin))))))))
+    (. .)))
+
+det(speaker-2, the-1)
+nsubj(erasing-8, speaker-2)
+poss(people-5, his-4)
+conj_and(speaker-2, people-5)
+nsubj(erasing-8, people-5)
+aux(erasing-8, will-6)
+aux(erasing-8, be-7)
+root(ROOT-0, erasing-8)
+det(line-10, the-9)
+dobj(erasing-8, line-10)
+partmod(line-10, drawn-11)
+prep_in(drawn-11, Europe-13)
+agent(drawn-11, Stalin-15)
+
+Sentence #75 (8 tokens):
+the NATO summit will produce an initiative.
+[Text=the CharacterOffsetBegin=4002 CharacterOffsetEnd=4005 PartOfSpeech=DT] [Text=NATO CharacterOffsetBegin=4006 CharacterOffsetEnd=4010 PartOfSpeech=NNP] [Text=summit CharacterOffsetBegin=4011 CharacterOffsetEnd=4017 PartOfSpeech=NN] [Text=will CharacterOffsetBegin=4018 CharacterOffsetEnd=4022 PartOfSpeech=MD] [Text=produce CharacterOffsetBegin=4023 CharacterOffsetEnd=4030 PartOfSpeech=VB] [Text=an CharacterOffsetBegin=4031 CharacterOffsetEnd=4033 PartOfSpeech=DT] [Text=initiative CharacterOffsetBegin=4034 CharacterOffsetEnd=4044 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=4044 CharacterOffsetEnd=4045 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT the) (NNP NATO) (NN summit))
+    (VP (MD will)
+      (VP (VB produce)
+        (NP (DT an) (NN initiative))))
+    (. .)))
+
+det(summit-3, the-1)
+nn(summit-3, NATO-2)
+nsubj(produce-5, summit-3)
+aux(produce-5, will-4)
+root(ROOT-0, produce-5)
+det(initiative-7, an-6)
+dobj(produce-5, initiative-7)
+
+Sentence #76 (6 tokens):
+there will be an initiative.
+[Text=there CharacterOffsetBegin=4046 CharacterOffsetEnd=4051 PartOfSpeech=RB] [Text=will CharacterOffsetBegin=4052 CharacterOffsetEnd=4056 PartOfSpeech=MD] [Text=be CharacterOffsetBegin=4057 CharacterOffsetEnd=4059 PartOfSpeech=VB] [Text=an CharacterOffsetBegin=4060 CharacterOffsetEnd=4062 PartOfSpeech=DT] [Text=initiative CharacterOffsetBegin=4063 CharacterOffsetEnd=4073 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=4073 CharacterOffsetEnd=4074 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (RB there))
+    (VP (MD will)
+      (VP (VB be)
+        (NP (DT an) (NN initiative))))
+    (. .)))
+
+nsubj(initiative-5, there-1)
+aux(initiative-5, will-2)
+cop(initiative-5, be-3)
+det(initiative-5, an-4)
+root(ROOT-0, initiative-5)
+
+Sentence #77 (7 tokens):
+there will be NATO air strikes.
+[Text=there CharacterOffsetBegin=4075 CharacterOffsetEnd=4080 PartOfSpeech=RB] [Text=will CharacterOffsetBegin=4081 CharacterOffsetEnd=4085 PartOfSpeech=MD] [Text=be CharacterOffsetBegin=4086 CharacterOffsetEnd=4088 PartOfSpeech=VB] [Text=NATO CharacterOffsetBegin=4089 CharacterOffsetEnd=4093 PartOfSpeech=NNP] [Text=air CharacterOffsetBegin=4094 CharacterOffsetEnd=4097 PartOfSpeech=NN] [Text=strikes CharacterOffsetBegin=4098 CharacterOffsetEnd=4105 PartOfSpeech=NNS] [Text=. CharacterOffsetBegin=4105 CharacterOffsetEnd=4106 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (RB there))
+    (VP (MD will)
+      (VP (VB be)
+        (NP (NNP NATO) (NN air) (NNS strikes))))
+    (. .)))
+
+nsubj(strikes-6, there-1)
+aux(strikes-6, will-2)
+cop(strikes-6, be-3)
+nn(strikes-6, NATO-4)
+nn(strikes-6, air-5)
+root(ROOT-0, strikes-6)
+
+Sentence #78 (7 tokens):
+Milosevic will agree to the deployment.
+[Text=Milosevic CharacterOffsetBegin=4107 CharacterOffsetEnd=4116 PartOfSpeech=NNP] [Text=will CharacterOffsetBegin=4117 CharacterOffsetEnd=4121 PartOfSpeech=MD] [Text=agree CharacterOffsetBegin=4122 CharacterOffsetEnd=4127 PartOfSpeech=VB] [Text=to CharacterOffsetBegin=4128 CharacterOffsetEnd=4130 PartOfSpeech=TO] [Text=the CharacterOffsetBegin=4131 CharacterOffsetEnd=4134 PartOfSpeech=DT] [Text=deployment CharacterOffsetBegin=4135 CharacterOffsetEnd=4145 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=4145 CharacterOffsetEnd=4146 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Milosevic))
+    (VP (MD will)
+      (VP (VB agree)
+        (PP (TO to)
+          (NP (DT the) (NN deployment)))))
+    (. .)))
+
+nsubj(agree-3, Milosevic-1)
+aux(agree-3, will-2)
+root(ROOT-0, agree-3)
+det(deployment-6, the-5)
+prep_to(agree-3, deployment-6)
+
+Sentence #79 (11 tokens):
+the Czech foreign minister remained buoyant during his opposition work.
+[Text=the CharacterOffsetBegin=4147 CharacterOffsetEnd=4150 PartOfSpeech=DT] [Text=Czech CharacterOffsetBegin=4151 CharacterOffsetEnd=4156 PartOfSpeech=NNP] [Text=foreign CharacterOffsetBegin=4157 CharacterOffsetEnd=4164 PartOfSpeech=JJ] [Text=minister CharacterOffsetBegin=4165 CharacterOffsetEnd=4173 PartOfSpeech=NN] [Text=remained CharacterOffsetBegin=4174 CharacterOffsetEnd=4182 PartOfSpeech=VBD] [Text=buoyant CharacterOffsetBegin=4183 CharacterOffsetEnd=4190 PartOfSpeech=JJ] [Text=during CharacterOffsetBegin=4191 CharacterOffsetEnd=4197 PartOfSpeech=IN] [Text=his CharacterOffsetBegin=4198 CharacterOffsetEnd=4201 PartOfSpeech=PRP$] [Text=opposition CharacterOffsetBegin=4202 CharacterOffsetEnd=4212 PartOfSpeech=NN] [Text=work CharacterOffsetBegin=4213 CharacterOffsetEnd=4217 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=4217 CharacterOffsetEnd=4218 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT the) (NNP Czech) (JJ foreign) (NN minister))
+    (VP (VBD remained)
+      (ADJP (JJ buoyant))
+      (PP (IN during)
+        (NP (PRP$ his) (NN opposition) (NN work))))
+    (. .)))
+
+det(minister-4, the-1)
+nn(minister-4, Czech-2)
+amod(minister-4, foreign-3)
+nsubj(buoyant-6, minister-4)
+cop(buoyant-6, remained-5)
+root(ROOT-0, buoyant-6)
+poss(work-10, his-8)
+nn(work-10, opposition-9)
+prep_during(buoyant-6, work-10)
+
+Sentence #80 (13 tokens):
+NATO has reached out to its former Eastern-bloc enemies in the past.
+[Text=NATO CharacterOffsetBegin=4219 CharacterOffsetEnd=4223 PartOfSpeech=NNP] [Text=has CharacterOffsetBegin=4224 CharacterOffsetEnd=4227 PartOfSpeech=VBZ] [Text=reached CharacterOffsetBegin=4228 CharacterOffsetEnd=4235 PartOfSpeech=VBN] [Text=out CharacterOffsetBegin=4236 CharacterOffsetEnd=4239 PartOfSpeech=RP] [Text=to CharacterOffsetBegin=4240 CharacterOffsetEnd=4242 PartOfSpeech=TO] [Text=its CharacterOffsetBegin=4243 CharacterOffsetEnd=4246 PartOfSpeech=PRP$] [Text=former CharacterOffsetBegin=4247 CharacterOffsetEnd=4253 PartOfSpeech=JJ] [Text=Eastern-bloc CharacterOffsetBegin=4254 CharacterOffsetEnd=4266 PartOfSpeech=JJ] [Text=enemies CharacterOffsetBegin=4267 CharacterOffsetEnd=4274 PartOfSpeech=NNS] [Text=in CharacterOffsetBegin=4275 CharacterOffsetEnd=4277 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=4278 CharacterOffsetEnd=4281 PartOfSpeech=DT] [Text=past CharacterOffsetBegin=4282 CharacterOffsetEnd=4286 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=4286 CharacterOffsetEnd=4287 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP NATO))
+    (VP (VBZ has)
+      (VP (VBN reached)
+        (PRT (RP out))
+        (PP (TO to)
+          (NP (PRP$ its) (JJ former) (JJ Eastern-bloc) (NNS enemies)))
+        (PP (IN in)
+          (NP (DT the) (NN past)))))
+    (. .)))
+
+nsubj(reached-3, NATO-1)
+aux(reached-3, has-2)
+root(ROOT-0, reached-3)
+prt(reached-3, out-4)
+poss(enemies-9, its-6)
+amod(enemies-9, former-7)
+amod(enemies-9, Eastern-bloc-8)
+prep_to(reached-3, enemies-9)
+det(past-12, the-11)
+prep_in(reached-3, past-12)
+
+Sentence #81 (8 tokens):
+there is violence against providers of abortion.
+[Text=there CharacterOffsetBegin=4288 CharacterOffsetEnd=4293 PartOfSpeech=EX] [Text=is CharacterOffsetBegin=4294 CharacterOffsetEnd=4296 PartOfSpeech=VBZ] [Text=violence CharacterOffsetBegin=4297 CharacterOffsetEnd=4305 PartOfSpeech=NN] [Text=against CharacterOffsetBegin=4306 CharacterOffsetEnd=4313 PartOfSpeech=IN] [Text=providers CharacterOffsetBegin=4314 CharacterOffsetEnd=4323 PartOfSpeech=NNS] [Text=of CharacterOffsetBegin=4324 CharacterOffsetEnd=4326 PartOfSpeech=IN] [Text=abortion CharacterOffsetBegin=4327 CharacterOffsetEnd=4335 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=4335 CharacterOffsetEnd=4336 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP (NN violence))
+        (PP (IN against)
+          (NP
+            (NP (NNS providers))
+            (PP (IN of)
+              (NP (NN abortion)))))))
+    (. .)))
+
+expl(is-2, there-1)
+root(ROOT-0, is-2)
+nsubj(is-2, violence-3)
+prep_against(violence-3, providers-5)
+prep_of(providers-5, abortion-7)
+
+Sentence #82 (16 tokens):
+District Attorney Frank C. Clark has amassed material to support a criminal indictment for homicide.
+[Text=District CharacterOffsetBegin=4337 CharacterOffsetEnd=4345 PartOfSpeech=NNP] [Text=Attorney CharacterOffsetBegin=4346 CharacterOffsetEnd=4354 PartOfSpeech=NNP] [Text=Frank CharacterOffsetBegin=4355 CharacterOffsetEnd=4360 PartOfSpeech=NNP] [Text=C. CharacterOffsetBegin=4361 CharacterOffsetEnd=4363 PartOfSpeech=NNP] [Text=Clark CharacterOffsetBegin=4364 CharacterOffsetEnd=4369 PartOfSpeech=NNP] [Text=has CharacterOffsetBegin=4370 CharacterOffsetEnd=4373 PartOfSpeech=VBZ] [Text=amassed CharacterOffsetBegin=4374 CharacterOffsetEnd=4381 PartOfSpeech=VBN] [Text=material CharacterOffsetBegin=4382 CharacterOffsetEnd=4390 PartOfSpeech=NN] [Text=to CharacterOffsetBegin=4391 CharacterOffsetEnd=4393 PartOfSpeech=TO] [Text=support CharacterOffsetBegin=4394 CharacterOffsetEnd=4401 PartOfSpeech=VB] [Text=a CharacterOffsetBegin=4402 CharacterOffsetEnd=4403 PartOfSpeech=DT] [Text=criminal CharacterOffsetBegin=4404 CharacterOffsetEnd=4412 PartOfSpeech=JJ] [Text=indictment CharacterOffsetBegin=4413 CharacterOffsetEnd=4423 PartOfSpeech=NN] [Text=for CharacterOffsetBegin=4424 CharacterOffsetEnd=4427 PartOfSpeech=IN] [Text=homicide CharacterOffsetBegin=4428 CharacterOffsetEnd=4436 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=4436 CharacterOffsetEnd=4437 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP District) (NNP Attorney) (NNP Frank) (NNP C.) (NNP Clark))
+    (VP (VBZ has)
+      (VP (VBN amassed)
+        (NP (NN material))
+        (S
+          (VP (TO to)
+            (VP (VB support)
+              (NP
+                (NP (DT a) (JJ criminal) (NN indictment))
+                (PP (IN for)
+                  (NP (NN homicide)))))))))
+    (. .)))
+
+nn(Clark-5, District-1)
+nn(Clark-5, Attorney-2)
+nn(Clark-5, Frank-3)
+nn(Clark-5, C.-4)
+nsubj(amassed-7, Clark-5)
+xsubj(support-10, Clark-5)
+aux(amassed-7, has-6)
+root(ROOT-0, amassed-7)
+dobj(amassed-7, material-8)
+aux(support-10, to-9)
+xcomp(amassed-7, support-10)
+det(indictment-13, a-11)
+amod(indictment-13, criminal-12)
+dobj(support-10, indictment-13)
+prep_for(indictment-13, homicide-15)
+
+Sentence #83 (9 tokens):
+the authorities are saying who the suspect is.
+[Text=the CharacterOffsetBegin=4438 CharacterOffsetEnd=4441 PartOfSpeech=DT] [Text=authorities CharacterOffsetBegin=4442 CharacterOffsetEnd=4453 PartOfSpeech=NNS] [Text=are CharacterOffsetBegin=4454 CharacterOffsetEnd=4457 PartOfSpeech=VBP] [Text=saying CharacterOffsetBegin=4458 CharacterOffsetEnd=4464 PartOfSpeech=VBG] [Text=who CharacterOffsetBegin=4465 CharacterOffsetEnd=4468 PartOfSpeech=WP] [Text=the CharacterOffsetBegin=4469 CharacterOffsetEnd=4472 PartOfSpeech=DT] [Text=suspect CharacterOffsetBegin=4473 CharacterOffsetEnd=4480 PartOfSpeech=NN] [Text=is CharacterOffsetBegin=4481 CharacterOffsetEnd=4483 PartOfSpeech=VBZ] [Text=. CharacterOffsetBegin=4483 CharacterOffsetEnd=4484 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT the) (NNS authorities))
+    (VP (VBP are)
+      (VP (VBG saying)
+        (SBAR
+          (WHNP (WP who))
+          (S
+            (NP (DT the) (NN suspect))
+            (VP (VBZ is))))))
+    (. .)))
+
+det(authorities-2, the-1)
+nsubj(saying-4, authorities-2)
+aux(saying-4, are-3)
+root(ROOT-0, saying-4)
+dobj(is-8, who-5)
+det(suspect-7, the-6)
+nsubj(is-8, suspect-7)
+ccomp(saying-4, is-8)
+
+Sentence #84 (9 tokens):
+the authorities have an idea where Kopp is.
+[Text=the CharacterOffsetBegin=4485 CharacterOffsetEnd=4488 PartOfSpeech=DT] [Text=authorities CharacterOffsetBegin=4489 CharacterOffsetEnd=4500 PartOfSpeech=NNS] [Text=have CharacterOffsetBegin=4501 CharacterOffsetEnd=4505 PartOfSpeech=VBP] [Text=an CharacterOffsetBegin=4506 CharacterOffsetEnd=4508 PartOfSpeech=DT] [Text=idea CharacterOffsetBegin=4509 CharacterOffsetEnd=4513 PartOfSpeech=NN] [Text=where CharacterOffsetBegin=4514 CharacterOffsetEnd=4519 PartOfSpeech=WRB] [Text=Kopp CharacterOffsetBegin=4520 CharacterOffsetEnd=4524 PartOfSpeech=NNP] [Text=is CharacterOffsetBegin=4525 CharacterOffsetEnd=4527 PartOfSpeech=VBZ] [Text=. CharacterOffsetBegin=4527 CharacterOffsetEnd=4528 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT the) (NNS authorities))
+    (VP (VBP have)
+      (NP
+        (NP (DT an) (NN idea))
+        (SBAR
+          (WHADVP (WRB where))
+          (S
+            (NP (NNP Kopp))
+            (VP (VBZ is))))))
+    (. .)))
+
+det(authorities-2, the-1)
+nsubj(have-3, authorities-2)
+root(ROOT-0, have-3)
+det(idea-5, an-4)
+dobj(have-3, idea-5)
+advmod(is-8, where-6)
+nsubj(is-8, Kopp-7)
+rcmod(idea-5, is-8)
+
+Sentence #85 (9 tokens):
+Clark said that finding the rifle was important.
+[Text=Clark CharacterOffsetBegin=4529 CharacterOffsetEnd=4534 PartOfSpeech=NNP] [Text=said CharacterOffsetBegin=4535 CharacterOffsetEnd=4539 PartOfSpeech=VBD] [Text=that CharacterOffsetBegin=4540 CharacterOffsetEnd=4544 PartOfSpeech=IN] [Text=finding CharacterOffsetBegin=4545 CharacterOffsetEnd=4552 PartOfSpeech=VBG] [Text=the CharacterOffsetBegin=4553 CharacterOffsetEnd=4556 PartOfSpeech=DT] [Text=rifle CharacterOffsetBegin=4557 CharacterOffsetEnd=4562 PartOfSpeech=NN] [Text=was CharacterOffsetBegin=4563 CharacterOffsetEnd=4566 PartOfSpeech=VBD] [Text=important CharacterOffsetBegin=4567 CharacterOffsetEnd=4576 PartOfSpeech=JJ] [Text=. CharacterOffsetBegin=4576 CharacterOffsetEnd=4577 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Clark))
+    (VP (VBD said)
+      (SBAR (IN that)
+        (S
+          (S
+            (VP (VBG finding)
+              (NP (DT the) (NN rifle))))
+          (VP (VBD was)
+            (ADJP (JJ important))))))
+    (. .)))
+
+nsubj(said-2, Clark-1)
+root(ROOT-0, said-2)
+mark(important-8, that-3)
+csubj(important-8, finding-4)
+det(rifle-6, the-5)
+dobj(finding-4, rifle-6)
+cop(important-8, was-7)
+ccomp(said-2, important-8)
+
+Sentence #86 (7 tokens):
+all of those doctors were killed.
+[Text=all CharacterOffsetBegin=4578 CharacterOffsetEnd=4581 PartOfSpeech=DT] [Text=of CharacterOffsetBegin=4582 CharacterOffsetEnd=4584 PartOfSpeech=IN] [Text=those CharacterOffsetBegin=4585 CharacterOffsetEnd=4590 PartOfSpeech=DT] [Text=doctors CharacterOffsetBegin=4591 CharacterOffsetEnd=4598 PartOfSpeech=NNS] [Text=were CharacterOffsetBegin=4599 CharacterOffsetEnd=4603 PartOfSpeech=VBD] [Text=killed CharacterOffsetBegin=4604 CharacterOffsetEnd=4610 PartOfSpeech=VBN] [Text=. CharacterOffsetBegin=4610 CharacterOffsetEnd=4611 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP
+      (NP (DT all))
+      (PP (IN of)
+        (NP (DT those) (NNS doctors))))
+    (VP (VBD were)
+      (VP (VBN killed)))
+    (. .)))
+
+nsubjpass(killed-6, all-1)
+det(doctors-4, those-3)
+prep_of(all-1, doctors-4)
+auxpass(killed-6, were-5)
+root(ROOT-0, killed-6)
+
+Sentence #87 (16 tokens):
+the fibers found near the murder and the fibers found in Kopp's car match.
+[Text=the CharacterOffsetBegin=4612 CharacterOffsetEnd=4615 PartOfSpeech=DT] [Text=fibers CharacterOffsetBegin=4616 CharacterOffsetEnd=4622 PartOfSpeech=NNS] [Text=found CharacterOffsetBegin=4623 CharacterOffsetEnd=4628 PartOfSpeech=VBN] [Text=near CharacterOffsetBegin=4629 CharacterOffsetEnd=4633 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=4634 CharacterOffsetEnd=4637 PartOfSpeech=DT] [Text=murder CharacterOffsetBegin=4638 CharacterOffsetEnd=4644 PartOfSpeech=NN] [Text=and CharacterOffsetBegin=4645 CharacterOffsetEnd=4648 PartOfSpeech=CC] [Text=the CharacterOffsetBegin=4649 CharacterOffsetEnd=4652 PartOfSpeech=DT] [Text=fibers CharacterOffsetBegin=4653 CharacterOffsetEnd=4659 PartOfSpeech=NNS] [Text=found CharacterOffsetBegin=4660 CharacterOffsetEnd=4665 PartOfSpeech=VBN] [Text=in CharacterOffsetBegin=4666 CharacterOffsetEnd=4668 PartOfSpeech=IN] [Text=Kopp CharacterOffsetBegin=4669 CharacterOffsetEnd=4673 PartOfSpeech=NNP] [Text='s CharacterOffsetBegin=4673 CharacterOffsetEnd=4675 PartOfSpeech=POS] [Text=car CharacterOffsetBegin=4676 CharacterOffsetEnd=4679 PartOfSpeech=NN] [Text=match CharacterOffsetBegin=4680 CharacterOffsetEnd=4685 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=4685 CharacterOffsetEnd=4686 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT the) (NNS fibers))
+    (VP (VBN found)
+      (PP (IN near)
+        (NP
+          (NP (DT the) (NN murder))
+          (CC and)
+          (NP
+            (NP (DT the) (NNS fibers))
+            (VP (VBN found)
+              (PP (IN in)
+                (NP
+                  (NP (NNP Kopp) (POS 's))
+                  (NN car) (NN match))))))))
+    (. .)))
+
+det(fibers-2, the-1)
+nsubj(found-3, fibers-2)
+root(ROOT-0, found-3)
+det(murder-6, the-5)
+prep_near(found-3, murder-6)
+det(fibers-9, the-8)
+prep_near(found-3, fibers-9)
+conj_and(murder-6, fibers-9)
+partmod(fibers-9, found-10)
+poss(match-15, Kopp-12)
+nn(match-15, car-14)
+prep_in(found-10, match-15)
+
+Sentence #88 (13 tokens):
+there was an official confirmation of the decision to upgrade the warrant.
+[Text=there CharacterOffsetBegin=4687 CharacterOffsetEnd=4692 PartOfSpeech=EX] [Text=was CharacterOffsetBegin=4693 CharacterOffsetEnd=4696 PartOfSpeech=VBD] [Text=an CharacterOffsetBegin=4697 CharacterOffsetEnd=4699 PartOfSpeech=DT] [Text=official CharacterOffsetBegin=4700 CharacterOffsetEnd=4708 PartOfSpeech=JJ] [Text=confirmation CharacterOffsetBegin=4709 CharacterOffsetEnd=4721 PartOfSpeech=NN] [Text=of CharacterOffsetBegin=4722 CharacterOffsetEnd=4724 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=4725 CharacterOffsetEnd=4728 PartOfSpeech=DT] [Text=decision CharacterOffsetBegin=4729 CharacterOffsetEnd=4737 PartOfSpeech=NN] [Text=to CharacterOffsetBegin=4738 CharacterOffsetEnd=4740 PartOfSpeech=TO] [Text=upgrade CharacterOffsetBegin=4741 CharacterOffsetEnd=4748 PartOfSpeech=VB] [Text=the CharacterOffsetBegin=4749 CharacterOffsetEnd=4752 PartOfSpeech=DT] [Text=warrant CharacterOffsetBegin=4753 CharacterOffsetEnd=4760 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=4760 CharacterOffsetEnd=4761 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBD was)
+      (NP
+        (NP (DT an) (JJ official) (NN confirmation))
+        (PP (IN of)
+          (NP (DT the) (NN decision)
+            (S
+              (VP (TO to)
+                (VP (VB upgrade)
+                  (NP (DT the) (NN warrant)))))))))
+    (. .)))
+
+expl(was-2, there-1)
+root(ROOT-0, was-2)
+det(confirmation-5, an-3)
+amod(confirmation-5, official-4)
+nsubj(was-2, confirmation-5)
+det(decision-8, the-7)
+prep_of(confirmation-5, decision-8)
+aux(upgrade-10, to-9)
+infmod(decision-8, upgrade-10)
+det(warrant-12, the-11)
+dobj(upgrade-10, warrant-12)
+
+Sentence #89 (11 tokens):
+there was a major development in the Slepian murder investigation.
+[Text=there CharacterOffsetBegin=4762 CharacterOffsetEnd=4767 PartOfSpeech=EX] [Text=was CharacterOffsetBegin=4768 CharacterOffsetEnd=4771 PartOfSpeech=VBD] [Text=a CharacterOffsetBegin=4772 CharacterOffsetEnd=4773 PartOfSpeech=DT] [Text=major CharacterOffsetBegin=4774 CharacterOffsetEnd=4779 PartOfSpeech=JJ] [Text=development CharacterOffsetBegin=4780 CharacterOffsetEnd=4791 PartOfSpeech=NN] [Text=in CharacterOffsetBegin=4792 CharacterOffsetEnd=4794 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=4795 CharacterOffsetEnd=4798 PartOfSpeech=DT] [Text=Slepian CharacterOffsetBegin=4799 CharacterOffsetEnd=4806 PartOfSpeech=JJ] [Text=murder CharacterOffsetBegin=4807 CharacterOffsetEnd=4813 PartOfSpeech=NN] [Text=investigation CharacterOffsetBegin=4814 CharacterOffsetEnd=4827 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=4827 CharacterOffsetEnd=4828 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (JJ major) (NN development))
+        (PP (IN in)
+          (NP (DT the) (JJ Slepian) (NN murder) (NN investigation)))))
+    (. .)))
+
+expl(was-2, there-1)
+root(ROOT-0, was-2)
+det(development-5, a-3)
+amod(development-5, major-4)
+nsubj(was-2, development-5)
+det(investigation-10, the-7)
+amod(investigation-10, Slepian-8)
+nn(investigation-10, murder-9)
+prep_in(development-5, investigation-10)
+
+Sentence #90 (7 tokens):
+there is a federal homicide statute.
+[Text=there CharacterOffsetBegin=4829 CharacterOffsetEnd=4834 PartOfSpeech=EX] [Text=is CharacterOffsetBegin=4835 CharacterOffsetEnd=4837 PartOfSpeech=VBZ] [Text=a CharacterOffsetBegin=4838 CharacterOffsetEnd=4839 PartOfSpeech=DT] [Text=federal CharacterOffsetBegin=4840 CharacterOffsetEnd=4847 PartOfSpeech=JJ] [Text=homicide CharacterOffsetBegin=4848 CharacterOffsetEnd=4856 PartOfSpeech=NN] [Text=statute CharacterOffsetBegin=4857 CharacterOffsetEnd=4864 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=4864 CharacterOffsetEnd=4865 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP (DT a) (JJ federal) (NN homicide) (NN statute)))
+    (. .)))
+
+expl(is-2, there-1)
+root(ROOT-0, is-2)
+det(statute-6, a-3)
+amod(statute-6, federal-4)
+nn(statute-6, homicide-5)
+nsubj(is-2, statute-6)
+
+Sentence #91 (15 tokens):
+Kopp will be charged under the recent Freedom of Access to Clinic Entrances Ac.
+[Text=Kopp CharacterOffsetBegin=4866 CharacterOffsetEnd=4870 PartOfSpeech=NNP] [Text=will CharacterOffsetBegin=4871 CharacterOffsetEnd=4875 PartOfSpeech=MD] [Text=be CharacterOffsetBegin=4876 CharacterOffsetEnd=4878 PartOfSpeech=VB] [Text=charged CharacterOffsetBegin=4879 CharacterOffsetEnd=4886 PartOfSpeech=VBN] [Text=under CharacterOffsetBegin=4887 CharacterOffsetEnd=4892 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=4893 CharacterOffsetEnd=4896 PartOfSpeech=DT] [Text=recent CharacterOffsetBegin=4897 CharacterOffsetEnd=4903 PartOfSpeech=JJ] [Text=Freedom CharacterOffsetBegin=4904 CharacterOffsetEnd=4911 PartOfSpeech=NN] [Text=of CharacterOffsetBegin=4912 CharacterOffsetEnd=4914 PartOfSpeech=IN] [Text=Access CharacterOffsetBegin=4915 CharacterOffsetEnd=4921 PartOfSpeech=NN] [Text=to CharacterOffsetBegin=4922 CharacterOffsetEnd=4924 PartOfSpeech=TO] [Text=Clinic CharacterOffsetBegin=4925 CharacterOffsetEnd=4931 PartOfSpeech=NNP] [Text=Entrances CharacterOffsetBegin=4932 CharacterOffsetEnd=4941 PartOfSpeech=NNPS] [Text=Ac CharacterOffsetBegin=4942 CharacterOffsetEnd=4944 PartOfSpeech=NNP] [Text=. CharacterOffsetBegin=4944 CharacterOffsetEnd=4945 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Kopp))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN charged)
+          (PP (IN under)
+            (NP
+              (NP (DT the) (JJ recent) (NN Freedom))
+              (PP (IN of)
+                (NP (NN Access)))))
+          (PP (TO to)
+            (NP (NNP Clinic) (NNPS Entrances) (NNP Ac))))))
+    (. .)))
+
+nsubjpass(charged-4, Kopp-1)
+aux(charged-4, will-2)
+auxpass(charged-4, be-3)
+root(ROOT-0, charged-4)
+det(Freedom-8, the-6)
+amod(Freedom-8, recent-7)
+prep_under(charged-4, Freedom-8)
+prep_of(Freedom-8, Access-10)
+nn(Ac-14, Clinic-12)
+nn(Ac-14, Entrances-13)
+prep_to(charged-4, Ac-14)
+
+Sentence #92 (7 tokens):
+there are threats against abortion providers.
+[Text=there CharacterOffsetBegin=4946 CharacterOffsetEnd=4951 PartOfSpeech=EX] [Text=are CharacterOffsetBegin=4952 CharacterOffsetEnd=4955 PartOfSpeech=VBP] [Text=threats CharacterOffsetBegin=4956 CharacterOffsetEnd=4963 PartOfSpeech=NNS] [Text=against CharacterOffsetBegin=4964 CharacterOffsetEnd=4971 PartOfSpeech=IN] [Text=abortion CharacterOffsetBegin=4972 CharacterOffsetEnd=4980 PartOfSpeech=NN] [Text=providers CharacterOffsetBegin=4981 CharacterOffsetEnd=4990 PartOfSpeech=NNS] [Text=. CharacterOffsetBegin=4990 CharacterOffsetEnd=4991 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBP are)
+      (NP
+        (NP (NNS threats))
+        (PP (IN against)
+          (NP (NN abortion) (NNS providers)))))
+    (. .)))
+
+expl(are-2, there-1)
+root(ROOT-0, are-2)
+nsubj(are-2, threats-3)
+nn(providers-6, abortion-5)
+prep_against(threats-3, providers-6)
+
+Sentence #93 (5 tokens):
+Kopp will be convicted.
+[Text=Kopp CharacterOffsetBegin=4992 CharacterOffsetEnd=4996 PartOfSpeech=NNP] [Text=will CharacterOffsetBegin=4997 CharacterOffsetEnd=5001 PartOfSpeech=MD] [Text=be CharacterOffsetBegin=5002 CharacterOffsetEnd=5004 PartOfSpeech=VB] [Text=convicted CharacterOffsetBegin=5005 CharacterOffsetEnd=5014 PartOfSpeech=VBN] [Text=. CharacterOffsetBegin=5014 CharacterOffsetEnd=5015 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (NNP Kopp))
+    (VP (MD will)
+      (VP (VB be)
+        (VP (VBN convicted))))
+    (. .)))
+
+nsubjpass(convicted-4, Kopp-1)
+aux(convicted-4, will-2)
+auxpass(convicted-4, be-3)
+root(ROOT-0, convicted-4)
+
+Sentence #94 (10 tokens):
+a weapon was recovered in the first police searches.
+[Text=a CharacterOffsetBegin=5016 CharacterOffsetEnd=5017 PartOfSpeech=DT] [Text=weapon CharacterOffsetBegin=5018 CharacterOffsetEnd=5024 PartOfSpeech=NN] [Text=was CharacterOffsetBegin=5025 CharacterOffsetEnd=5028 PartOfSpeech=VBD] [Text=recovered CharacterOffsetBegin=5029 CharacterOffsetEnd=5038 PartOfSpeech=VBN] [Text=in CharacterOffsetBegin=5039 CharacterOffsetEnd=5041 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=5042 CharacterOffsetEnd=5045 PartOfSpeech=DT] [Text=first CharacterOffsetBegin=5046 CharacterOffsetEnd=5051 PartOfSpeech=JJ] [Text=police CharacterOffsetBegin=5052 CharacterOffsetEnd=5058 PartOfSpeech=NN] [Text=searches CharacterOffsetBegin=5059 CharacterOffsetEnd=5067 PartOfSpeech=NNS] [Text=. CharacterOffsetBegin=5067 CharacterOffsetEnd=5068 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT a) (NN weapon))
+    (VP (VBD was)
+      (VP (VBN recovered)
+        (PP (IN in)
+          (NP (DT the) (JJ first) (NN police) (NNS searches)))))
+    (. .)))
+
+det(weapon-2, a-1)
+nsubjpass(recovered-4, weapon-2)
+auxpass(recovered-4, was-3)
+root(ROOT-0, recovered-4)
+det(searches-9, the-6)
+amod(searches-9, first-7)
+nn(searches-9, police-8)
+prep_in(recovered-4, searches-9)
+
+Sentence #95 (10 tokens):
+a stranger was parked near Slepian's home early.
+[Text=a CharacterOffsetBegin=5069 CharacterOffsetEnd=5070 PartOfSpeech=DT] [Text=stranger CharacterOffsetBegin=5071 CharacterOffsetEnd=5079 PartOfSpeech=NN] [Text=was CharacterOffsetBegin=5080 CharacterOffsetEnd=5083 PartOfSpeech=VBD] [Text=parked CharacterOffsetBegin=5084 CharacterOffsetEnd=5090 PartOfSpeech=VBN] [Text=near CharacterOffsetBegin=5091 CharacterOffsetEnd=5095 PartOfSpeech=IN] [Text=Slepian CharacterOffsetBegin=5096 CharacterOffsetEnd=5103 PartOfSpeech=NNP] [Text='s CharacterOffsetBegin=5103 CharacterOffsetEnd=5105 PartOfSpeech=POS] [Text=home CharacterOffsetBegin=5106 CharacterOffsetEnd=5110 PartOfSpeech=NN] [Text=early CharacterOffsetBegin=5111 CharacterOffsetEnd=5116 PartOfSpeech=RB] [Text=. CharacterOffsetBegin=5116 CharacterOffsetEnd=5117 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT a) (NN stranger))
+    (VP (VBD was)
+      (VP (VBN parked)
+        (PP (IN near)
+          (NP
+            (NP (NNP Slepian) (POS 's))
+            (NN home))
+          (ADVP (RB early)))))
+    (. .)))
+
+det(stranger-2, a-1)
+nsubjpass(parked-4, stranger-2)
+auxpass(parked-4, was-3)
+root(ROOT-0, parked-4)
+poss(home-8, Slepian-6)
+prep_near(parked-4, home-8)
+advmod(parked-4, early-9)
+
+Sentence #96 (10 tokens):
+there was a ratification process in February this year.
+[Text=there CharacterOffsetBegin=5118 CharacterOffsetEnd=5123 PartOfSpeech=EX] [Text=was CharacterOffsetBegin=5124 CharacterOffsetEnd=5127 PartOfSpeech=VBD] [Text=a CharacterOffsetBegin=5128 CharacterOffsetEnd=5129 PartOfSpeech=DT] [Text=ratification CharacterOffsetBegin=5130 CharacterOffsetEnd=5142 PartOfSpeech=NN] [Text=process CharacterOffsetBegin=5143 CharacterOffsetEnd=5150 PartOfSpeech=NN] [Text=in CharacterOffsetBegin=5151 CharacterOffsetEnd=5153 PartOfSpeech=IN] [Text=February CharacterOffsetBegin=5154 CharacterOffsetEnd=5162 PartOfSpeech=NNP] [Text=this CharacterOffsetBegin=5163 CharacterOffsetEnd=5167 PartOfSpeech=DT] [Text=year CharacterOffsetBegin=5168 CharacterOffsetEnd=5172 PartOfSpeech=NN] [Text=. CharacterOffsetBegin=5172 CharacterOffsetEnd=5173 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBD was)
+      (NP
+        (NP (DT a) (NN ratification) (NN process))
+        (PP (IN in)
+          (NP
+            (NP (NNP February))
+            (NP (DT this) (NN year))))))
+    (. .)))
+
+expl(was-2, there-1)
+root(ROOT-0, was-2)
+det(process-5, a-3)
+nn(process-5, ratification-4)
+nsubj(was-2, process-5)
+prep_in(process-5, February-7)
+det(year-9, this-8)
+dep(February-7, year-9)
+
+Sentence #97 (7 tokens):
+a date had already been fixed.
+[Text=a CharacterOffsetBegin=5174 CharacterOffsetEnd=5175 PartOfSpeech=DT] [Text=date CharacterOffsetBegin=5176 CharacterOffsetEnd=5180 PartOfSpeech=NN] [Text=had CharacterOffsetBegin=5181 CharacterOffsetEnd=5184 PartOfSpeech=VBD] [Text=already CharacterOffsetBegin=5185 CharacterOffsetEnd=5192 PartOfSpeech=RB] [Text=been CharacterOffsetBegin=5193 CharacterOffsetEnd=5197 PartOfSpeech=VBN] [Text=fixed CharacterOffsetBegin=5198 CharacterOffsetEnd=5203 PartOfSpeech=VBN] [Text=. CharacterOffsetBegin=5203 CharacterOffsetEnd=5204 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (DT a) (NN date))
+    (VP (VBD had)
+      (ADVP (RB already))
+      (VP (VBN been)
+        (VP (VBN fixed))))
+    (. .)))
+
+det(date-2, a-1)
+nsubjpass(fixed-6, date-2)
+aux(fixed-6, had-3)
+advmod(fixed-6, already-4)
+auxpass(fixed-6, been-5)
+root(ROOT-0, fixed-6)
+
+Sentence #98 (13 tokens):
+there is an embassy's mission of liaison between Hungary and NATO.
+[Text=there CharacterOffsetBegin=5205 CharacterOffsetEnd=5210 PartOfSpeech=EX] [Text=is CharacterOffsetBegin=5211 CharacterOffsetEnd=5213 PartOfSpeech=VBZ] [Text=an CharacterOffsetBegin=5214 CharacterOffsetEnd=5216 PartOfSpeech=DT] [Text=embassy CharacterOffsetBegin=5217 CharacterOffsetEnd=5224 PartOfSpeech=NN] [Text='s CharacterOffsetBegin=5224 CharacterOffsetEnd=5226 PartOfSpeech=POS] [Text=mission CharacterOffsetBegin=5227 CharacterOffsetEnd=5234 PartOfSpeech=NN] [Text=of CharacterOffsetBegin=5235 CharacterOffsetEnd=5237 PartOfSpeech=IN] [Text=liaison CharacterOffsetBegin=5238 CharacterOffsetEnd=5245 PartOfSpeech=NN] [Text=between CharacterOffsetBegin=5246 CharacterOffsetEnd=5253 PartOfSpeech=IN] [Text=Hungary CharacterOffsetBegin=5254 CharacterOffsetEnd=5261 PartOfSpeech=NNP] [Text=and CharacterOffsetBegin=5262 CharacterOffsetEnd=5265 PartOfSpeech=CC] [Text=NATO CharacterOffsetBegin=5266 CharacterOffsetEnd=5270 PartOfSpeech=NNP] [Text=. CharacterOffsetBegin=5270 CharacterOffsetEnd=5271 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP (EX there))
+    (VP (VBZ is)
+      (NP
+        (NP
+          (NP (DT an) (NN embassy) (POS 's))
+          (NN mission))
+        (PP (IN of)
+          (NP
+            (NP (NN liaison))
+            (PP (IN between)
+              (NP (NNP Hungary)
+                (CC and)
+                (NNP NATO)))))))
+    (. .)))
+
+expl(is-2, there-1)
+root(ROOT-0, is-2)
+det(embassy-4, an-3)
+poss(mission-6, embassy-4)
+nsubj(is-2, mission-6)
+prep_of(mission-6, liaison-8)
+prep_between(liaison-8, Hungary-10)
+prep_between(liaison-8, NATO-12)
+conj_and(Hungary-10, NATO-12)
+
+Sentence #99 (15 tokens):
+Martonyi and his people share the same values as the existing members of NATO.
+[Text=Martonyi CharacterOffsetBegin=5272 CharacterOffsetEnd=5280 PartOfSpeech=NNP] [Text=and CharacterOffsetBegin=5281 CharacterOffsetEnd=5284 PartOfSpeech=CC] [Text=his CharacterOffsetBegin=5285 CharacterOffsetEnd=5288 PartOfSpeech=PRP$] [Text=people CharacterOffsetBegin=5289 CharacterOffsetEnd=5295 PartOfSpeech=NNS] [Text=share CharacterOffsetBegin=5296 CharacterOffsetEnd=5301 PartOfSpeech=VBP] [Text=the CharacterOffsetBegin=5302 CharacterOffsetEnd=5305 PartOfSpeech=DT] [Text=same CharacterOffsetBegin=5306 CharacterOffsetEnd=5310 PartOfSpeech=JJ] [Text=values CharacterOffsetBegin=5311 CharacterOffsetEnd=5317 PartOfSpeech=NNS] [Text=as CharacterOffsetBegin=5318 CharacterOffsetEnd=5320 PartOfSpeech=IN] [Text=the CharacterOffsetBegin=5321 CharacterOffsetEnd=5324 PartOfSpeech=DT] [Text=existing CharacterOffsetBegin=5325 CharacterOffsetEnd=5333 PartOfSpeech=VBG] [Text=members CharacterOffsetBegin=5334 CharacterOffsetEnd=5341 PartOfSpeech=NNS] [Text=of CharacterOffsetBegin=5342 CharacterOffsetEnd=5344 PartOfSpeech=IN] [Text=NATO CharacterOffsetBegin=5345 CharacterOffsetEnd=5349 PartOfSpeech=NNP] [Text=. CharacterOffsetBegin=5349 CharacterOffsetEnd=5350 PartOfSpeech=.] 
+(ROOT
+  (S
+    (NP
+      (NP (NNP Martonyi))
+      (CC and)
+      (NP (PRP$ his) (NNS people)))
+    (VP (VBP share)
+      (NP (DT the) (JJ same) (NNS values))
+      (PP (IN as)
+        (NP
+          (NP (DT the) (VBG existing) (NNS members))
+          (PP (IN of)
+            (NP (NNP NATO))))))
+    (. .)))
+
+nsubj(share-5, Martonyi-1)
+poss(people-4, his-3)
+conj_and(Martonyi-1, people-4)
+nsubj(share-5, people-4)
+root(ROOT-0, share-5)
+det(values-8, the-6)
+amod(values-8, same-7)
+dobj(share-5, values-8)
+det(members-12, the-10)
+amod(members-12, existing-11)
+prep_as(share-5, members-12)
+prep_of(members-12, NATO-14)
+
