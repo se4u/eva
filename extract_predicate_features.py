@@ -80,14 +80,85 @@ data
 docs
    readme.pdf
 """
-
-
-##
 import sys, csv
-stanford_parse_file_name=sys.argv[1]
-complete_csv_file_name=sys.argv[2]
-output_file_name=sys.argv[3]
-d=csv.DictReader(open(stanford_parse_file_name))
-ld=list(d)
-for e in ld:
-    f.write(e["normalization"])
+argv=sys.argv
+input_file_name=argv[1]
+factbank_path=argv[2]
+output_file_name=argv[3]
+event_dict=event_dict_maker()
+predicate_class_dict=predicate_class_dict_maker()
+sdp_dict=sdp_dict_maker()
+pos_dict=pos_dict_maker()
+output=[feature(e, event_dict, sdp_dict, predicate_class_dict, pos_dict) for e in csv.DictReader(open(input_file_name, "rb"))]
+with open(output_file_name) as f:
+    for o in output:
+        f.write(",".join(o))
+        f.write("\n")
+exit()
+def feature(row, event_dict, sdp_dict, predicate_class_dict, pos_dict):
+    pk=primary_key(row)
+    event_index=event(pk, event_dict)
+    sdp=sd_parse(pk, sdp_dict)
+    t=predicate_trail(pk, event_index, sdp, pos_dict)
+    f=[]
+    for (predicate, pos, relation, depth) in t[:1]:
+        temp_key=(predicate, pos, relation)
+        if temp_key in predicate_class_dict:
+            f.extend([predicate_class_dict[temp_key], lemma(predicate)])
+    return f
+
+def primary_key(row):
+    """input: dict(file=, sentId=, eId=, eiId=, eText=, )
+    output: (file, sentId, eId, eiId)
+    """
+    pass
+
+def event(pk, event_dict):
+    """input: (file, sentId, eId, eiId)
+    output: event_dict[(file, sentId, eId)]
+    """
+    pass
+
+def sd_parse(pk, sdp_dict):
+    """input: (file, sentId, eId, eiId)
+    output: sdp_dict[(file, sentId)]
+    """
+    pass
+
+def predicate_trail(pk, event_index, sdp, pos_dict):
+    """input: event_index=8, sdp=[root(ROOT-0, lucky-6), xcomp(lucky-6, break-8), advmod(break-8, even-9), xsubj(break-8, Kwan-3), aux(break-8, to-7)]
+    output: [(lucky, POS_of_lucky, xcomp, 1), (ROOT, ROOT, root_xcomp, 2)]
+    """
+    pass
+
+def get_pos(pk, token_index, pos_dict):
+    """input: (file, sentId, eId, eiId) and token_index and pos_dict
+    output: pos_dict[(file, sentId, token_index)]
+    """
+    pass
+
+def lemma(word):
+    """input:
+    output:
+    """
+    pass
+
+def predicate_class_dict_maker():
+    """output: dict((predicate, pos, relation))
+    """
+    pass
+
+def event_dict_maker():
+    """output: The token number tokLoc - 1 from tokens_tml would be stored as (file, sendId, tmlTagId)
+    """
+    pass
+
+def sdp_dict_maker():
+    """output: gets parse for (file, sentId) in sdp_dict
+    """
+    pass
+
+def pos_dict_maker():
+    """output: dict( (file, sentence, token_index) )
+    """
+    pass
