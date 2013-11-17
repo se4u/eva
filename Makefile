@@ -10,8 +10,8 @@ train.csv test.csv : marneffe_data.csv
 %.sdp : %.sent 
 	java -cp /Users/pushpendrerastogi/stanford-corenlp-full-2013-06-20/stanford-corenlp-3.2.0.jar:/Users/pushpendrerastogi/stanford-corenlp-full-2013-06-20/stanford-corenlp-3.2.0-models.jar -Xmx2g edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,parse -outputExtension ".out" -file  $< && cp $<.out $@
 
-%_predicate.features : %.sdp %.csv 
-	python extract_predicate_features.py $^ $@
+%_predicate.features : %.csv 
+	python extract_predicate_features.py $^ path_to_factbank $@
 
 train_loglinear_model : train_predicate.features
 	echo "TODO"

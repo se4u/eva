@@ -48,19 +48,8 @@ Do feature engineering.
 
 
 *Predicate classes*
-Sauri's thesis defines classes of predicates(nouns and verbs) that project the same veridicality value onto the events they introduce. (Appendix A, PAge 164)
-The classes also define the grammatical relations that need to hold between the predicate and the event it introduces, because grammatical contexts
-matter for veridicality.
-
-Different veridicality values will indeed be assigned to X in He doesnt know that X and in He doesnt know if X.
-The classes have names like ANNOUNCE, CONFIRM, CONJECTURE, and SAY.
-We used dependency graphs produced by the Stanford parser to follow the path from the target event to the root of the sentence.
-
-If a predicate in the path was contained in one of the classes and the grammatical relation matched, 
-      we added 
-         1. the lemma of the predicate as a feature
-         2. a feature marking the predicate class.
-
+see makefile and then QQQ we need to put the parses for all sentences
+in factbank in the right place.
 *World knowledge* 
 For each verb found in the path and contained in the predicate classes, we also added the lemma of its subject, and whether or not the verb was negated. 
 

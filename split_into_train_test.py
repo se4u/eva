@@ -11,7 +11,7 @@ ll=[e for e in ld if len(re.findall(" (%s)([ .]|$)"%e["eText"], e["normalization
 for data_type in ["train", "test"]:
     llt=[e for e in ll if e["split"]==data_type]
     f=open(data_type+".csv", "wb")
-    fields=["eText", "normalization", "CT_plus", "CT_minus", "PR_plus", "PR_minus", "PS_plus", "PS_minus", "Uu"]
+    fields=["file", "sentId", "eId", "eiId", "eText", "normalization", "CT_plus", "CT_minus", "PR_plus", "PR_minus", "PS_plus", "PS_minus", "Uu"]
     dt=csv.DictWriter(f, fields, extrasaction='ignore')
     dt.writerow(dict(zip(fields, fields)))
     dt.writerows(llt)
