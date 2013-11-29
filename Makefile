@@ -8,7 +8,8 @@ train.csv test.csv : marneffe_data.csv
 	python csv_to_single_sentence_per_line.py $< $@
 
 %.sdp : %.sent 
-	java -cp /Users/pushpendrerastogi/stanford-corenlp-full-2013-06-20/stanford-corenlp-3.2.0.jar:/Users/pushpendrerastogi/stanford-corenlp-full-2013-06-20/stanford-corenlp-3.2.0-models.jar -Xmx2g edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,parse -outputExtension ".out" -file  $< && cp $<.out $@
+# We need top copy in this stupid way because the parser appends the suffix to the original file name
+	java -cp /Users/pushpendrerastogi/stanford-corenlp-full-2013-06-20/stanford-corenlp-3.2.0.jar:/Users/pushpendrerastogi/stanford-corenlp-full-2013-06-20/stanford-corenlp-3.2.0-models.jar -Xmx2g edu.stanford.nlp.pipeline.StanfordCoreNLP -annotators tokenize,ssplit,pos,parse -outputExtension ".out" -ssplit.eolonly -file  $< && cp $<.out $@
 
 %_predicate.features : %.csv 
 	python extract_predicate_features.py $^ ~/Dropbox/evsem_data/factbank/ $@

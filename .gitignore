@@ -34,3 +34,7 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+factbank.sdp
+factbank.sent
+factbank.sent.out
+parse.pickle
