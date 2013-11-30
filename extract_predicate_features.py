@@ -14,7 +14,7 @@ we add
 2. a feature marking the predicate class.
 
 Here the actual sentence is in factbank/data/sentences.txt: 'ABC19980108.1830.0711.tml'|||15|||'And Wong Kwan will be lucky to break even.'
-Its stanford dependency parse of these sentences are in separate files named ABC19980108.1830.0711.tml_15 in the dropbox/evsem_data/factbank folders and they contain the following text.
+Its stanford dependency parse contains the following text.
 cc(lucky-6, And-1)
 nn(Kwan-3, Wong-2)
 nsubj(lucky-6, Kwan-3)
@@ -35,6 +35,7 @@ and it is adjective (the token_ling and tokens_tml contains pos tags and info ab
 and in the list of predicates
 and the relation between lucky and break is xcomp
 Therefore it would apply
+
 And we would fire the following features
 1. Lemma of all the predicate that are between the target event and the root of the sentence ?. so lucky is a feature. event_root_1_lucky:1 1 specifies the level above the event.) 
 2. Feature marking the predicate class ? (so we'll be marking the predicate class of the event_root_1_class_want:1)
@@ -82,6 +83,7 @@ docs
    readme.pdf
 """
 import sys, csv
+sys.path.append("")
 from extract_predicate_features_lib import event_dict_maker, predicate_class_dict_maker, sdp_dict_maker, pos_dict_maker, feature
 argv=sys.argv
 input_file_name=argv[1]
@@ -91,10 +93,11 @@ predicate_class_dict=predicate_class_dict_maker()
 event_dict=event_dict_maker(factbank_path)
 sdp_dict=sdp_dict_maker(factbank_path)
 pos_dict=pos_dict_maker(factbank_path)
-output=[feature(e, event_dict, sdp_dict, predicate_class_dict, pos_dict) for e in csv.DictReader(open(input_file_name, "rb"))]
-with open(output_file_name) as f:
-    for o in output:
-        f.write(",".join(o))
+_input=csv.DictReader(open(input_file_name, "rb"))
+with open(output_file_name, "wb") as f:
+    for e in _input:
+        fff=feature(e, event_dict, sdp_dict, predicate_class_dict, pos_dict)
+        f.write(",".join(fff))
         f.write("\n")
 exit()
 

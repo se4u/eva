@@ -38,3 +38,5 @@ factbank.sdp
 factbank.sent
 factbank.sent.out
 parse.pickle
+test_predicate.features
+train_predicate.features
