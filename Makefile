@@ -14,5 +14,8 @@ train.csv test.csv : marneffe_data.csv
 %_predicate.features : %.csv 
 	python extract_predicate_features.py $^ ~/Dropbox/evsem_data/factbank/data $@
 
-train_loglinear_model : train_predicate.features
-	echo "TODO"
+%.classifier_input : %.csv
+	python make_classifier_input.py $^ $@
+
+%_loglinear_model : %_predicate.features %.classifier_input
+	java -jar ~/stanford-classifier-2013-11-12/stanford-classifier-3.3.0.jar -prop classifier_bow.prop 1> $@

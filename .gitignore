@@ -40,3 +40,6 @@ factbank.sent.out
 parse.pickle
 test_predicate.features
 train_predicate.features
+classifier_output
+test.classifier_input
+train.classifier_input
