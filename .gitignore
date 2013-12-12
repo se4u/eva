@@ -43,3 +43,6 @@ train_predicate.features
 classifier_output
 test.classifier_input
 train.classifier_input
+loglinear_model*
+*.features
+*.classifier_input.pgcqmn

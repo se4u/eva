@@ -40,4 +40,4 @@ tolerance=1e-4
 # Training input
 #
 trainFile=train.classifier_input
-testFile=test.classifier_input
+testFile=train.classifier_input

@@ -1,18 +1,13 @@
 #
 # Features
 #
-#useClassFeature=true
-#1.useNGrams=true
-#1.usePrefixSuffixNGrams=true
-#1.maxNGramLeng=4
-#1.minNGramLeng=1
-#1.binnedLengths=10,20,30
+useClassFeature=true
 
-1.splitWordsRegexp=\\s+
+1.splitWordsRegexp=,
 1.useSplitWords=true
 1.useLowercaseSplitWords=true
 1.useSplitWordNGrams=true
-1.maxWordNGramLeng=3
+1.maxWordNGramLeng=1
 #1.useSplitWordPairs=true
 
 #
@@ -39,5 +34,5 @@ tolerance=1e-4
 #
 # Training input
 #
-trainFile=train.classifier_input
-testFile=test.classifier_input
+trainFile=train.classifier_input.pgcqmn
+testFile=train.classifier_input.pgcqmn
