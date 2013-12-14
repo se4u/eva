@@ -34,5 +34,5 @@ tolerance=1e-4
 #
 # Training input
 #
-trainFile=train.classifier_input.pgcqmn
-testFile=train.classifier_input.pgcqmn
+trainFile=train.classifier_input.pgcqmnbow
+testFile=test.classifier_input.pgcqmnbow

@@ -119,7 +119,7 @@ with open(output_file_name, "wb") as f:
         elif feature_type=="worldknowledge":
             feature_func=worldknowledge_feature
         fff=feature_func(e, event_dict, sdp_dict, predicate_class_dict, pos_dict)
-        f.write(",".join(fff))
+        f.write(" ".join(fff))
         f.write("\n")
 exit()
 

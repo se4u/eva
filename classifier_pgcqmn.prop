@@ -3,11 +3,11 @@
 #
 useClassFeature=true
 
-1.splitWordsRegexp=,
+1.splitWordsRegexp=\\s+
 1.useSplitWords=true
 1.useLowercaseSplitWords=true
-1.useSplitWordNGrams=true
-1.maxWordNGramLeng=1
+#1.useSplitWordNGrams=true
+#1.maxWordNGramLeng=1
 #1.useSplitWordPairs=true
 
 #

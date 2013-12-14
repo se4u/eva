@@ -46,3 +46,6 @@ train.classifier_input
 loglinear_model*
 *.features
 *.classifier_input.pgcqmn
+train.classifier_input*
+test.classifier_input*
+features_of_all642_and_130_sentences.zip

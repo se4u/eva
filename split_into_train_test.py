@@ -7,7 +7,8 @@ ld=list(d)
 
 ###
 ## If we set the threhold here to be 0 then we would get all the cases which require lemmatization. Let not care about them for a moment
-ll=[e for e in ld if len(re.findall(" (%s)([ .]|$)"%e["eText"], e["normalization"]))==1]
+## EDITED: December 13, to include all cases, even ones that require lemmatization
+ll=ld
 for data_type in ["train", "test"]:
     llt=[e for e in ll if e["split"]==data_type]
     f=open(data_type+".csv", "wb")

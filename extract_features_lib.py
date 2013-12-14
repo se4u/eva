@@ -39,9 +39,7 @@ def general_feature(row, event_dict, sdp_dict, predicate_class_dict, pos_dict):
     except:
         #TOFIX
         #Currently due to a problem of incompatible tokenization some of the text gets fkcd
-        return ["g_"+e for e in [event_lemma, root_lemma]]
-        
-        
+        return ["g_"+e for e in [event_lemma, root_lemma]]        
     
 
 def quotation_feature(row, event_dict, sdp_dict, predicate_class_dict, pos_dict, sentence_dict):
@@ -57,39 +55,36 @@ def quotation_feature(row, event_dict, sdp_dict, predicate_class_dict, pos_dict,
     return ["q_true" if sentence_has_quotation or "we" in root_subjects else "q_false"]
 
 
-MODALS=["can","could","may","might","must","will","would","shall","should"]
+def common_template(row, event_dict, sdp_dict, predicate_class_dict, pos_dict, BIGLIST):
+    pk=primary_key(row);
+    sdp=sd_parse(pk, sdp_dict)
+    event_token=get_event_token(pk, event_dict)
+    event_index=get_event_index(pk, event_dict)
+    blanket=[e.lower() for e in get_blanket_of_token(event_token, event_index, sdp)]
+    elements_in_blanket=[e for e in blanket if e in BIGLIST]
+    has_modal="true" if len(elements_in_blanket)>0 else "false"
+    return ["m_"+e for e in elements_in_blanket+[has_modal]]
+
+
 def modality_feature(row, event_dict, sdp_dict, predicate_class_dict, pos_dict):
     """Distinguish between  modality markers found as direct governors or children of the event under consideration
     #TODO
     And modal words found elsewhere in the context of the sentence.
     """
-    pk=primary_key(row);
-    sdp=sd_parse(pk, sdp_dict)
-    event_token=get_event_token(pk, event_dict)
-    event_index=get_event_index(pk, event_dict)
-    blanket=[e.lower() for e in get_blanket_of_token(event_index, event_token, sdp)]
-    modals_in_blanket=[e for e in blanket if e in MODALS]
-    has_modal="true" if len(modals_in_blanket)>0 else "false"
-    return ["m_"+e for e in modals_in_blanket+[has_modal]]
+    MODALS=["can","could","may","might","must","will","would","shall","should"]
+    return common_template(row, event_dict, sdp_dict, predicate_class_dict, pos_dict, MODALS)
 
-CONDITIONALS=["if"]
+
 def conditional_feature(row, event_dict, sdp_dict, predicate_class_dict, pos_dict):
     """
     Antecedents of conditionals:  events in an if-clause
     Embedding under words marking uncertainty:  embedding under call for
     #TODO Properly.
     """
-    pk=primary_key(row);
-    sdp=sd_parse(pk, sdp_dict)
-    event_token=get_event_token(pk, event_dict)
-    event_index=get_event_index(pk, event_dict)
-    blanket=[e.lower() for e in get_blanket_of_token(event_index, event_token, sdp)]
-    conditionals_in_blanket=[e for e in blanket if e in CONDITIONALS]
-    has_conditional="true" if len(conditionals_in_blanket)>0 else "false"
-    return ["c_"+e for e in conditionals_in_blanket+[has_conditional]]
+    CONDITIONALS=["if"]
+    return common_template(row, event_dict, sdp_dict, predicate_class_dict, pos_dict, CONDITIONALS)
     
 
-NEGATIONS=["no", "not", "Not", "None", "No one", "Nobody", "Nothing", "Neither", "Nowhere", "Never", "Negative", "Hardly", "Scarcely", "Barely", "Negative", "deny", "Doesn't", "Isn't", "Wasn't", "Shouldn't", "Wouldn't", "Couldn't", "Won't", "Can't", "Don't"]
 def negation_feature(row, event_dict, sdp_dict, predicate_class_dict, pos_dict):
     """Events are considered negated if they have a negation dependency in 
     the graph or an explicit linguistic marker of negation as
@@ -99,14 +94,8 @@ def negation_feature(row, event_dict, sdp_dict, predicate_class_dict, pos_dict):
     Events are also considered negated if embedded in a negative context 
     (e.g., fail, cancel). 
     """
-    pk=primary_key(row);
-    sdp=sd_parse(pk, sdp_dict)
-    event_token=get_event_token(pk, event_dict)
-    event_index=get_event_index(pk, event_dict)
-    blanket=[e.lower() for e in get_blanket_of_token(event_index, event_token, sdp)]
-    negations_in_blanket=[e for e in blanket if e in NEGATIONS]
-    has_negation="true" if len(negations_in_blanket)>0 else "false"
-    return ["n_" + e for e in negations_in_blanket+[has_negation]]
+    NEGATIONS=["no", "not", "not", "none", "no one", "nobody", "nothing", "neither", "nowhere", "never", "negative", "hardly", "scarcely", "barely", "negative", "deny", "doesn't", "isn't", "wasn't", "shouldn't", "wouldn't", "couldn't", "won't", "can't", "don't"]
+    return common_template(row, event_dict, sdp_dict, predicate_class_dict, pos_dict, NEGATIONS)
 
 def worldknowledge_feature(row, event_dict, sdp_dict, predicate_class_dict, pos_dict):
     """
@@ -310,8 +299,8 @@ def sdp_dict_maker(factbank_path=r"/Users/pushpendrerastogi/Dropbox/evsem_data/f
                 sentence=l[2][1:-1].replace(r"\'", "'").strip()
                 sent_write_file.write(sentence); assert l[2][0]=="'"
                 sent_write_file.write("\n")
-    # If the results does not exist or is older than sentence_file
-    if (not os.path.exists(parse_file)) or (os.path.getmtime(parse_file) < os.path.getmtime(sentence_file_path)):
+    # If the results does not exist
+    if (not os.path.exists(parse_file)):
         os.system("make factbank.sdp")        
     #Then extract the stanford parses from the sentence file by keeping only the needed portion
     #The stanford parse for a sentence is a list of 5 tuples
@@ -319,7 +308,6 @@ def sdp_dict_maker(factbank_path=r"/Users/pushpendrerastogi/Dropbox/evsem_data/f
     #Then make sure that the number of lists is exactly equal to the number of sentences
     assert len(parses) == len(filename_sentId)
     d=dict(zip(filename_sentId, parses))
-    #Store this in a pickle
     return d
     
 def pos_dict_maker(factbank_path):
