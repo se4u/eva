@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+Drone strike <EVENT class="OCCURRENCE" eid="e1">hits</EVENT> vehicle in #Somalia's south, <EVENT class="OCCURRENCE" eid="e2">killing</EVENT> two al-#Shabab members, <SOURCE sip_eId="e3" sip_eiId="ei3" ssid="s1">witnesses</SOURCE> <EVENT class="REPORTING" eid="e3">tell</EVENT> Al Jazeera | http://t.co/cSkyGi7AIT
+<MAKEINSTANCE eiid="ei1" eventID="e1" />
+<MAKEINSTANCE eiid="ei2" eventID="e2" />
+<MAKEINSTANCE eiid="ei3" eventID="e3" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<RELEVANT_SOURCE rsid="s0" />
+<RELEVANT_SOURCE rsid="s1_s0" />
+<FACT_VALUE eiid="ei1" fvid="fv0" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei2" fvid="fv1" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei3" fvid="fv2" rsid="s0" value="CT+" /><FACT_VALUE eiid="ei1" fvid="fv3" rsid="s1_s0" value="CT+" /><FACT_VALUE eiid="ei2" fvid="fv4" rsid="s1_s0" value="CT+" /></TimeML>

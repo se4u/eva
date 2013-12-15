@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+Editorial/Opinion | http://t.co/V1wzXLbNLB | <SOURCE sip_eId="e1" sip_eiId="ei1" ssid="s1">Wave of Long Island</SOURCE> http://t.co/mDTy5DkTZM
+<EVENT class="REPORTING" eid="e1">says</EVENT> <EVENT class="OCCURRENCE" eid="e2">vote</EVENT> no on Prop 1
+<MAKEINSTANCE eiid="ei1" eventID="e1" />
+<MAKEINSTANCE eiid="ei2" eventID="e2" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<RELEVANT_SOURCE rsid="s0" />
+<RELEVANT_SOURCE rsid="s1_s0" />
+<FACT_VALUE eiid="ei1" fvid="fv0" rsid="s0" value="CT+" /><FACT_VALUE eiid="ei2" fvid="fv1" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei2" fvid="fv2" rsid="s1_s0" value="Uu" /></TimeML>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+UN <SOURCE sip_eId="e1" sip_eiId="ei1" ssid="s1">Envoy</SOURCE> to Eritrea <EVENT class="REPORTING" eid="e1">says</EVENT> country's citizens <EVENT class="OCCURRENCE" eid="e2">run</EVENT> risk of being <EVENT class="OCCURRENCE" eid="e4">shot</EVENT> by army if they <EVENT class="I_ACTION" eid="e5">try</EVENT> to <EVENT class="OCCURRENCE" eid="e6">flee</EVENT> their homeland http://t.co/ailOaryumy
+<MAKEINSTANCE eiid="ei1" eventID="e1" />
+<MAKEINSTANCE eiid="ei2" eventID="e2" />
+<MAKEINSTANCE eiid="ei4" eventID="e4" />
+<MAKEINSTANCE eiid="ei5" eventID="e5" />
+<MAKEINSTANCE eiid="ei6" eventID="e6" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<RELEVANT_SOURCE rsid="s0" />
+<RELEVANT_SOURCE rsid="s1_s0" />
+<FACT_VALUE eiid="ei1" fvid="fv0" rsid="s0" value="CT+" /><FACT_VALUE eiid="ei2" fvid="fv1" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei4" fvid="fv2" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei5" fvid="fv3" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei6" fvid="fv4" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei2" fvid="fv5" rsid="s1_s0" value="CT+" /><FACT_VALUE eiid="ei4" fvid="fv6" rsid="s1_s0" value="Uu" /><FACT_VALUE eiid="ei5" fvid="fv7" rsid="s1_s0" value="Uu" /><FACT_VALUE eiid="ei6" fvid="fv8" rsid="s1_s0" value="Uu" /></TimeML>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+Operation #WeWantOurTrophyBack "<SOURCE ssid="s1">@KenyaRugby247</SOURCE>: Earlier Quins II <EVENT class="OCCURRENCE" eid="e1">went</EVENT> all in on Mean Machine II <EVENT class="OCCURRENCE" eid="e2">beating</EVENT> them 55-5. #ESS"
+<MAKEINSTANCE eiid="ei1" eventID="e1" />
+<MAKEINSTANCE eiid="ei2" eventID="e2" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<RELEVANT_SOURCE rsid="s0" />
+<RELEVANT_SOURCE rsid="s1_s0" />
+<FACT_VALUE eiid="ei1" fvid="fv0" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei2" fvid="fv1" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei1" fvid="fv2" rsid="s1_s0" value="CT+" /><FACT_VALUE eiid="ei2" fvid="fv3" rsid="s1_s0" value="CT+" /></TimeML>

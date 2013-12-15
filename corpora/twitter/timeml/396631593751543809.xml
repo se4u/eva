@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+I should have <EVENT class="OCCURRENCE" eid="e1">stopped</EVENT> to get breakfast.
+<MAKEINSTANCE eiid="ei1" eventID="e1" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<RELEVANT_SOURCE rsid="s0" />
+<FACT_VALUE eiid="ei1" fvid="fv0" rsid="s0" value="CT-" /></TimeML>

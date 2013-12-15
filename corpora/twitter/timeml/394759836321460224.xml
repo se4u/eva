@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+Video | Kurdish fighters <EVENT class="STATE" eid="e2">in</EVENT> control of a #Syria border crossing with Iraq  http://t.co/gTFNvxYT3A
+<MAKEINSTANCE eiid="ei2" eventID="e2" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<RELEVANT_SOURCE rsid="s0" />
+<FACT_VALUE eiid="ei2" fvid="fv0" rsid="s0" value="CT+" /></TimeML>

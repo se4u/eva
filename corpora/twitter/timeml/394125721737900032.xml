@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+#Egypt's top political satirist <EVENT class="ASPECTUAL" eid="e1">back</EVENT> <EVENT class="STATE" eid="e2">on</EVENT> air http://t.co/HUgQJ4AZ6c
+<MAKEINSTANCE eiid="ei1" eventID="e1" />
+<MAKEINSTANCE eiid="ei2" eventID="e2" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<RELEVANT_SOURCE rsid="s0" />
+<FACT_VALUE eiid="ei1" fvid="fv0" rsid="s0" value="CT+" /><FACT_VALUE eiid="ei2" fvid="fv1" rsid="s0" value="CT+" /></TimeML>

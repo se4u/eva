@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+Despite <EVENT class="REPORTING" eid="e4">accounts</EVENT> of <EVENT class="OCCURRENCE" eid="e1">cannibalism</EVENT>, shark <EVENT class="OCCURRENCE" eid="e2">attacks</EVENT> and <EVENT class="OCCURRENCE" eid="e3">rape</EVENT>, increasing number of people <EVENT class="OCCURRENCE" eid="e5">smuggled</EVENT> to Puerto Rico by sea http://t.co/RVDzOEMucE
+<MAKEINSTANCE eiid="ei4" eventID="e4" />
+<MAKEINSTANCE eiid="ei1" eventID="e1" />
+<MAKEINSTANCE eiid="ei2" eventID="e2" />
+<MAKEINSTANCE eiid="ei3" eventID="e3" />
+<MAKEINSTANCE eiid="ei5" eventID="e5" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<SOURCE implicit="GEN" sip_eId="e4" sip_eiId="ei4" ssid="s1" />
+<RELEVANT_SOURCE rsid="s0" />
+<RELEVANT_SOURCE rsid="s1_s0" />
+<FACT_VALUE eiid="ei4" fvid="fv0" rsid="s0" value="CT+" /><FACT_VALUE eiid="ei1" fvid="fv1" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei2" fvid="fv2" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei3" fvid="fv3" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei5" fvid="fv4" rsid="s0" value="CT+" /><FACT_VALUE eiid="ei1" fvid="fv5" rsid="s1_s0" value="CT+" /><FACT_VALUE eiid="ei2" fvid="fv6" rsid="s1_s0" value="CT+" /><FACT_VALUE eiid="ei3" fvid="fv7" rsid="s1_s0" value="CT+" /></TimeML>

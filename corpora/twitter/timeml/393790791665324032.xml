@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+BREAKING: <EVENT class="STATE" eid="e4">Magnitude</EVENT> 7.6 #<EVENT class="OCCURRENCE" eid="e1">earthquake</EVENT> has been <EVENT class="I_ACTION" eid="e2">recorded</EVENT> 231 miles east of #Japan's Honshu Island, <EVENT class="REPORTING" eid="e3">says</EVENT> the #US Geological <SOURCE sip_eId="e3" sip_eiId="ei3" ssid="s1">Survey</SOURCE>. More soon.
+<MAKEINSTANCE eiid="ei4" eventID="e4" />
+<MAKEINSTANCE eiid="ei1" eventID="e1" />
+<MAKEINSTANCE eiid="ei2" eventID="e2" />
+<MAKEINSTANCE eiid="ei3" eventID="e3" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<SOURCE implicit="GEN" ssid="s2" />
+<RELEVANT_SOURCE rsid="s0" />
+<RELEVANT_SOURCE rsid="s1_s0" />
+<RELEVANT_SOURCE rsid="s2_s1_s0" />
+<FACT_VALUE eiid="ei4" fvid="fv0" rsid="s0" value="Uu" />
+<FACT_VALUE eiid="ei1" fvid="fv1" rsid="s0" value="Uu" />
+<FACT_VALUE eiid="ei2" fvid="fv2" rsid="s0" value="Uu" />
+<FACT_VALUE eiid="ei3" fvid="fv3" rsid="s0" value="CT+" />
+<FACT_VALUE eiid="ei4" fvid="fv4" rsid="s1_s0" value="Uu" />
+<FACT_VALUE eiid="ei1" fvid="fv5" rsid="s1_s0" value="Uu" />
+<FACT_VALUE eiid="ei2" fvid="fv6" rsid="s1_s0" value="CT+" />
+<FACT_VALUE eiid="ei4" fvid="fv4" rsid="s2_s1_s0" value="CT+" />
+<FACT_VALUE eiid="ei1" fvid="fv5" rsid="s2_s1_s0" value="CT+" />
+</TimeML>

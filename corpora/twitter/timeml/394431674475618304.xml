@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+Photo of a Syrian migrant <EVENT class="OCCURRENCE" eid="e2">mourning</EVENT> his children who <EVENT class="OCCURRENCE" eid="e3">drowned</EVENT> on the way to #Australia | http://t.co/tfPVmY54YG #Syria
+<MAKEINSTANCE eiid="ei2" eventID="e2" />
+<MAKEINSTANCE eiid="ei3" eventID="e3" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<RELEVANT_SOURCE rsid="s0" />
+<FACT_VALUE eiid="ei2" fvid="fv0" rsid="s0" value="CT+" /><FACT_VALUE eiid="ei3" fvid="fv1" rsid="s0" value="CT+" /></TimeML>

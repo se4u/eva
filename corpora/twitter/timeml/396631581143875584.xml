@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<EVENT class="REPORTING" eid="e1">RT</EVENT> <SOURCE sip_eId="e1" sip_eiId="ei1" ssid="s1">@SadieLees1</SOURCE>: Im so <EVENT class="I_STATE" eid="e2">excited</EVENT> to <EVENT class="ASPECTUAL" eid="e3">start</EVENT> <EVENT class="OCCURRENCE" eid="e4">listening</EVENT> to christmas music <EVENT class="ASPECTUAL" eid="e5">start</EVENT> <EVENT class="OCCURRENCE" eid="e6">decorating</EVENT> and <EVENT class="OCCURRENCE" eid="e7">buying</EVENT> christmas gifts 🙈 i <EVENT class="STATE" eid="e8">love</EVENT> christmas ❄️⛄️🎄🎁
+<MAKEINSTANCE eiid="ei1" eventID="e1" />
+<MAKEINSTANCE eiid="ei2" eventID="e2" />
+<MAKEINSTANCE eiid="ei3" eventID="e3" />
+<MAKEINSTANCE eiid="ei4" eventID="e4" />
+<MAKEINSTANCE eiid="ei5" eventID="e5" />
+<MAKEINSTANCE eiid="ei6" eventID="e6" />
+<MAKEINSTANCE eiid="ei7" eventID="e7" />
+<MAKEINSTANCE eiid="ei8" eventID="e8" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<RELEVANT_SOURCE rsid="s0" />
+<RELEVANT_SOURCE rsid="s1_s0" />
+<FACT_VALUE eiid="ei1" fvid="fv0" rsid="s0" value="CT+" /><FACT_VALUE eiid="ei2" fvid="fv1" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei3" fvid="fv2" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei4" fvid="fv3" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei5" fvid="fv4" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei6" fvid="fv5" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei7" fvid="fv6" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei8" fvid="fv7" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei2" fvid="fv8" rsid="s1_s0" value="CT+" /><FACT_VALUE eiid="ei3" fvid="fv9" rsid="s1_s0" value="CT+" /><FACT_VALUE eiid="ei4" fvid="fv10" rsid="s1_s0" value="CT+" /><FACT_VALUE eiid="ei5" fvid="fv11" rsid="s1_s0" value="CT+" /><FACT_VALUE eiid="ei6" fvid="fv12" rsid="s1_s0" value="CT+" /><FACT_VALUE eiid="ei7" fvid="fv13" rsid="s1_s0" value="CT+" /><FACT_VALUE eiid="ei8" fvid="fv14" rsid="s1_s0" value="CT+" /></TimeML>

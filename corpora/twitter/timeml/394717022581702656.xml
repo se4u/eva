@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+RT @AJEWeather For updates on the storm that's <EVENT class="OCCURRENCE" eid="e1">battering</EVENT> the Southern UK &amp; Northern France, check out our live blog: http://t.co/WgDopHQClZ
+<MAKEINSTANCE eiid="ei1" eventID="e1" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<RELEVANT_SOURCE rsid="s0" />
+<FACT_VALUE eiid="ei1" fvid="fv0" rsid="s0" value="CT+" /></TimeML>

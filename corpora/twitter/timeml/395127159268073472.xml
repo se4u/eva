@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+#Philippines <SOURCE sip_eId="e1" sip_eiId="ei1" ssid="s1">pres</SOURCE> <EVENT class="I_ACTION" eid="e1">questions</EVENT> authenticity of <SOURCE sip_eId="e5" sip_eiId="ei5" ssid="s2">video</SOURCE> <EVENT class="I_STATE" eid="e5">appearing</EVENT> to <EVENT class="REPORTING" eid="e2">show</EVENT> hostages being <EVENT class="OCCURRENCE" eid="e3">shot</EVENT> at during a <EVENT class="OCCURRENCE" eid="e4">siege</EVENT> last month: http://t.co/f6W4SU3dwZ
+<MAKEINSTANCE eiid="ei1" eventID="e1" />
+<MAKEINSTANCE eiid="ei2" eventID="e2" />
+<MAKEINSTANCE eiid="ei3" eventID="e3" />
+<MAKEINSTANCE eiid="ei4" eventID="e4" />
+<MAKEINSTANCE eiid="ei5" eventID="e5" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<RELEVANT_SOURCE rsid="s0" />
+<RELEVANT_SOURCE rsid="s1_s0" />
+<RELEVANT_SOURCE rsid="s2_s0" />
+<FACT_VALUE eiid="ei1" fvid="fv0" rsid="s0" value="CT+" /><FACT_VALUE eiid="ei2" fvid="fv1" rsid="s0" value="PR+" /><FACT_VALUE eiid="ei3" fvid="fv2" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei4" fvid="fv3" rsid="s0" value="CT+" /><FACT_VALUE eiid="ei5" fvid="fv4" rsid="s0" value="CT+" /><FACT_VALUE eiid="ei2" fvid="fv5" rsid="s1_s0" value="PR+" /><FACT_VALUE eiid="ei3" fvid="fv6" rsid="s1_s0" value="CT-" /><FACT_VALUE eiid="ei4" fvid="fv7" rsid="s1_s0" value="CT+" /><FACT_VALUE eiid="ei5" fvid="fv8" rsid="s1_s0" value="CT+" /><FACT_VALUE eiid="ei3" fvid="fv9" rsid="s2_s0" value="CT+" /><FACT_VALUE eiid="ei4" fvid="fv10" rsid="s2_s0" value="CT+" /></TimeML>

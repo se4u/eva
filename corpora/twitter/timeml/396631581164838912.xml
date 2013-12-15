@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<EVENT class="REPORTING" eid="e1">RT</EVENT> <SOURCE sip_eId="e1" sip_eiId="ei1" ssid="s1">@UnoSpurgeon</SOURCE>: @EsaiasMusic thank y'all for killing it mehhhhhnnnnn and <EVENT class="OCCURRENCE" eid="e2">hanging</EVENT> with u mehhhhnnnnn and mehhnnnn the apparel meehnnnn I'm …
+<MAKEINSTANCE eiid="ei1" eventID="e1" />
+<MAKEINSTANCE eiid="ei2" eventID="e2" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<RELEVANT_SOURCE rsid="s0" />
+<RELEVANT_SOURCE rsid="s1_s0" />
+<FACT_VALUE eiid="ei1" fvid="fv0" rsid="s0" value="CT+" /><FACT_VALUE eiid="ei2" fvid="fv1" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei2" fvid="fv2" rsid="s1_s0" value="CT+" /></TimeML>

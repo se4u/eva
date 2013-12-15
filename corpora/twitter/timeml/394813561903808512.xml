@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+RT @AJEWeather Where is the St Jude's Day storm <EVENT class="OCCURRENCE" eid="e1">heading</EVENT> next? @WeathertonFox has all the details in 10 mins: http://t.co/ODijE5kKin
+<MAKEINSTANCE eiid="ei1" eventID="e1" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<RELEVANT_SOURCE rsid="s0" />
+<FACT_VALUE eiid="ei1" fvid="fv0" rsid="s0" value="CT+" /></TimeML>

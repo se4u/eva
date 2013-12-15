@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+#Mozambique's army <EVENT class="OCCURRENCE" eid="e1">attacked</EVENT> #Renamo rebel group for 2nd time this month, raising <EVENT class="STATE" eid="e2">concerns</EVENT> over the country's economy: http://t.co/YCwjptYKJL
+<MAKEINSTANCE eiid="ei1" eventID="e1" />
+<MAKEINSTANCE eiid="ei2" eventID="e2" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<RELEVANT_SOURCE rsid="s0" />
+<FACT_VALUE eiid="ei1" fvid="fv0" rsid="s0" value="CT+" /><FACT_VALUE eiid="ei2" fvid="fv1" rsid="s0" value="CT+" /></TimeML>

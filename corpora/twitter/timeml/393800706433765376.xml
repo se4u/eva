@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+<EVENT class="STATE" eid="e2">Magnitude</EVENT> 7.3 #quake <EVENT class="OCCURRENCE" eid="e1">hits</EVENT> off #Japan coast http://t.co/kq4eW4y3Ur
+<MAKEINSTANCE eiid="ei2" eventID="e2" />
+<MAKEINSTANCE eiid="ei1" eventID="e1" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<RELEVANT_SOURCE rsid="s0" />
+<FACT_VALUE eiid="ei2" fvid="fv0" rsid="s0" value="CT+" /><FACT_VALUE eiid="ei1" fvid="fv1" rsid="s0" value="CT+" /></TimeML>

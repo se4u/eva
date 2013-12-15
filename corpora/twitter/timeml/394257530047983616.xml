@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+#Georgia <EVENT class="I_STATE" eid="e1">set</EVENT> to <EVENT class="OCCURRENCE" eid="e2">elect</EVENT> new president on Sunday as <SOURCE sip_eId="e4" sip_eiId="ei4" ssid="s1"><EVENT class="OCCURRENCE" eid="e3">polls</EVENT></SOURCE> <EVENT class="REPORTING" eid="e4">suggest</EVENT> public <EVENT class="STATE" eid="e5">frustrated</EVENT> with incumbent government | http://t.co/QFcjFZh9DL
+<MAKEINSTANCE eiid="ei1" eventID="e1" />
+<MAKEINSTANCE eiid="ei2" eventID="e2" />
+<MAKEINSTANCE eiid="ei3" eventID="e3" />
+<MAKEINSTANCE eiid="ei4" eventID="e4" />
+<MAKEINSTANCE eiid="ei5" eventID="e5" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<RELEVANT_SOURCE rsid="s0" />
+<RELEVANT_SOURCE rsid="s1_s0" />
+<FACT_VALUE eiid="ei1" fvid="fv0" rsid="s0" value="CT+" /><FACT_VALUE eiid="ei2" fvid="fv1" rsid="s0" value="PR+" /><FACT_VALUE eiid="ei3" fvid="fv2" rsid="s0" value="CT+" /><FACT_VALUE eiid="ei4" fvid="fv3" rsid="s0" value="CT+" /><FACT_VALUE eiid="ei5" fvid="fv4" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei5" fvid="fv5" rsid="s1_s0" value="CT+" /></TimeML>

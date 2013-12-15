@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+Updated: <SOURCE sip_eId="e1" sip_eiId="ei1" ssid="s1">Report</SOURCE> by #German magazine <EVENT class="REPORTING" eid="e1">reveals</EVENT> that the #NSA may have <EVENT class="OCCURRENCE" eid="e2">bugged</EVENT> German chancellor's phone since 2002 | http://t.co/6shQ1abjZQ
+<MAKEINSTANCE eiid="ei1" eventID="e1" />
+<MAKEINSTANCE eiid="ei2" eventID="e2" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<RELEVANT_SOURCE rsid="s0" />
+<RELEVANT_SOURCE rsid="s1_s0" />
+<FACT_VALUE eiid="ei1" fvid="fv0" rsid="s0" value="CT+" /><FACT_VALUE eiid="ei2" fvid="fv1" rsid="s0" value="PS+" /><FACT_VALUE eiid="ei2" fvid="fv2" rsid="s1_s0" value="PS+" /></TimeML>

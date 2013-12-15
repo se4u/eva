@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+No party <EVENT class="OCCURRENCE" eid="e1">wins</EVENT> majority in #Czech <EVENT class="OCCURRENCE" eid="e2">election</EVENT> http://t.co/HDD6IYA2t3
+<MAKEINSTANCE eiid="ei1" eventID="e1" />
+<MAKEINSTANCE eiid="ei2" eventID="e2" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<RELEVANT_SOURCE rsid="s0" />
+<FACT_VALUE eiid="ei1" fvid="fv0" rsid="s0" value="CT-" /><FACT_VALUE eiid="ei2" fvid="fv1" rsid="s0" value="CT+" /></TimeML>

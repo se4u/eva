@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://timeml.org/timeMLdocs/TimeML_1.2.1.xsd">
+Lately, I've simply been <EVENT class="OCCURRENCE" eid="e2">saying</EVENT> to the Divine two words which are: take me.Just take me.Whoever "me" is today. <EVENT class="REPORTING" eid="e1">~</EVENT> <SOURCE sip_eId="e1" sip_eiId="ei1" ssid="s1">Nalini MacNab</SOURCE>
+<MAKEINSTANCE eiid="ei2" eventID="e2" />
+<MAKEINSTANCE eiid="ei1" eventID="e1" />
+<SOURCE implicit="AUTHOR" ssid="s0" />
+<RELEVANT_SOURCE rsid="s0" />
+<RELEVANT_SOURCE rsid="s1_s0" />
+<FACT_VALUE eiid="ei2" fvid="fv0" rsid="s0" value="Uu" /><FACT_VALUE eiid="ei1" fvid="fv1" rsid="s0" value="CT+" /><FACT_VALUE eiid="ei2" fvid="fv2" rsid="s1_s0" value="CT+" /></TimeML>
